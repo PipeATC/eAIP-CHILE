@@ -1,0 +1,493 @@
+{
+  "icao": "SCEL",
+  "source": "AIP Chile Vol. II (AMDT 103)",
+  "count": 54,
+  "charts": [
+    {
+      "code": "IAC01",
+      "type": "IAC",
+      "phase": "Aproximación",
+      "num": "1",
+      "rwy": "17L",
+      "title": "ILS Z RWY 17L",
+      "file": "IAC01.jpg"
+    },
+    {
+      "code": "IAC02",
+      "type": "IAC",
+      "phase": "Aproximación",
+      "num": "2",
+      "rwy": "17R",
+      "title": "ILS Z RWY 17R",
+      "file": "IAC02.jpg"
+    },
+    {
+      "code": "IAC03",
+      "type": "IAC",
+      "phase": "Aproximación",
+      "num": "3",
+      "rwy": "17L",
+      "title": "ILS Y RWY 17L",
+      "file": "IAC03.jpg"
+    },
+    {
+      "code": "IAC04",
+      "type": "IAC",
+      "phase": "Aproximación",
+      "num": "4",
+      "rwy": "17R",
+      "title": "ILS Y RWY 17R",
+      "file": "IAC04.jpg"
+    },
+    {
+      "code": "IAC05",
+      "type": "IAC",
+      "phase": "Aproximación",
+      "num": "5",
+      "rwy": "",
+      "title": "IAC 5",
+      "file": "IAC05.jpg"
+    },
+    {
+      "code": "IAC06",
+      "type": "IAC",
+      "phase": "Aproximación",
+      "num": "6",
+      "rwy": "",
+      "title": "IAC 6",
+      "file": "IAC06.jpg"
+    },
+    {
+      "code": "IAC07",
+      "type": "IAC",
+      "phase": "Aproximación",
+      "num": "7",
+      "rwy": "",
+      "title": "IAC 7",
+      "file": "IAC07.jpg"
+    },
+    {
+      "code": "IAC08",
+      "type": "IAC",
+      "phase": "Aproximación",
+      "num": "8",
+      "rwy": "",
+      "title": "IAC 8",
+      "file": "IAC08.jpg"
+    },
+    {
+      "code": "IAC09",
+      "type": "IAC",
+      "phase": "Aproximación",
+      "num": "9",
+      "rwy": "17L",
+      "title": "VOR RWY 17L",
+      "file": "IAC09.jpg"
+    },
+    {
+      "code": "IAC10",
+      "type": "IAC",
+      "phase": "Aproximación",
+      "num": "10",
+      "rwy": "17R",
+      "title": "VOR RWY 17R",
+      "file": "IAC10.jpg"
+    },
+    {
+      "code": "IAC11",
+      "type": "IAC",
+      "phase": "Aproximación",
+      "num": "11",
+      "rwy": "35R",
+      "title": "VOR RWY 35R",
+      "file": "IAC11.jpg"
+    },
+    {
+      "code": "IAC12",
+      "type": "IAC",
+      "phase": "Aproximación",
+      "num": "12",
+      "rwy": "35L",
+      "title": "VOR RWY 35L",
+      "file": "IAC12.jpg"
+    },
+    {
+      "code": "IAC13",
+      "type": "IAC",
+      "phase": "Aproximación",
+      "num": "13",
+      "rwy": "17L",
+      "title": "RNP Y RWY 17L",
+      "file": "IAC13.jpg"
+    },
+    {
+      "code": "IAC14",
+      "type": "IAC",
+      "phase": "Aproximación",
+      "num": "14",
+      "rwy": "17R",
+      "title": "RNP Z RWY 17R",
+      "file": "IAC14.jpg"
+    },
+    {
+      "code": "IAC15",
+      "type": "IAC",
+      "phase": "Aproximación",
+      "num": "15",
+      "rwy": "17R",
+      "title": "RNP Y RWY 17R",
+      "file": "IAC15.jpg"
+    },
+    {
+      "code": "IAC16",
+      "type": "IAC",
+      "phase": "Aproximación",
+      "num": "16",
+      "rwy": "35R",
+      "title": "RNP RWY 35R",
+      "file": "IAC16.jpg"
+    },
+    {
+      "code": "IAC17",
+      "type": "IAC",
+      "phase": "Aproximación",
+      "num": "17",
+      "rwy": "35L",
+      "title": "RNP RWY 35L",
+      "file": "IAC17.jpg"
+    },
+    {
+      "code": "IAC18",
+      "type": "IAC",
+      "phase": "Aproximación",
+      "num": "18",
+      "rwy": "",
+      "title": "IAC 18",
+      "file": "IAC18.jpg"
+    },
+    {
+      "code": "IAC19",
+      "type": "IAC",
+      "phase": "Aproximación",
+      "num": "19",
+      "rwy": "",
+      "title": "IAC 19",
+      "file": "IAC19.jpg"
+    },
+    {
+      "code": "IAC20",
+      "type": "IAC",
+      "phase": "Aproximación",
+      "num": "20",
+      "rwy": "",
+      "title": "IAC 20",
+      "file": "IAC20.jpg"
+    },
+    {
+      "code": "SID01",
+      "type": "SID",
+      "phase": "Salida",
+      "num": "1",
+      "rwy": "",
+      "title": "SID 1",
+      "file": "SID01.jpg"
+    },
+    {
+      "code": "SID02",
+      "type": "SID",
+      "phase": "Salida",
+      "num": "2",
+      "rwy": "",
+      "title": "SID 2",
+      "file": "SID02.jpg"
+    },
+    {
+      "code": "SID03",
+      "type": "SID",
+      "phase": "Salida",
+      "num": "3",
+      "rwy": "",
+      "title": "SID 3",
+      "file": "SID03.jpg"
+    },
+    {
+      "code": "SID04",
+      "type": "SID",
+      "phase": "Salida",
+      "num": "4",
+      "rwy": "",
+      "title": "SID 4",
+      "file": "SID04.jpg"
+    },
+    {
+      "code": "SID05",
+      "type": "SID",
+      "phase": "Salida",
+      "num": "5",
+      "rwy": "",
+      "title": "Gelus 5B RNAV",
+      "file": "SID05.jpg"
+    },
+    {
+      "code": "SID06",
+      "type": "SID",
+      "phase": "Salida",
+      "num": "6",
+      "rwy": "",
+      "title": "Dilok 7B RNAV",
+      "file": "SID06.jpg"
+    },
+    {
+      "code": "SID07",
+      "type": "SID",
+      "phase": "Salida",
+      "num": "7",
+      "rwy": "",
+      "title": "Guvol 6B RNAV",
+      "file": "SID07.jpg"
+    },
+    {
+      "code": "SID08",
+      "type": "SID",
+      "phase": "Salida",
+      "num": "8",
+      "rwy": "",
+      "title": "Donti 5B RNAV",
+      "file": "SID08.jpg"
+    },
+    {
+      "code": "SID09",
+      "type": "SID",
+      "phase": "Salida",
+      "num": "9",
+      "rwy": "",
+      "title": "Nebeg 7C RNAV",
+      "file": "SID09.jpg"
+    },
+    {
+      "code": "SID10",
+      "type": "SID",
+      "phase": "Salida",
+      "num": "10",
+      "rwy": "",
+      "title": "Albal 7C RNAV",
+      "file": "SID10.jpg"
+    },
+    {
+      "code": "SID11",
+      "type": "SID",
+      "phase": "Salida",
+      "num": "11",
+      "rwy": "",
+      "title": "Liner 6C RNAV",
+      "file": "SID11.jpg"
+    },
+    {
+      "code": "SID12",
+      "type": "SID",
+      "phase": "Salida",
+      "num": "12",
+      "rwy": "",
+      "title": "Angod 6C RNAV",
+      "file": "SID12.jpg"
+    },
+    {
+      "code": "SID13",
+      "type": "SID",
+      "phase": "Salida",
+      "num": "13",
+      "rwy": "17R",
+      "title": "RNP RWY 17R",
+      "file": "SID13.jpg"
+    },
+    {
+      "code": "SID14",
+      "type": "SID",
+      "phase": "Salida",
+      "num": "14",
+      "rwy": "17L",
+      "title": "RNP RWY 17L",
+      "file": "SID14.jpg"
+    },
+    {
+      "code": "STAR01",
+      "type": "STAR",
+      "phase": "Llegada",
+      "num": "1",
+      "rwy": "",
+      "title": "STAR 1",
+      "file": "STAR01.jpg"
+    },
+    {
+      "code": "STAR02",
+      "type": "STAR",
+      "phase": "Llegada",
+      "num": "2",
+      "rwy": "",
+      "title": "STAR 2",
+      "file": "STAR02.jpg"
+    },
+    {
+      "code": "STAR03",
+      "type": "STAR",
+      "phase": "Llegada",
+      "num": "3",
+      "rwy": "",
+      "title": "STAR 3",
+      "file": "STAR03.jpg"
+    },
+    {
+      "code": "STAR04",
+      "type": "STAR",
+      "phase": "Llegada",
+      "num": "4",
+      "rwy": "",
+      "title": "STAR 4",
+      "file": "STAR04.jpg"
+    },
+    {
+      "code": "STAR05",
+      "type": "STAR",
+      "phase": "Llegada",
+      "num": "5",
+      "rwy": "",
+      "title": "STAR 5",
+      "file": "STAR05.jpg"
+    },
+    {
+      "code": "STAR06",
+      "type": "STAR",
+      "phase": "Llegada",
+      "num": "6",
+      "rwy": "17",
+      "title": "RNAV RWY 17",
+      "file": "STAR06.jpg"
+    },
+    {
+      "code": "STAR07",
+      "type": "STAR",
+      "phase": "Llegada",
+      "num": "7",
+      "rwy": "17",
+      "title": "RNAV RWY 17",
+      "file": "STAR07.jpg"
+    },
+    {
+      "code": "STAR08",
+      "type": "STAR",
+      "phase": "Llegada",
+      "num": "8",
+      "rwy": "17",
+      "title": "RNAV RWY 17",
+      "file": "STAR08.jpg"
+    },
+    {
+      "code": "STAR09",
+      "type": "STAR",
+      "phase": "Llegada",
+      "num": "9",
+      "rwy": "35",
+      "title": "RNAV RWY 35",
+      "file": "STAR09.jpg"
+    },
+    {
+      "code": "STAR10",
+      "type": "STAR",
+      "phase": "Llegada",
+      "num": "10",
+      "rwy": "35",
+      "title": "RNAV RWY 35",
+      "file": "STAR10.jpg"
+    },
+    {
+      "code": "STAR11",
+      "type": "STAR",
+      "phase": "Llegada",
+      "num": "11",
+      "rwy": "17",
+      "title": "RNAV RWY 17",
+      "file": "STAR11.jpg"
+    },
+    {
+      "code": "ADC01",
+      "type": "ADC",
+      "phase": "Aeródromo",
+      "num": "",
+      "rwy": "",
+      "title": "Plano de aeródromo",
+      "file": "ADC01.jpg"
+    },
+    {
+      "code": "ADC02",
+      "type": "ADC",
+      "phase": "Aeródromo",
+      "num": "",
+      "rwy": "",
+      "title": "Plano de aeródromo",
+      "file": "ADC02.jpg"
+    },
+    {
+      "code": "GMC01",
+      "type": "GMC",
+      "phase": "Movimiento",
+      "num": "",
+      "rwy": "",
+      "title": "Movimiento en superficie",
+      "file": "GMC01.jpg"
+    },
+    {
+      "code": "GMC02",
+      "type": "GMC",
+      "phase": "Movimiento",
+      "num": "",
+      "rwy": "",
+      "title": "Movimiento en superficie",
+      "file": "GMC02.jpg"
+    },
+    {
+      "code": "PDC01",
+      "type": "PDC",
+      "phase": "Estacionamiento",
+      "num": "",
+      "rwy": "",
+      "title": "Estacionamiento",
+      "file": "PDC01.jpg"
+    },
+    {
+      "code": "PDC02",
+      "type": "PDC",
+      "phase": "Estacionamiento",
+      "num": "",
+      "rwy": "",
+      "title": "Estacionamiento",
+      "file": "PDC02.jpg"
+    },
+    {
+      "code": "PDC03",
+      "type": "PDC",
+      "phase": "Estacionamiento",
+      "num": "",
+      "rwy": "",
+      "title": "Estacionamiento",
+      "file": "PDC03.jpg"
+    },
+    {
+      "code": "VAC01",
+      "type": "VAC",
+      "phase": "Visual",
+      "num": "",
+      "rwy": "",
+      "title": "Aproximación visual",
+      "file": "VAC01.jpg"
+    },
+    {
+      "code": "VAC02",
+      "type": "VAC",
+      "phase": "Visual",
+      "num": "",
+      "rwy": "",
+      "title": "VAC",
+      "file": "VAC02.jpg"
+    }
+  ]
+}

@@ -1,45 +1,39 @@
 #!/usr/bin/env python3
 """
-Incrusta los assets (cartas renderizadas) dentro de prototipo/index.html como
-data: URIs, para que el prototipo sea un único archivo autocontenido que se
-puede abrir en cualquier navegador / teléfono sin servidor ni archivos sueltos.
+Inyecta el catálogo de cartas de SCEL dentro de prototipo/index.html.
+
+El prototipo lista las cartas desde un catálogo embebido (para no depender de
+fetch/CORS al abrir por file://) y carga cada imagen por ruta relativa desde
+data/charts/SCEL/. Este script vuelca data/charts/SCEL/catalog.json en el
+marcador  const CATALOG=/*__CATALOG__*/{...}/*__END__*/  de index.html.
 
 Uso:  python prototipo/build.py
-Es idempotente: vuelve a inyectar la imagen en la línea marcada
-    const CHART_SRC="...";/*__CHART_ILS_Z_17L__*/
+(idempotente). Regenera primero las cartas con:
+      python pipeline/render_scel_charts.py
 """
-import base64
+import json
 import pathlib
 import re
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 HTML = ROOT / "prototipo" / "index.html"
+CATALOG = ROOT / "data" / "charts" / "SCEL" / "catalog.json"
 
-ASSETS = {
-    "__CHART_ILS_Z_17L__": ROOT / "data" / "charts" / "SCEL" / "ILS_Z_17L.png",
-}
-
-
-def data_uri(path: pathlib.Path) -> str:
-    mime = "image/png" if path.suffix == ".png" else "image/jpeg"
-    b64 = base64.b64encode(path.read_bytes()).decode("ascii")
-    return f"data:{mime};base64,{b64}"
+MARK = re.compile(r'/\*__CATALOG__\*/.*?/\*__END__\*/', re.S)
 
 
 def main():
+    if not CATALOG.exists():
+        raise SystemExit(f"No existe {CATALOG}. Corre pipeline/render_scel_charts.py primero.")
+    data = json.loads(CATALOG.read_text(encoding="utf-8"))
+    payload = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
     html = HTML.read_text(encoding="utf-8")
-    for marker, path in ASSETS.items():
-        if not path.exists():
-            print(f"  ! falta {path} — se deja el placeholder para {marker}")
-            continue
-        uri = data_uri(path)
-        # reemplaza la línea:  const CHART_SRC="...";/*__MARKER__*/
-        pat = re.compile(r'const CHART_SRC="(?:[^"\\]|\\.)*";/\*' + re.escape(marker) + r'\*/')
-        repl = f'const CHART_SRC="{uri}";/*{marker}*/'
-        html, n = pat.subn(repl, html)
-        print(f"  {'✓' if n else '·'} {marker}: {n} inyección(es), {path.stat().st_size/1e6:.2f} MB -> data URI")
-    HTML.write_text(html, encoding="utf-8")
-    print(f"Listo: {HTML} ({HTML.stat().st_size/1e6:.2f} MB)")
+    new = f"/*__CATALOG__*/{payload}/*__END__*/"
+    html2, n = MARK.subn(lambda _: new, html, count=1)
+    if not n:
+        raise SystemExit("No se encontró el marcador __CATALOG__ en index.html")
+    HTML.write_text(html2, encoding="utf-8")
+    print(f"✓ Catálogo inyectado: {data['count']} cartas -> {HTML.name} ({HTML.stat().st_size/1024:.0f} KB)")
 
 
 if __name__ == "__main__":
