@@ -1,0 +1,6 @@
+# Pipeline de ingesta AIP Chile
+pypdf>=4.0
+pdfplumber>=0.11
+camelot-py[cv]>=0.11
+# Render de cartas: se usa poppler-utils (pdftoppm) vía sistema
+# Para tiles opcionalmente: pypdfium2>=4.0

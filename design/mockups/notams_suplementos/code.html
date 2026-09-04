@@ -1,0 +1,439 @@
+<!DOCTYPE html><html class="dark" lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=inter:wght@100..900&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;700;800&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "background": "#0f131c", "surface-tint": "#98cbff", "surface-dim": "#0f131c", "on-error-container": "#ffdad6", "tertiary-fixed-dim": "#ffb95f", "on-secondary-fixed": "#002113", "on-background": "#dfe2ee", "primary": "#98cbff", "secondary": "#4edea3", "on-tertiary-fixed": "#2a1700", "surface-container-highest": "#31353e", "on-tertiary-fixed-variant": "#653e00", "outline-variant": "#3f4852", "on-secondary": "#003824", "error": "#ffb4ab", "secondary-container": "#00a572", "tertiary": "#ffb95f", "inverse-primary": "#00629d", "secondary-fixed": "#6ffbbe", "secondary-fixed-dim": "#4edea3", "on-error": "#690005", "primary-container": "#00a3ff", "on-secondary-container": "#00311f", "on-secondary-fixed-variant": "#005236", "surface-container-lowest": "#0a0e16", "surface-bright": "#353942", "surface": "#0f131c", "surface-variant": "#31353e", "on-tertiary-container": "#4c2d00", "tertiary-fixed": "#ffddb8", "tertiary-container": "#da8b00", "surface-container": "#1c2028", "error-container": "#93000a", "surface-container-low": "#181c24", "inverse-on-surface": "#2c3039", "primary-fixed-dim": "#98cbff", "outline": "#88919d", "on-primary-fixed-variant": "#004a77", "on-primary-fixed": "#001d33", "on-primary": "#003354", "on-tertiary": "#472a00", "on-surface": "#dfe2ee", "surface-container-high": "#262a33", "on-surface-variant": "#bec7d4", "inverse-surface": "#dfe2ee", "on-primary-container": "#00375a", "primary-fixed": "#cfe5ff" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "pad-xl": "1.5rem", "gutter-mobile": "0.75rem", "pad-xs": "0.25rem", "gutter-tablet": "1rem", "pad-2xs": "0.125rem", "pad-md": "0.75rem", "touch-min": "44px", "pad-lg": "1rem", "pad-sm": "0.5rem", "sheet-max-w": "480px" }, fontFamily: { "caption": ["inter"], "body-md": ["inter"], "badge-label": ["jetbrainsMono"], "data-display-lg": ["jetbrainsMono"], "headline-lg": ["inter"], "headline-md": ["inter"], "body-lg": ["inter"], "body-sm": ["inter"], "data-display-md": ["jetbrainsMono"], "headline-sm": ["inter"], "data-display-sm": ["jetbrainsMono"] }, fontSize: { "caption": ["10px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "500" }], "body-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400" }], "badge-label": ["10px", { "lineHeight": "12px", "letterSpacing": "0.06em", "fontWeight": "700" }], "data-display-lg": ["22px", { "lineHeight": "28px", "letterSpacing": "0.04em", "fontWeight": "700" }], "headline-lg": ["26px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-md": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["15px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "body-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" }], "data-display-md": ["15px", { "lineHeight": "20px", "letterSpacing": "0.03em", "fontWeight": "600" }], "headline-sm": ["16px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "600" }], "data-display-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }] } } } }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen" style="font-family: Inter, system-ui, sans-serif;"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-pad-sm"><div class="flex items-center gap-pad-sm min-w-0"><img alt="Logo IFIS AIP Chile DGAC" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAE4zMdDGf-7O2ENVLk_GY1h9evyAqrv0T1jwHxfk9942TncOX21-csdI2YouaFqmJguYLi2Pm0UL-oGaMDRBn0hosS6F9ygvKX8EAdt4-1zEunXhUZfS6UmU-eGXZIcsClIMP_KsNjtYOr0rEuZjvoPIc1DFwz2RynaO-U8v7lW5l9yXFvAiH8_jbAP_hf5XXVO4aHqVu1lEbF69n065uGnrEBsuPJ1mvpjdT2E6bbzuDeeWc0oPQT4M_pb6f8BlGUQ"><div class="flex flex-col min-w-0"><span class="font-badge-label text-badge-label tracking-wider text-primary truncate uppercase">AIP CHILE EFB</span><span class="font-headline-sm text-headline-sm font-semibold tracking-tight text-on-surface truncate">Notams</span></div></div><div class="flex items-center gap-pad-xs flex-shrink-0"><div class="hidden sm:flex items-center gap-pad-2xs px-pad-sm py-pad-xs rounded bg-surface-container text-on-surface-variant font-data-display-sm text-data-display-sm"><span class="material-symbols-outlined text-[14px] text-primary">schedule</span><span class="">18:42z</span></div><div class="flex items-center gap-pad-xs px-pad-sm py-pad-xs rounded bg-surface-container-high"><span class="h-2 w-2 rounded-full bg-secondary animate-pulse"></span><span class="font-badge-label text-badge-label text-secondary">2404 VIGENTE</span></div><button class="min-h-touch-min min-w-touch-min flex items-center justify-center p-pad-2xs rounded-full hover:opacity-80 transition-opacity"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCC26MsAQph-_7_y8aueOUcEF-KglQ_Qv089WoPCoDNGuTB2z89jISoOrNXuGrkgAHW096sJnDz1wmWOpG1m1IKfqSo8_9BIKhiOckzweR1yyn0tJ90fhoIGqSf6mC7_yM78jZCTqqj_sHHfwlwMtzq0wtkzvhBLQbc-qEiG5UqqRvzAyTeM7yDdKiDgzX00sK76SF2wlbQ16IRp3s3dc-ZSeV5SWhdgtQMzDVs2VIMUHATM2wVzv4"></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Interactive Segmented Navigation Bar -->
+<div class="px-gutter-mobile pt-pad-sm pb-pad-xs">
+<div class="flex items-center gap-pad-xs overflow-x-auto pb-pad-2xs scrollbar-none" id="categoryNav">
+<button class="tab-btn px-pad-md py-pad-xs rounded-lg font-badge-label text-badge-label uppercase tracking-wider bg-surface-container-high text-primary flex items-center gap-pad-xs flex-shrink-0 shadow-sm transition-all" onclick="switchTab(this, 'scel')">
+<span class="material-symbols-outlined text-[15px]">flight_land</span>
+<span class="">AERÓDROMOS (SCEL)</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</button>
+<button class="tab-btn px-pad-md py-pad-xs rounded-lg font-badge-label text-badge-label uppercase tracking-wider bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center gap-pad-xs flex-shrink-0 transition-all" onclick="switchTab(this, 'scez')">
+<span class="material-symbols-outlined text-[15px]">radar</span>
+<span class="">FIR SANTIAGO (SCEZ)</span>
+</button>
+<button class="tab-btn px-pad-md py-pad-xs rounded-lg font-badge-label text-badge-label uppercase tracking-wider bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center gap-pad-xs flex-shrink-0 transition-all" onclick="switchTab(this, 'sup')">
+<span class="material-symbols-outlined text-[15px]">library_books</span>
+<span class="">SUP AIP</span>
+</button>
+<button class="tab-btn px-pad-md py-pad-xs rounded-lg font-badge-label text-badge-label uppercase tracking-wider bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center gap-pad-xs flex-shrink-0 transition-all" onclick="switchTab(this, 'aic')">
+<span class="material-symbols-outlined text-[15px]">campaign</span>
+<span class="">CIRCULARES AIC</span>
+</button>
+</div>
+</div>
+<!-- Operational Briefing Status Banner -->
+<div class="px-gutter-mobile py-pad-xs">
+<div class="bg-surface-container-low rounded-xl p-pad-md shadow-md flex flex-col gap-pad-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-pad-xs">
+<span class="material-symbols-outlined text-tertiary text-[18px]">verified_user</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Briefing Operacional Activo</span>
+</div>
+<span class="font-badge-label text-badge-label text-on-surface-variant bg-surface-container px-pad-sm py-pad-2xs rounded">SCEL / SCL</span>
+</div>
+<!-- Metric Pills Row -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-pad-xs">
+<div class="bg-surface-container rounded-lg p-pad-sm flex items-center gap-pad-xs">
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-data-display-md text-data-display-md text-on-surface leading-none">32</span>
+<span class="font-caption text-caption text-on-surface-variant uppercase truncate">Vigentes</span>
+</div>
+</div>
+<div class="bg-surface-container rounded-lg p-pad-sm flex items-center gap-pad-xs">
+<div class="w-8 h-8 rounded-lg bg-error-container/40 flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[18px]">emergency</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-data-display-md text-data-display-md text-error leading-none">2 CRÍTICOS</span>
+<span class="font-caption text-caption text-on-error-container uppercase truncate">Alerta Vuelo</span>
+</div>
+</div>
+<div class="col-span-2 sm:col-span-1 bg-surface-container rounded-lg p-pad-sm flex items-center justify-between sm:justify-start gap-pad-xs">
+<div class="w-8 h-8 rounded-lg bg-secondary-container/20 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-data-display-sm text-data-display-sm text-secondary truncate">AMDT 2404</span>
+<span class="font-caption text-caption text-on-surface-variant truncate">Sinc: hace 4 min</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Search & Tactical Chips Tray -->
+<div class="px-gutter-mobile py-pad-xs flex flex-col gap-pad-xs">
+<!-- Avionics Styled Search Bar -->
+<div class="relative flex items-center bg-surface-container-lowest rounded-lg">
+<span class="material-symbols-outlined absolute left-pad-sm text-on-surface-variant text-[18px]">search</span>
+<input class="w-full bg-transparent pl-9 pr-pad-md py-pad-sm font-data-display-sm text-data-display-sm text-on-surface placeholder:text-outline-variant focus:outline-none placeholder:font-body-sm" id="notamSearch" oninput="filterNotams(this.value)" placeholder="Filtrar por código o palabra (RWY, ILS, TWY)..." type="text">
+<button class="min-w-touch-min min-h-touch-min flex items-center justify-center text-on-surface-variant hover:text-on-surface" onclick="clearSearch()">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+</button>
+</div>
+<!-- Filter Chips Scroll -->
+<div class="flex items-center gap-pad-xs overflow-x-auto pb-pad-2xs scrollbar-none" id="filterChips">
+<button class="chip-btn px-pad-sm py-pad-2xs rounded bg-primary text-on-primary font-badge-label text-badge-label uppercase flex-shrink-0 shadow-sm transition-all" onclick="setFilterChip(this, 'all')">Todos (32)</button>
+<button class="chip-btn px-pad-sm py-pad-2xs rounded bg-surface-container text-on-surface-variant hover:text-on-surface font-badge-label text-badge-label uppercase flex-shrink-0 transition-all" onclick="setFilterChip(this, 'rwy')">Pistas &amp; Luces (9)</button>
+<button class="chip-btn px-pad-sm py-pad-2xs rounded bg-surface-container text-on-surface-variant hover:text-on-surface font-badge-label text-badge-label uppercase flex-shrink-0 transition-all" onclick="setFilterChip(this, 'nav')">Radioayudas / NAV (4)</button>
+<button class="chip-btn px-pad-sm py-pad-2xs rounded bg-surface-container text-on-surface-variant hover:text-on-surface font-badge-label text-badge-label uppercase flex-shrink-0 transition-all" onclick="setFilterChip(this, 'airspace')">Espacio Aéreo (11)</button>
+<button class="chip-btn px-pad-sm py-pad-2xs rounded bg-surface-container text-on-surface-variant hover:text-on-surface font-badge-label text-badge-label uppercase flex-shrink-0 transition-all" onclick="setFilterChip(this, 'hazards')">Peligros / Aves (8)</button>
+</div>
+</div>
+<!-- Active NOTAM List -->
+<div class="px-gutter-mobile py-pad-xs flex flex-col gap-pad-sm" id="notamContainer">
+<!-- Card 1: CRITICAL ALERT -->
+<article class="notam-card bg-surface-container-low rounded-xl overflow-hidden shadow-lg transition-all" data-category="rwy" id="card-A1428">
+<!-- High-consequence visual header strip -->
+<div class="bg-error-container/30 px-pad-md py-pad-xs flex items-center justify-between">
+<div class="flex items-center gap-pad-xs">
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+<span class="font-badge-label text-badge-label text-error font-bold uppercase tracking-wider">CRÍTICO OPERACIONAL</span>
+</div>
+<div class="flex items-center gap-pad-xs">
+<span class="font-data-display-sm text-data-display-sm text-error bg-surface-container-lowest/80 px-pad-xs py-pad-2xs rounded">SCEL / AMB</span>
+<span class="font-caption text-caption text-on-surface-variant">SERIE A</span>
+</div>
+</div>
+<div class="p-pad-md flex flex-col gap-pad-sm">
+<!-- NOTAM Reference & Subject -->
+<div class="flex items-start justify-between gap-pad-sm">
+<div class="flex flex-col min-w-0">
+<span class="font-data-display-md text-data-display-md text-primary-fixed-dim">A1428/24 NOTAMN</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mt-pad-2xs tracking-tight">RWY 17R/35L CLSD DUE TO MAINT WIP</h2>
+</div>
+<span class="font-badge-label text-badge-label bg-surface-container-highest text-on-surface-variant px-pad-xs py-pad-2xs rounded uppercase">AEROD</span>
+</div>
+<!-- Monospace Validity & Schedule Box -->
+<div class="bg-surface-container rounded-lg p-pad-sm flex flex-col gap-pad-2xs font-data-display-sm text-data-display-sm">
+<div class="flex flex-wrap items-center justify-between gap-pad-xs text-on-surface-variant">
+<div class="flex items-center gap-pad-2xs">
+<span class="material-symbols-outlined text-[14px] text-tertiary">calendar_clock</span>
+<span class="text-on-surface">FROM: 24/04/20 02:00</span>
+</div>
+<span class="text-primary-fixed-dim">TO: 24/04/28 10:00 UTC</span>
+</div>
+<div class="flex items-center gap-pad-xs text-secondary-fixed">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+<span class="">SCHEDULE: DAILY 0200-1000</span>
+</div>
+</div>
+<!-- Human Plain-Language Decoded Translation -->
+<div class="bg-surface-container-lowest rounded-lg p-pad-sm flex items-start gap-pad-xs">
+<span class="material-symbols-outlined text-secondary text-[16px] flex-shrink-0 mt-0.5">translate</span>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+<strong class="text-primary font-semibold">Decodificación DGAC:</strong> Pista 17R/35L cerrada por trabajos de mantenimiento en carpeta asfáltica. Luces de eje (RCLL) fuera de servicio durante horario publicado. Planificar rodaje vía TWY Kilo hacia RWY 17L.
+          </p>
+</div>
+<!-- Quick Cockpit Actions -->
+<div class="flex items-center gap-pad-xs pt-pad-xs">
+<button class="flex-1 min-h-touch-min bg-surface-container hover:bg-surface-container-high rounded-lg px-pad-sm py-pad-xs flex items-center justify-center gap-pad-xs text-on-surface font-headline-sm text-[13px] transition-colors" onclick="toggleRead('card-A1428', this)">
+<span class="material-symbols-outlined text-[18px] text-secondary read-icon">check_circle</span>
+<span class="read-text">Marcar Leído</span>
+</button>
+<button class="flex-1 min-h-touch-min bg-surface-container hover:bg-surface-container-high rounded-lg px-pad-sm py-pad-xs flex items-center justify-center gap-pad-xs text-primary font-headline-sm text-[13px] transition-colors" onclick="showMapPreview('RWY 17R/35L')">
+<span class="material-symbols-outlined text-[18px]">map</span>
+<span class="">Ver en Plano</span>
+</button>
+<button class="min-w-touch-min min-h-touch-min bg-surface-container hover:bg-surface-container-high rounded-lg flex items-center justify-center text-on-surface-variant transition-colors" title="Compartir a tripulación">
+<span class="material-symbols-outlined text-[18px]">ios_share</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 2: WARNING NAVAID -->
+<article class="notam-card bg-surface-container-low rounded-xl overflow-hidden shadow-md transition-all" data-category="nav" id="card-A1390">
+<!-- Amber Advisory Strip -->
+<div class="bg-tertiary-container/30 px-pad-md py-pad-xs flex items-center justify-between">
+<div class="flex items-center gap-pad-xs">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-badge-label text-badge-label text-tertiary-fixed-dim uppercase tracking-wider font-bold">PRECAUCIÓN NAVEGACIÓN</span>
+</div>
+<span class="font-data-display-sm text-data-display-sm text-tertiary-fixed-dim bg-surface-container-lowest/80 px-pad-xs py-pad-2xs rounded">NAV / VOR</span>
+</div>
+<div class="p-pad-md flex flex-col gap-pad-sm">
+<div class="flex items-start justify-between gap-pad-sm">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-pad-xs">
+<span class="font-data-display-md text-data-display-md text-primary-fixed-dim">A1390/24 NOTAMR</span>
+<span class="font-caption text-caption text-on-surface-variant">(Reemplaza A1375)</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mt-pad-2xs tracking-tight">VOR/DME AMB 116.1 MHZ U/S FOR CALIBRATION</h2>
+</div>
+</div>
+<div class="bg-surface-container rounded-lg p-pad-sm flex flex-col gap-pad-2xs font-data-display-sm text-data-display-sm">
+<div class="flex flex-wrap items-center justify-between gap-pad-xs text-on-surface-variant">
+<div class="flex items-center gap-pad-2xs">
+<span class="material-symbols-outlined text-[14px] text-tertiary">schedule</span>
+<span class="text-on-surface">FROM: 24/04/18 12:00</span>
+</div>
+<span class="text-primary-fixed-dim">TO: 24/04/25 23:59 UTC</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-pad-sm flex items-start gap-pad-xs">
+<span class="material-symbols-outlined text-secondary text-[16px] flex-shrink-0 mt-0.5">translate</span>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+<strong class="text-primary font-semibold">Decodificación DGAC:</strong> Radioayuda VOR/DME Santiago fuera de servicio por vuelo de calibración DGAC. Procedimientos VOR no autorizados; utilizar RNAV 1 GNSS para llegadas STAR y aproximaciones instrumentales RNP.
+          </p>
+</div>
+<div class="flex items-center gap-pad-xs pt-pad-xs">
+<button class="flex-1 min-h-touch-min bg-surface-container hover:bg-surface-container-high rounded-lg px-pad-sm py-pad-xs flex items-center justify-center gap-pad-xs text-on-surface font-headline-sm text-[13px] transition-colors" onclick="toggleRead('card-A1390', this)">
+<span class="material-symbols-outlined text-[18px] text-secondary read-icon">check_circle</span>
+<span class="read-text">Marcar Leído</span>
+</button>
+<button class="min-w-touch-min min-h-touch-min bg-surface-container hover:bg-surface-container-high rounded-lg px-pad-md py-pad-xs flex items-center justify-center gap-pad-xs text-primary font-headline-sm text-[13px] transition-colors">
+<span class="material-symbols-outlined text-[18px]">alt_route</span>
+<span class="">Ver STAR RNAV</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 3: INFO OBSTACLE -->
+<article class="notam-card bg-surface-container-low rounded-xl overflow-hidden shadow-sm transition-all" data-category="hazards" id="card-C0512">
+<!-- Cyan Info Strip -->
+<div class="bg-primary-container/20 px-pad-md py-pad-xs flex items-center justify-between">
+<div class="flex items-center gap-pad-xs">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-badge-label text-badge-label text-primary uppercase tracking-wider font-bold">INFORMACIÓN / OBSTÁCULO</span>
+</div>
+<span class="font-data-display-sm text-data-display-sm text-primary bg-surface-container-lowest/80 px-pad-xs py-pad-2xs rounded">SERIE C</span>
+</div>
+<div class="p-pad-md flex flex-col gap-pad-sm">
+<div class="flex items-start justify-between gap-pad-sm">
+<div class="flex flex-col min-w-0">
+<span class="font-data-display-md text-data-display-md text-primary-fixed-dim">C0512/24 NOTAMN</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mt-pad-2xs tracking-tight">OBST CRANE ERECTED 2.1 NM NORTH SCEL ELEV 1720FT LIGHTED</h2>
+</div>
+<span class="font-badge-label text-badge-label bg-surface-container-highest text-on-surface-variant px-pad-xs py-pad-2xs rounded uppercase">OBST</span>
+</div>
+<div class="bg-surface-container rounded-lg p-pad-sm flex items-center justify-between font-data-display-sm text-data-display-sm">
+<div class="flex items-center gap-pad-2xs text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-primary">schedule</span>
+<span class="">VALIDITY: PERMANENTE (PERM)</span>
+</div>
+<span class="font-badge-label text-badge-label bg-surface-container-highest text-secondary px-pad-xs py-pad-2xs rounded">ILUMINADA</span>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-pad-sm flex items-start gap-pad-xs">
+<span class="material-symbols-outlined text-secondary text-[16px] flex-shrink-0 mt-0.5">translate</span>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+<strong class="text-primary font-semibold">Decodificación DGAC:</strong> Grúa pluma de construcción erigida a 2.1 NM al norte del umbral RWY 17L. Elevación máxima 1,720 FT AMSL. Balizamiento nocturno de destello rojo operativo. No afecta gradiente de ascenso estándar.
+          </p>
+</div>
+<div class="flex items-center gap-pad-xs pt-pad-xs">
+<button class="flex-1 min-h-touch-min bg-surface-container hover:bg-surface-container-high rounded-lg px-pad-sm py-pad-xs flex items-center justify-center gap-pad-xs text-on-surface font-headline-sm text-[13px] transition-colors" onclick="toggleRead('card-C0512', this)">
+<span class="material-symbols-outlined text-[18px] text-secondary read-icon">check_circle</span>
+<span class="read-text">Marcar Leído</span>
+</button>
+<button class="min-w-touch-min min-h-touch-min bg-surface-container hover:bg-surface-container-high rounded-lg px-pad-md py-pad-xs flex items-center justify-center gap-pad-xs text-primary font-headline-sm text-[13px] transition-colors">
+<span class="material-symbols-outlined text-[18px]">near_me</span>
+<span class="">Radial 358°</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+<!-- Interactive Aerodrome Chart Snapshot (Moment of Delight) -->
+<div class="px-gutter-mobile pt-pad-md pb-pad-xs">
+<div class="bg-surface-container-low rounded-xl p-pad-md shadow-md flex flex-col gap-pad-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-pad-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">layers</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Visualizador de Afectación SCEL</span>
+</div>
+<span class="font-badge-label text-badge-label bg-surface-container text-on-surface-variant px-pad-xs py-pad-2xs rounded uppercase">OVERLAY EFB</span>
+</div>
+<!-- Cockpit Vector Runway Graphic -->
+<div class="relative w-full h-44 bg-surface-container-lowest rounded-lg overflow-hidden flex items-center justify-center p-pad-sm">
+<!-- Grid Canvas Overlay -->
+<svg class="absolute inset-0 w-full h-full opacity-20 pointer-events-none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="24" id="grid" patternUnits="userSpaceOnUse" width="24">
+<path d="M 24 0 L 0 0 0 24" fill="none" stroke="#98cbff" stroke-width="0.5"></path>
+</pattern>
+</defs>
+<rect fill="url(#grid)" height="100%" width="100%"></rect>
+</svg>
+<!-- Simulated Airport Layout Schematic -->
+<div class="relative w-full max-w-[340px] h-full flex items-center justify-around py-pad-xs">
+<!-- Runway 17R / 35L (CLOSED) -->
+<div class="flex flex-col items-center justify-between h-full w-12 bg-surface-container-high/60 rounded relative group">
+<!-- Closed X indicator -->
+<div class="absolute inset-0 flex flex-col items-center justify-center gap-6 pointer-events-none">
+<span class="font-badge-label text-error font-bold text-[18px]">✕</span>
+<span class="font-badge-label text-error font-bold text-[18px]">✕</span>
+</div>
+<span class="font-badge-label text-[10px] text-error pt-1">17R</span>
+<div class="w-0.5 flex-1 border-r border-dashed border-error/40 my-1"></div>
+<span class="font-badge-label text-[10px] text-error pb-1">35L</span>
+<!-- Tag indicator -->
+<div class="absolute -top-2 bg-error text-on-error font-badge-label text-[8px] px-1 rounded uppercase tracking-tighter">CLSD</div>
+</div>
+<!-- Central Taxiway Spine -->
+<div class="flex flex-col items-center justify-center gap-1">
+<span class="font-badge-label text-caption text-outline-variant">TWY A / K</span>
+<div class="w-16 h-0.5 bg-primary/30"></div>
+<span class="font-caption text-caption text-secondary flex items-center gap-pad-2xs">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              FLOW 17L
+            </span>
+</div>
+<!-- Runway 17L / 35R (ACTIVE) -->
+<div class="flex flex-col items-center justify-between h-full w-12 bg-surface-container-high rounded relative">
+<span class="font-badge-label text-[10px] text-secondary pt-1">17L</span>
+<div class="w-0.5 flex-1 border-r border-dashed border-secondary/80 my-1 animate-pulse"></div>
+<span class="font-badge-label text-[10px] text-secondary pb-1">35R</span>
+<!-- Tag indicator -->
+<div class="absolute -top-2 bg-secondary text-on-secondary font-badge-label text-[8px] px-1 rounded uppercase tracking-tighter">ACTIVA</div>
+</div>
+</div>
+<!-- Compass Rose HUD Element -->
+<div class="absolute bottom-2 right-2 flex items-center gap-1 bg-surface-container-high/90 px-pad-xs py-pad-2xs rounded">
+<span class="material-symbols-outlined text-[13px] text-primary">navigation</span>
+<span class="font-data-display-sm text-[10px] text-on-surface">MAG 174°</span>
+</div>
+</div>
+</div>
+</div>
+<!-- AIP Supplements Section Preview Card -->
+<div class="px-gutter-mobile pt-pad-sm pb-pad-lg">
+<div class="bg-surface-container-low rounded-xl p-pad-md shadow-md flex flex-col gap-pad-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-pad-xs">
+<span class="material-symbols-outlined text-primary-container text-[20px]">menu_book</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Suplementos AIP Chile Vigentes</span>
+</div>
+<span class="font-badge-label text-badge-label text-secondary bg-surface-container px-pad-xs py-pad-2xs rounded">ONLINE</span>
+</div>
+<!-- Item Card -->
+<div class="bg-surface-container rounded-lg p-pad-md flex flex-col gap-pad-xs">
+<div class="flex items-start justify-between gap-pad-sm">
+<div class="flex items-center gap-pad-xs">
+<span class="font-badge-label text-badge-label bg-tertiary-container/40 text-tertiary-fixed px-pad-xs py-pad-2xs rounded uppercase font-bold">SUP AIP 08/24</span>
+<span class="font-caption text-caption text-on-surface-variant">SCEL AD 2.24</span>
+</div>
+<div class="flex items-center gap-pad-2xs text-secondary font-data-display-sm text-data-display-sm">
+<span class="material-symbols-outlined text-[14px]">offline_pin</span>
+<span class="">Disponible Offline</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface font-medium">
+          Procedimientos especiales de aproximación y rodaje durante obras mayores de repavimentación en Calle de Rodaje Alfa (TWY A) y plataforma remota.
+        </p>
+<div class="flex items-center justify-between pt-pad-xs">
+<span class="font-data-display-sm text-data-display-sm text-outline">Válido: 15 MAR 2024 - 15 DIC 2024</span>
+<button class="min-h-touch-min px-pad-md bg-surface-container-highest hover:bg-surface-bright rounded-lg flex items-center gap-pad-xs text-primary transition-colors" onclick="downloadSupplement(this)">
+<span class="material-symbols-outlined text-[18px]">download_for_offline</span>
+<span class="font-headline-sm text-[12px]">Descargar PDF (2.4 MB)</span>
+</button>
+</div>
+</div>
+<!-- AIC Secondary Item Quick Line -->
+<div class="flex items-center justify-between px-pad-sm py-pad-xs bg-surface-container-lowest/60 rounded-lg">
+<div class="flex items-center gap-pad-xs min-w-0">
+<span class="material-symbols-outlined text-outline-variant text-[16px]">description</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate">AIC A 02/24: Ensayos de enlace de datos CP-DLC en FIR Santiago</span>
+</div>
+<button class="min-w-touch-min min-h-touch-min flex items-center justify-center text-primary hover:text-on-surface">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Filter Tabs Interaction
+  function switchTab(btn, category) {
+    document.querySelectorAll('.tab-btn').forEach(el => {
+      el.classList.remove('bg-surface-container-high', 'text-primary');
+      el.classList.add('bg-surface-container', 'text-on-surface-variant');
+    });
+    btn.classList.add('bg-surface-container-high', 'text-primary');
+    btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+  }
+
+  // Filter Chips Interaction
+  function setFilterChip(chip, filter) {
+    document.querySelectorAll('.chip-btn').forEach(el => {
+      el.classList.remove('bg-primary', 'text-on-primary');
+      el.classList.add('bg-surface-container', 'text-on-surface-variant');
+    });
+    chip.classList.add('bg-primary', 'text-on-primary');
+    chip.classList.remove('bg-surface-container', 'text-on-surface-variant');
+
+    const cards = document.querySelectorAll('.notam-card');
+    cards.forEach(card => {
+      if (filter === 'all') {
+        card.style.display = 'flex';
+      } else {
+        const cat = card.getAttribute('data-category');
+        card.style.display = (cat === filter) ? 'flex' : 'none';
+      }
+    });
+  }
+
+  // Quick Search Filter
+  function filterNotams(query) {
+    const term = query.toLowerCase().trim();
+    const cards = document.querySelectorAll('.notam-card');
+    cards.forEach(card => {
+      const text = card.textContent.toLowerCase();
+      if (!term || text.includes(term)) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  function clearSearch() {
+    const input = document.getElementById('notamSearch');
+    input.value = '';
+    filterNotams('');
+  }
+
+  // Toggle Read Action with Delight Feedback
+  function toggleRead(cardId, button) {
+    const card = document.getElementById(cardId);
+    const icon = button.querySelector('.read-icon');
+    const text = button.querySelector('.read-text');
+
+    if (card.dataset.read === 'true') {
+      card.dataset.read = 'false';
+      card.style.opacity = '1';
+      icon.textContent = 'check_circle';
+      icon.classList.remove('text-on-surface-variant');
+      icon.classList.add('text-secondary');
+      text.textContent = 'Marcar Leído';
+    } else {
+      card.dataset.read = 'true';
+      card.style.opacity = '0.65';
+      icon.textContent = 'task_alt';
+      icon.classList.remove('text-secondary');
+      icon.classList.add('text-on-surface-variant');
+      text.textContent = 'Leído por Tripulación';
+    }
+  }
+
+  // Map preview toast simulator
+  function showMapPreview(element) {
+    const originalTitle = document.title;
+    const alertBox = document.createElement('div');
+    alertBox.className = "fixed bottom-20 left-1/2 -translate-x-1/2 z-50 bg-primary text-on-primary px-pad-md py-pad-xs rounded-full font-badge-label text-badge-label shadow-xl flex items-center gap-pad-xs animate-bounce";
+    alertBox.innerHTML = '<span class="material-symbols-outlined text-[16px]">location_searching</span> Visualizando ' + element + ' en Carta SCEL ADC';
+    document.body.appendChild(alertBox);
+    setTimeout(() => alertBox.remove(), 2600);
+  }
+
+  // Download feedback
+  function downloadSupplement(btn) {
+    btn.innerHTML = '<span class="material-symbols-outlined text-[18px] text-secondary">cloud_done</span><span class="font-headline-sm text-[12px] text-secondary">Guardado Offline</span>';
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.5)]" data-active-classes="text-primary-container font-headline-sm scale-105"><div class="flex justify-around items-center h-16 px-gutter-mobile max-w-sheet-max-w mx-auto"><a class="flex-1 min-h-touch-min min-w-touch-min flex flex-col items-center justify-center gap-pad-2xs text-on-surface-variant transition-colors hover:text-on-surface" data-path="aerodromos" href="#"><span class="material-symbols-outlined text-[20px]">flight_takeoff</span><span class="font-badge-label text-badge-label tracking-wider">AERÓDROMOS</span></a><a class="flex-1 min-h-touch-min min-w-touch-min flex flex-col items-center justify-center gap-pad-2xs text-on-surface-variant transition-colors hover:text-on-surface" data-path="cartas" href="#"><span class="material-symbols-outlined text-[20px]">map</span><span class="font-badge-label text-badge-label tracking-wider">CARTAS</span></a><a class="flex-1 min-h-touch-min min-w-touch-min flex flex-col items-center justify-center gap-pad-2xs text-on-surface-variant transition-colors hover:text-on-surface" data-path="enroute" href="#"><span class="material-symbols-outlined text-[20px]">alt_route</span><span class="font-badge-label text-badge-label tracking-wider">ENROUTE</span></a><a aria-current="page" class="flex-1 min-h-touch-min min-w-touch-min flex flex-col items-center justify-center gap-pad-2xs transition-colors text-primary-container font-headline-sm scale-105" data-path="notams" href="#"><span class="material-symbols-outlined text-[20px]">warning</span><span class="font-badge-label text-badge-label tracking-wider">NOTAMS</span></a></div></nav>
+
+
+
+</body></html>
