@@ -1,0 +1,50 @@
+{
+  "icao": "SCEL",
+  "iata": "SCL",
+  "name": "Aeropuerto Arturo Merino Benítez",
+  "city": "Santiago, Chile",
+  "fir": "SCEZ",
+  "source": "AIP Chile Vol. I — AD 2 SCEL (AMDT NR 67)",
+  "_nota": "Datos extraídos del AIP Chile oficial. Herramienta de consulta/estudio; no reemplaza la fuente certificada.",
+  "general": {
+    "arp": "33°23'39.99\"S 070°47'37.69\"W",
+    "ubicacion": "14 KM al NW de Santiago · Comuna de Pudahuel",
+    "elevacion_ft": 1555,
+    "elevacion_m": 474,
+    "temp_ref_c": 30,
+    "ondulacion_geoidal_m": 26.10,
+    "mag_var": "1.1° E (2022)",
+    "altitud_transicion_ft": 10000,
+    "trafico": "IFR/VFR",
+    "clase_espacio": "D (CTR)",
+    "arff_categoria": "CAT 9",
+    "operador": "DGAC",
+    "combustible": "Jet A1",
+    "horas": "H24"
+  },
+  "runways": [
+    {"id": "17L", "brg_mag": "176°", "len_m": 3750, "wid_m": 55, "sfc": "ASPH", "thr_elev_ft": 1550, "tora": 3750, "toda": 3750, "asda": 3750, "lda": 3750, "ils": "IUEL 110.3"},
+    {"id": "35R", "brg_mag": "356°", "len_m": 3750, "wid_m": 55, "sfc": "ASPH", "thr_elev_ft": 1555, "tora": 3750, "toda": 3750, "asda": 3750, "lda": 3200, "ils": null},
+    {"id": "17R", "brg_mag": "176°", "len_m": 3800, "wid_m": 45, "sfc": "ASPH", "thr_elev_ft": 1551, "tora": 3800, "toda": 3800, "asda": 3800, "lda": 3800, "ils": "IMER 111.1"},
+    {"id": "35L", "brg_mag": "356°", "len_m": 3800, "wid_m": 45, "sfc": "ASPH", "thr_elev_ft": 1550, "tora": 3800, "toda": 3800, "asda": 3800, "lda": 3800, "ils": null}
+  ],
+  "frequencies": [
+    {"service": "ATIS", "name": "ATIS Arribo", "freq": "132.100", "hours": "H24"},
+    {"service": "ATIS", "name": "ATIS Despegue", "freq": "132.700", "hours": "H24"},
+    {"service": "APP", "name": "Santiago Aproximación", "freq": "119.700", "hours": "H24", "alt": ["129.700", "135.400"]},
+    {"service": "TWR", "name": "Santiago Torre (Local Primaria)", "freq": "118.100", "hours": "H24"},
+    {"service": "TWR", "name": "Santiago Torre (Local Secundaria)", "freq": "118.350", "hours": "H24"},
+    {"service": "GND", "name": "Santiago Control Terrestre E", "freq": "122.200", "hours": "H24"},
+    {"service": "GND", "name": "Santiago Control Terrestre W", "freq": "122.500", "hours": "H24"},
+    {"service": "DLVRY", "name": "Santiago Autorizaciones", "freq": "136.700", "hours": "H24"},
+    {"service": "INFO", "name": "Santiago Información", "freq": "122.400", "alt": ["125.400"]}
+  ],
+  "navaids": [
+    {"type": "DVOR/DME", "id": "AMB", "freq": "116.1 MHz", "ch": "108X", "rwy": "17L/35R", "elev_ft": 1558, "hours": "H24"},
+    {"type": "DVOR/DME", "id": "PDH", "freq": "117.2 MHz", "ch": "119X", "rwy": "17R/35L", "elev_ft": 1552, "hours": "H24"},
+    {"type": "ILS/LOC", "id": "IUEL", "freq": "110.3 MHz", "rwy": "17L", "hours": "H24"},
+    {"type": "ILS/GP DME", "id": null, "freq": "335.0 MHz", "ch": "40X", "rwy": "17L", "hours": "H24"},
+    {"type": "ILS/LOC", "id": "IMER", "freq": "111.1 MHz", "rwy": "17R", "hours": "H24"},
+    {"type": "ILS/GP DME", "id": null, "freq": "331.7 MHz", "ch": "48X", "rwy": "17R", "hours": "H24"}
+  ]
+}

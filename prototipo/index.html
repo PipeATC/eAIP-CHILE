@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<title>AIP Chile EFB — Prototipo</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ===== AIP CHILE EFB · design tokens (design/DESIGN_SYSTEM.md) ===== */
+:root{
+  --bg:#0B0F17; --surface:#0F131C; --s-low:#141926; --s:#1A2130; --s-high:#232C3D; --s-top:#2C374B;
+  --line:#2A3446; --line-2:#3A465C;
+  --ink:#F1F5FB; --ink-2:#AEBAC9; --ink-3:#6C7A8D;
+  --primary:#00A3FF; --primary-2:#0284C7; --on-primary:#04121D;
+  --emerald:#10B981; --amber:#F59E0B; --red:#EF4444; --violet:#A855F7;
+  --sans:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+  --maxw:412px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg)}
+body{font-family:var(--sans);color:var(--ink);-webkit-font-smoothing:antialiased;overscroll-behavior:none}
+::-webkit-scrollbar{width:0;height:0;display:none}*{scrollbar-width:none}
+.mono{font-family:var(--mono);font-feature-settings:"tnum" 1}
+img,svg{display:block;max-width:100%}
+button{font-family:inherit;color:inherit;background:none;border:none;cursor:pointer}
+input{font-family:inherit}
+[hidden]{display:none!important}
+i.ic{display:inline-flex;align-items:center;justify-content:center;line-height:0;vertical-align:middle}
+i.ic svg{width:1em;height:1em;stroke:currentColor;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.tap{-webkit-tap-highlight-color:transparent;transition:border-color .15s,background .15s,transform .1s}
+.tap:active{transform:scale(.98)}
+
+#app{background:var(--surface);min-height:100vh;padding-bottom:96px;position:relative}
+@media(min-width:520px){
+  body{display:flex;justify-content:center;background:#05070c}
+  #app{width:var(--maxw);box-shadow:0 0 0 1px #1a2233,0 30px 80px rgba(0,0,0,.6)}
+}
+.header{position:sticky;top:0;z-index:50;background:rgba(10,14,22,.95);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.hbar{height:56px;padding:0 12px;display:flex;align-items:center;justify-content:space-between;gap:8px}
+.brand{display:flex;align-items:center;gap:10px;min-width:0}
+.brand .k{font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.14em;color:var(--primary);text-transform:uppercase}
+.brand .t{font-size:15px;font-weight:600;letter-spacing:-.01em;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pill{display:flex;align-items:center;gap:5px;padding:4px 8px;border-radius:5px;font-family:var(--mono);font-size:11px}
+.pill.clock{background:var(--s);color:var(--ink-2)}
+.pill.airac{background:var(--s-high)}
+.pill.airac b{color:var(--emerald);font-size:10px;font-weight:700;letter-spacing:.06em}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--emerald)}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.pulse{animation:pulse 2s infinite}
+.disclaimer{padding:5px 12px;background:rgba(245,158,11,.1);border-top:1px solid rgba(245,158,11,.2);display:flex;align-items:center;gap:6px}
+.disclaimer span{font-size:10px;color:rgba(245,158,11,.92);font-weight:500;letter-spacing:.02em}
+.disclaimer .ic{color:var(--amber);font-size:13px}
+
+.screen{display:none;padding:0 12px}
+.screen.on{display:block;animation:fade .18s ease}
+@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+.row{display:flex;align-items:center;gap:8px}
+.between{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.scroll-x{display:flex;gap:6px;overflow-x:auto;margin:0 -12px;padding:0 12px 4px}
+.grow{flex:1;min-width:0}.none{flex:none}
+.trunc{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sec{margin-top:16px}
+.sec-head{display:flex;align-items:center;gap:6px;margin-bottom:8px}
+.sec-head .ic{font-size:18px;color:var(--primary)}
+.sec-head h2{font-size:13px;font-weight:700;letter-spacing:.02em;color:var(--ink)}
+.sec-head .r{margin-left:auto;font-size:9px;color:var(--ink-3);letter-spacing:.06em}
+.tag{font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:.06em;padding:2px 6px;border-radius:4px}
+.demo{background:rgba(245,158,11,.15);color:var(--amber)}
+
+.search{display:flex;align-items:center;background:var(--s-low);border:1px solid var(--line);border-radius:8px;padding:8px 10px;margin-top:12px}
+.search:focus-within{border-color:var(--primary)}
+.search .ic{color:var(--primary);font-size:19px;margin-right:6px}
+.search input{width:100%;background:none;border:none;outline:none;font-family:var(--mono);font-size:12px;letter-spacing:.08em;color:var(--ink);text-transform:uppercase}
+.search input::placeholder{color:var(--ink-3)}
+.chip{display:inline-flex;align-items:center;gap:4px;padding:6px 12px;border-radius:8px;background:var(--s);color:var(--ink-2);font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.06em;flex:none}
+.chip .s{color:var(--ink-3)}
+.chip.on{background:var(--primary);color:var(--on-primary)}
+.chip .ic{font-size:13px}
+.cat{padding:6px 10px;border-radius:999px;background:var(--s);border:1px solid var(--line);color:var(--ink-2);font-family:var(--mono);font-size:10px;font-weight:700;flex:none}
+.cat .n{opacity:.6}
+.cat.on{background:var(--primary);border-color:var(--primary);color:var(--on-primary)}
+
+.hero{position:relative;margin-top:12px;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.hero .bg{position:absolute;inset:0;background:linear-gradient(135deg,#12233a,#0f1826 55%,#0b0f17)}
+.hero .in{position:relative;padding:14px}
+.hero .st{font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.06em;color:var(--emerald);display:flex;align-items:center;gap:4px}
+.hero .st .ic{font-size:13px}
+.hero h1{font-family:var(--mono);font-size:30px;font-weight:800;line-height:1;color:var(--ink)}
+.hero .sub1{font-size:15px;font-weight:700;color:var(--ink);margin-top:4px}
+.hero .sub2{font-size:11px;color:var(--ink-2);margin-top:1px}
+.ico-btn{font-size:20px;color:var(--amber)}
+
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:10px}
+.tile{background:var(--s);border:1px solid var(--line);border-radius:8px;padding:10px}
+.tile .l{font-family:var(--mono);font-size:9px;letter-spacing:.06em;color:var(--ink-3)}
+.tile .v{font-family:var(--mono);font-size:17px;font-weight:700;color:var(--ink);margin-top:2px;line-height:1}
+.tile .u{font-family:var(--mono);font-size:9px;color:var(--ink-3);margin-top:3px}
+.rwybox{background:var(--s);border:1px solid var(--line);border-radius:8px;padding:12px;display:flex;align-items:center;justify-content:space-between;margin-top:10px}
+.rwybox .l{font-family:var(--mono);font-size:9px;letter-spacing:.06em;color:var(--ink-3)}
+.rwybox .v{font-family:var(--mono);font-size:15px;font-weight:700;color:var(--ink);margin-top:2px}
+.rwybox .d{font-size:10px;color:var(--ink-2);margin-top:2px}
+.rwybox .ic{font-size:32px;color:rgba(0,163,255,.8)}
+.metar{background:var(--s-low);border:1px solid var(--line);border-radius:8px;padding:10px}
+.metar p{font-family:var(--mono);font-size:11px;color:var(--emerald);line-height:1.6}
+
+.freqs{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.freq{text-align:left;background:var(--s);border:1px solid var(--line);border-radius:8px;padding:10px}
+.freq:active,.freq.hot{border-color:var(--primary)}
+.freq .top{display:flex;align-items:flex-start;justify-content:space-between}
+.freq .l{font-family:var(--mono);font-size:9px;letter-spacing:.06em;color:var(--ink-3)}
+.freq .cp{font-size:15px;color:var(--ink-3)}
+.freq .v{font-family:var(--mono);font-size:16px;font-weight:700;color:var(--primary);margin-top:2px}
+@keyframes cf{0%{background:rgba(16,185,129,.22)}100%{background:var(--s)}}
+.copyflash{animation:cf .9s ease}
+
+.warnbtn{width:100%;text-align:left;background:rgba(245,158,11,.1);border:1px solid rgba(245,158,11,.3);border-radius:8px;padding:12px;display:flex;align-items:center;gap:12px}
+.warnbtn .ic{font-size:26px;color:var(--amber)}
+.warnbtn .k{font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.06em;color:var(--amber)}
+.warnbtn .k .z{color:rgba(245,158,11,.6)}
+.warnbtn .t{font-size:12px;color:var(--ink);font-weight:500}
+.warnbtn .go{margin-left:auto;color:var(--ink-3);font-size:18px}
+
+.charts{display:flex;flex-direction:column;gap:6px;margin-top:8px}
+.chart{width:100%;text-align:left;background:var(--s);border:1px solid var(--line);border-radius:8px;padding:10px;display:flex;align-items:center;gap:10px}
+.chart:active{border-color:var(--primary)}
+.chart .badge{font-family:var(--mono);font-size:9px;font-weight:700;padding:4px 6px;border-radius:4px;flex:none}
+.chart .t{font-size:12px;font-weight:600;color:var(--ink)}
+.chart .s{font-family:var(--mono);font-size:9px;color:var(--ink-3);margin-top:2px}
+.chart .pin{font-size:16px;color:var(--amber)}
+.chart .go{color:var(--ink-3);font-size:18px}
+
+.browser-head{padding-top:12px}
+.browser-head .row1{display:flex;align-items:center;gap:8px}
+.browser-head h2{font-size:16px;font-weight:700;color:var(--ink)}
+.browser-head .sub{font-size:11px;color:var(--ink-2);margin-top:1px}
+.chartgrid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+.cardc{text-align:left;background:var(--s);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.cardc:active{border-color:var(--primary)}
+.cardc .thumb{aspect-ratio:3/4;background:#fff;overflow:hidden;position:relative}
+.cardc .thumb img{width:100%;height:100%;object-fit:cover;object-position:top}
+.cardc .thumb .bd{position:absolute;top:5px;left:5px;font-family:var(--mono);font-size:8px;font-weight:700;padding:2px 5px;border-radius:3px;background:rgba(10,14,22,.82);color:var(--c,#fff)}
+.cardc .cap{padding:8px 9px}
+.cardc .cap .t{font-size:11px;font-weight:600;color:var(--ink);line-height:1.25}
+.cardc .cap .s{font-family:var(--mono);font-size:9px;color:var(--ink-3);margin-top:2px}
+
+.ct-head{display:flex;align-items:flex-start;gap:8px;padding-top:12px}
+.ct-back{width:32px;height:32px;border-radius:6px;background:var(--s);border:1px solid var(--line);display:grid;place-items:center;color:var(--primary);font-size:18px;flex:none}
+.ct-app{font-family:var(--mono);font-size:10px;padding:4px 6px;border-radius:4px;background:var(--s-high);color:var(--c,var(--primary));font-weight:700;flex:none}
+.ct-title{font-size:15px;font-weight:700;letter-spacing:-.01em;color:var(--ink)}
+.ct-proc{font-size:13px;font-weight:600;color:var(--primary)}
+.ct-meta{display:flex;align-items:center;gap:6px;margin-top:2px;font-size:10px;color:var(--ink-2);flex-wrap:wrap}
+.ct-meta .d{color:var(--ink-3)}.ct-meta .sup{color:var(--amber);font-weight:600}
+.strip{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:10px}
+.strip .it{background:var(--s);border:1px solid var(--line);border-radius:8px;padding:10px}
+.strip .l{font-family:var(--mono);font-size:9px;letter-spacing:.06em;color:var(--ink-3)}
+.strip .row2{display:flex;align-items:flex-end;gap:4px;margin-top:2px}
+.strip .v{font-family:var(--mono);font-size:16px;font-weight:700;color:var(--ink);line-height:1}
+.strip .u{font-family:var(--mono);font-size:9px;color:var(--primary);margin-bottom:2px}
+.viewport{position:relative;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#0a0e16;aspect-ratio:3/4;margin-top:10px;touch-action:none;cursor:grab}
+.viewport.grab{cursor:grabbing}
+#chart-stage{position:absolute;inset:0;transform-origin:0 0;will-change:transform}
+#chart-inner{width:100%}
+#chart-inner img{width:100%;display:block;background:#fff}
+.viewport.night #chart-inner img{filter:invert(1) hue-rotate(180deg) brightness(.92) contrast(1.05)}
+.viewport .rail{position:absolute;top:8px;right:8px;display:flex;flex-direction:column;gap:4px}
+.viewport .rail button{width:36px;height:36px;border-radius:4px;background:rgba(10,14,22,.85);border:1px solid var(--line);display:grid;place-items:center;font-size:18px;color:var(--ink-2)}
+.viewport .rail button.p{color:var(--primary)}
+.viewport .scale{position:absolute;bottom:8px;left:8px;font-family:var(--mono);font-size:9px;padding:2px 6px;border-radius:4px;background:rgba(10,14,22,.85);border:1px solid var(--line);color:var(--ink-2)}
+.viewport .loading{position:absolute;inset:0;display:grid;place-items:center;color:var(--ink-3);font-family:var(--mono);font-size:11px;text-align:center;padding:16px}
+.minima{border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--s)}
+.minima .hd,.minima .rw{display:grid;grid-template-columns:1.4fr 1fr 1fr;font-family:var(--mono);font-size:11px}
+.minima .hd>div{padding:8px 10px;color:var(--ink-3);letter-spacing:.06em;border-bottom:1px solid var(--line);font-size:10px}
+.minima .rw>div{padding:8px 10px}
+.minima .rw{border-bottom:1px solid rgba(42,52,70,.6)}.minima .rw:last-child{border-bottom:none}
+.minima .rw .p{font-weight:700}.minima .rw .da{color:var(--ink-2)}.minima .rw .rvr{color:var(--emerald);font-weight:600}
+.note{font-size:10px;color:var(--ink-3);margin-top:6px;line-height:1.5}
+.dbcard{background:var(--s);border:1px solid var(--line);border-radius:8px;padding:12px;display:flex;align-items:center;gap:10px}
+.dbcard .ic{font-size:22px;color:var(--emerald)}
+.dbcard .t{font-size:12px;font-weight:600;color:var(--ink)}
+.dbcard .d{font-size:10px;color:var(--ink-2)}
+
+.brief{background:var(--s);border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:12px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:10px}
+.kpi{border-radius:6px;border:1px solid var(--line);background:var(--s-low);padding:10px}
+.kpi.red{background:rgba(239,68,68,.1);border-color:rgba(239,68,68,.3)}
+.kpi .n{font-family:var(--mono);font-size:20px;font-weight:700;color:var(--ink)}
+.kpi.red .n{color:var(--red)}.kpi .l{font-size:10px;color:var(--ink-3);margin-top:2px}.kpi.red .l{color:rgba(239,68,68,.8)}
+.notam{border-radius:8px;overflow:hidden;background:var(--s)}
+.notam .bar{padding:6px 12px;display:flex;align-items:center;justify-content:space-between}
+.notam .bar .c{font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:.06em;display:flex;align-items:center;gap:4px}
+.notam .bar .z{font-family:var(--mono);font-size:9px;color:var(--ink-3)}
+.notam .in{padding:12px}
+.notam .id{font-family:var(--mono);font-size:11px;font-weight:700;color:var(--primary)}.notam .id .z{color:var(--ink-3)}
+.notam .t{font-family:var(--mono);font-size:12px;font-weight:700;color:var(--ink);margin-top:4px;line-height:1.35}
+.notam .dec{margin-top:8px;display:flex;align-items:flex-start;gap:6px;background:var(--s-low);border:1px solid var(--line);border-radius:6px;padding:8px}
+.notam .dec .ic{font-size:15px;color:var(--primary);flex:none;margin-top:1px}
+.notam .dec p{font-size:11px;color:var(--ink-2);line-height:1.5}.notam .dec b{color:var(--ink)}
+.notam .val{margin-top:8px;font-family:var(--mono);font-size:10px;color:var(--ink-3);display:flex;align-items:center;gap:4px}
+.foot-note{font-size:10px;color:var(--ink-3);margin-top:8px;line-height:1.5}.foot-note b{color:var(--ink-2)}
+
+.nav{position:fixed;bottom:0;left:0;right:0;z-index:50;background:rgba(10,14,22,.96);backdrop-filter:blur(14px);border-top:1px solid var(--line);max-width:var(--maxw);margin:0 auto;padding-bottom:env(safe-area-inset-bottom,0)}
+@media(min-width:520px){.nav{left:50%;transform:translateX(-50%)}}
+.nav .g{display:grid;grid-template-columns:repeat(4,1fr);height:64px}
+.navb{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;color:var(--ink-3)}
+.navb .ic{font-size:22px}.navb span{font-size:9px;font-weight:600;letter-spacing:.03em}.navb.on{color:var(--primary)}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:96px;z-index:60;padding:8px 12px;border-radius:8px;background:var(--emerald);color:#04121d;font-size:12px;font-weight:700;box-shadow:0 8px 24px rgba(0,0,0,.4);opacity:0;pointer-events:none;transition:opacity .2s}
+
+.c-primary{--c:var(--primary)}.c-emerald{--c:var(--emerald)}.c-amber{--c:var(--amber)}
+.c-red{--c:var(--red)}.c-violet{--c:var(--violet)}.c-ink-2{--c:var(--ink-2)}
+.badge{color:var(--c);background:color-mix(in srgb,var(--c) 15%,transparent)}
+.notam{border:1px solid color-mix(in srgb,var(--c) 30%,transparent)}
+.notam .bar{background:color-mix(in srgb,var(--c) 10%,transparent)}
+.notam .bar .c{color:var(--c)}.notam .bar .c .dot{background:var(--c)}
+</style>
+</head>
+<body>
+<div id="app">
+
+  <header class="header">
+    <div class="hbar">
+      <div class="brand">
+        <svg width="34" height="34" viewBox="0 0 34 34" class="none">
+          <rect x="1" y="1" width="32" height="32" rx="7" fill="#0F131C" stroke="#00A3FF" stroke-width="1.5"/>
+          <path d="M17 6 L25 26 L17 21 L9 26 Z" fill="#00A3FF"/><circle cx="17" cy="17" r="2.2" fill="#0A0E16"/>
+        </svg>
+        <div style="min-width:0">
+          <div class="k">AIP CHILE · IFIS</div>
+          <div class="t" id="hdr-title">Aeródromos</div>
+        </div>
+      </div>
+      <div class="row" style="gap:6px">
+        <div class="pill clock"><i class="ic" data-ic="clock" style="font-size:13px;color:var(--primary)"></i><span id="utc-clock">--:--z</span></div>
+        <div class="pill airac"><span class="dot pulse"></span><b>AIRAC 2409</b></div>
+      </div>
+    </div>
+    <div class="disclaimer">
+      <i class="ic" data-ic="info"></i>
+      <span>PROTOTIPO · consulta/estudio · no reemplaza la fuente oficial certificada para navegación</span>
+    </div>
+  </header>
+
+  <!-- SCREEN 1 — AERÓDROMO -->
+  <section id="scr-ad" class="screen on">
+    <div class="search">
+      <i class="ic" data-ic="search"></i>
+      <input value="SCEL" placeholder="Buscar aeródromo, VOR o fix…">
+    </div>
+    <div class="scroll-x" style="margin-top:10px">
+      <button class="chip on tap"><i class="ic" data-ic="pin"></i>SCEL</button>
+      <button class="chip tap">SCFA <span class="s">ANF</span></button>
+      <button class="chip tap">SCCF <span class="s">CJC</span></button>
+      <button class="chip tap">SCTE <span class="s">PMC</span></button>
+      <button class="chip tap">SCIE <span class="s">CCP</span></button>
+    </div>
+
+    <div class="hero">
+      <div class="bg"></div>
+      <div class="in">
+        <div class="between">
+          <div class="st"><i class="ic" data-ic="check"></i>AIP ACTIVO · AD 2 · AMDT 67</div>
+          <button class="ico-btn tap"><i class="ic" data-ic="star"></i></button>
+        </div>
+        <div class="row" style="align-items:flex-end;gap:8px;margin-top:8px">
+          <h1>SCEL</h1><span class="mono" style="font-size:14px;color:var(--primary);font-weight:700;margin-bottom:2px">SCL</span>
+        </div>
+        <div class="sub1">ARTURO MERINO BENÍTEZ INTL</div>
+        <div class="sub2">SANTIAGO, CHILE · FIR SCEZ · 14 KM AL NW</div>
+      </div>
+    </div>
+
+    <div class="tiles" id="ad-tiles"></div>
+
+    <div class="rwybox">
+      <div>
+        <div class="l">PISTAS DECLARADAS</div>
+        <div class="v">17L/35R · 17R/35L</div>
+        <div class="d">Paralelas · ASPH · máx 3.800 × 45 m</div>
+      </div>
+      <i class="ic" data-ic="plane"></i>
+    </div>
+
+    <div class="sec">
+      <div class="sec-head"><i class="ic" data-ic="wind"></i><h2>METAR &amp; CONDICIONES</h2><span class="tag demo" style="margin-left:auto">MUESTRA DEMO</span></div>
+      <div class="metar"><p>SCEL 041800Z 18012KT 9999 FEW030 21/08 Q1016 NOSIG</p></div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-head"><i class="ic" data-ic="radio"></i><h2>FRECUENCIAS</h2><span class="r">TOCA PARA COPIAR</span></div>
+      <div class="freqs" id="ad-freqs"></div>
+    </div>
+
+    <div class="sec">
+      <button class="warnbtn tap" onclick="go('no')">
+        <i class="ic" data-ic="alert"></i>
+        <div style="min-width:0">
+          <div class="k">NOTAM A1428/24 · CRÍTICO <span class="z">· DEMO</span></div>
+          <div class="t trunc">RWY 17R/35L CLSD DUE TO MAINT WIP</div>
+        </div>
+        <i class="ic go" data-ic="chevron"></i>
+      </button>
+    </div>
+
+    <div class="sec">
+      <div class="sec-head"><i class="ic" data-ic="map"></i><h2>CARTAS AERONÁUTICAS</h2>
+        <button class="r mono tap" style="color:var(--primary);font-weight:700;letter-spacing:.06em" onclick="go('ct')">VER TODAS ›</button></div>
+      <div class="scroll-x" id="ad-chart-cats"></div>
+      <div class="charts" id="ad-charts"></div>
+    </div>
+  </section>
+
+  <!-- SCREEN 2 — CARTAS (navegador + visor) -->
+  <section id="scr-ct" class="screen">
+    <div id="ct-browser">
+      <div class="browser-head">
+        <div class="row1">
+          <span class="ct-app c-violet">SCEL</span>
+          <div class="grow"><h2>Cartas de SCEL</h2><div class="sub" id="ct-count">— cartas · AIP Chile Vol. II · AMDT 103</div></div>
+        </div>
+      </div>
+      <div class="scroll-x" id="ct-cats" style="margin-top:10px"></div>
+      <div class="chartgrid" id="ct-grid"></div>
+    </div>
+
+    <div id="ct-viewer" hidden>
+      <div class="ct-head">
+        <button class="ct-back tap" onclick="closeChart()"><i class="ic" data-ic="arrowleft"></i></button>
+        <span class="ct-app" id="ctv-badge">IAC</span>
+        <div class="grow" style="min-width:0">
+          <div class="row" style="gap:6px;flex-wrap:wrap"><span class="ct-title">SCEL / SCL</span><span class="ct-proc" id="ctv-title">—</span></div>
+          <div class="ct-meta" id="ctv-meta"></div>
+        </div>
+      </div>
+
+      <div class="strip" id="ct-strip" hidden></div>
+
+      <div class="viewport" id="viewport">
+        <div id="chart-stage"><div id="chart-inner"></div></div>
+        <div class="loading" id="ct-loading">Cargando carta…</div>
+        <div class="rail">
+          <button class="p tap" onclick="czoom(1.35)"><i class="ic" data-ic="plus"></i></button>
+          <button class="tap" onclick="czoom(1/1.35)"><i class="ic" data-ic="minus"></i></button>
+          <button class="tap" id="night-btn" onclick="cnight()"><i class="ic" data-ic="moon"></i></button>
+          <button class="tap" onclick="cfit()"><i class="ic" data-ic="maximize"></i></button>
+        </div>
+        <div class="scale" id="czoom-lbl">100%</div>
+      </div>
+
+      <div id="ct-extra" hidden>
+        <div class="sec">
+          <div class="sec-head"><i class="ic" data-ic="ruler"></i><h2>MÍNIMOS DE ATERRIZAJE</h2><span class="r">QNH · RWY 17L</span></div>
+          <div class="minima">
+            <div class="hd"><div>PROC</div><div>DA(H)</div><div>RVR/VIS</div></div>
+            <div id="ct-minima"></div>
+          </div>
+          <p class="note">MSA 25 NM AMB 19.000' · ALT MNM 5.000' · Nivel de transición por ATC. * Aeronaves "FAIL PASSIVE". Requiere certificación especial DAN 06-02 / 06-12.</p>
+        </div>
+      </div>
+
+      <div class="sec">
+        <div class="dbcard">
+          <i class="ic" data-ic="database"></i>
+          <div style="min-width:0">
+            <div class="t">Base de Datos AIP Chile · AIRAC 2409</div>
+            <div class="d">Cartas reales renderizadas del Vol. II (DGAC AMDT 103)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREEN 3 — NOTAMs -->
+  <section id="scr-no" class="screen">
+    <div class="brief">
+      <div class="sec-head" style="margin-bottom:0"><i class="ic" data-ic="shield"></i><h2>Briefing Operacional · SCEL</h2><span class="tag demo" style="margin-left:auto">MUESTRA DEMO</span></div>
+      <div class="kpis">
+        <div class="kpi"><div class="row" style="gap:6px"><i class="ic" data-ic="file" style="font-size:16px;color:var(--ink-2)"></i><span class="n">32</span></div><div class="l">VIGENTES</div></div>
+        <div class="kpi red"><div class="row" style="gap:6px"><i class="ic" data-ic="siren" style="font-size:16px;color:var(--red)"></i><span class="n">2</span></div><div class="l">CRÍTICOS · ALERTA VUELO</div></div>
+      </div>
+    </div>
+    <div id="notam-list" style="display:flex;flex-direction:column;gap:8px;margin-top:12px"></div>
+    <p class="foot-note">Los NOTAM y suplementos son <b>datos de muestra</b> del prototipo. En producción provienen de un feed operacional en vivo (no del PDF del AIP).</p>
+  </section>
+
+  <nav class="nav">
+    <div class="g">
+      <button class="navb on tap" data-scr="ad"><i class="ic" data-ic="plane"></i><span>AERÓDROMOS</span></button>
+      <button class="navb tap" data-scr="ct"><i class="ic" data-ic="map"></i><span>CARTAS</span></button>
+      <button class="navb tap" data-scr="en"><i class="ic" data-ic="route"></i><span>ENROUTE</span></button>
+      <button class="navb tap" data-scr="no"><i class="ic" data-ic="alert"></i><span>NOTAMS</span></button>
+    </div>
+  </nav>
+
+  <div id="toast" class="toast"></div>
+</div>
+
+<script>
+/* ===== ICONOS SVG EN LÍNEA ===== */
+const ICONS={
+  search:'<circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/>',
+  pin:'<path d="M12 21s-6-5.7-6-10a6 6 0 0 1 12 0c0 4.3-6 10-6 10Z"/><circle cx="12" cy="11" r="2.4"/>',
+  star:'<path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 17l-5.2 2.7 1-5.8L3.5 9.2l5.9-.9Z"/>',
+  check:'<circle cx="12" cy="12" r="9"/><path d="m8.3 12 2.6 2.6L15.8 9"/>',
+  plane:'<path d="M17.8 19.2 16 11l3.5-3.5a2.1 2.1 0 0 0-3-3L13 8 4.8 6.2a1 1 0 0 0-.9 1.7l4.6 3.4-2.3 2.3-2.3-.5a1 1 0 0 0-.9 1.6L6 20l1.8 2.7a1 1 0 0 0 1.6-.9l-.5-2.3 2.3-2.3 3.4 4.6a1 1 0 0 0 1.7-.9Z"/>',
+  wind:'<path d="M2 8h13a3 3 0 1 0-3-4"/><path d="M2 12h17a3 3 0 1 1-3 4"/><path d="M2 16h9a3 3 0 1 1-3 4"/>',
+  radio:'<circle cx="12" cy="12" r="2"/><path d="M7.8 7.8a6 6 0 0 0 0 8.4M16.2 7.8a6 6 0 0 1 0 8.4M5 5a9.5 9.5 0 0 0 0 14M19 5a9.5 9.5 0 0 1 0 14"/>',
+  alert:'<path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h16.9a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/><path d="M12 9v4.5"/><path d="M12 17h.01"/>',
+  map:'<path d="M9 4 3 6.2v14L9 18l6 2.2 6-2.2v-14L15 6 9 4Z"/><path d="M9 4v14M15 6v14"/>',
+  chevron:'<path d="m9 6 6 6-6 6"/>',
+  arrowleft:'<path d="M19 12H5"/><path d="m12 19-7-7 7-7"/>',
+  pushpin:'<path d="M12 17v5"/><path d="M9.5 10.8V4h5v6.8l2 3.2h-9l2-3.2Z"/>',
+  copy:'<rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>',
+  clock:'<circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3 1.8"/>',
+  info:'<circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><path d="M12 8h.01"/>',
+  plus:'<path d="M12 5v14M5 12h14"/>', minus:'<path d="M5 12h14"/>',
+  moon:'<path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11Z"/>',
+  maximize:'<path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M8 21H5a2 2 0 0 1-2-2v-3M16 21h3a2 2 0 0 0 2-2v-3"/>',
+  translate:'<path d="M4 5h8M8 3v2c0 4.5-2.2 8-6 9.5M5 9c0 3.2 3.2 5.5 7 6.5"/><path d="m12.5 21 4-9 4 9M14 18h5"/>',
+  database:'<ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/>',
+  shield:'<path d="M12 3 5 6v5c0 4.6 3 8.2 7 10 4-1.8 7-5.4 7-10V6l-7-3Z"/>',
+  file:'<path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8Z"/><path d="M14 3v5h5M9 13h6M9 17h6"/>',
+  ruler:'<path d="M3 15 15 3l6 6L9 21Z"/><path d="m7.5 10.5 2 2M11 7l2 2M14.5 10.5l1.5 1.5"/>',
+  route:'<circle cx="6" cy="19" r="2.2"/><circle cx="18" cy="5" r="2.2"/><path d="M6.5 16.8V9.5a4 4 0 0 1 4-4H14M17.5 7.2v7.3a4 4 0 0 1-4 4H10"/>',
+  siren:'<path d="M7 18v-4.5a5 5 0 0 1 10 0V18"/><path d="M5 18h14v3H5z"/><path d="M12 4.5V2M4.8 8 3.4 7M19.2 8l1.4-1"/>',
+};
+function drawIcons(root){(root||document).querySelectorAll('i.ic[data-ic]').forEach(n=>{
+  if(n.dataset.done)return;
+  n.innerHTML='<svg viewBox="0 0 24 24">'+(ICONS[n.dataset.ic]||'')+'</svg>';n.dataset.done="1";});}
+
+/* ===== CATÁLOGO DE CARTAS (inyectado por prototipo/build.py desde data/charts/SCEL/catalog.json) ===== */
+const CHART_BASE="../data/charts/SCEL/";
+const CATALOG=/*__CATALOG__*/{"icao":"SCEL","source":"AIP Chile Vol. II (AMDT 103)","count":54,"charts":[{"code":"IAC01","type":"IAC","phase":"Aproximación","num":"1","rwy":"17L","title":"ILS Z RWY 17L","file":"IAC01.jpg"},{"code":"IAC02","type":"IAC","phase":"Aproximación","num":"2","rwy":"17R","title":"ILS Z RWY 17R","file":"IAC02.jpg"},{"code":"IAC03","type":"IAC","phase":"Aproximación","num":"3","rwy":"17L","title":"ILS Y RWY 17L","file":"IAC03.jpg"},{"code":"IAC04","type":"IAC","phase":"Aproximación","num":"4","rwy":"17R","title":"ILS Y RWY 17R","file":"IAC04.jpg"},{"code":"IAC05","type":"IAC","phase":"Aproximación","num":"5","rwy":"","title":"IAC 5","file":"IAC05.jpg"},{"code":"IAC06","type":"IAC","phase":"Aproximación","num":"6","rwy":"","title":"IAC 6","file":"IAC06.jpg"},{"code":"IAC07","type":"IAC","phase":"Aproximación","num":"7","rwy":"","title":"IAC 7","file":"IAC07.jpg"},{"code":"IAC08","type":"IAC","phase":"Aproximación","num":"8","rwy":"","title":"IAC 8","file":"IAC08.jpg"},{"code":"IAC09","type":"IAC","phase":"Aproximación","num":"9","rwy":"17L","title":"VOR RWY 17L","file":"IAC09.jpg"},{"code":"IAC10","type":"IAC","phase":"Aproximación","num":"10","rwy":"17R","title":"VOR RWY 17R","file":"IAC10.jpg"},{"code":"IAC11","type":"IAC","phase":"Aproximación","num":"11","rwy":"35R","title":"VOR RWY 35R","file":"IAC11.jpg"},{"code":"IAC12","type":"IAC","phase":"Aproximación","num":"12","rwy":"35L","title":"VOR RWY 35L","file":"IAC12.jpg"},{"code":"IAC13","type":"IAC","phase":"Aproximación","num":"13","rwy":"17L","title":"RNP Y RWY 17L","file":"IAC13.jpg"},{"code":"IAC14","type":"IAC","phase":"Aproximación","num":"14","rwy":"17R","title":"RNP Z RWY 17R","file":"IAC14.jpg"},{"code":"IAC15","type":"IAC","phase":"Aproximación","num":"15","rwy":"17R","title":"RNP Y RWY 17R","file":"IAC15.jpg"},{"code":"IAC16","type":"IAC","phase":"Aproximación","num":"16","rwy":"35R","title":"RNP RWY 35R","file":"IAC16.jpg"},{"code":"IAC17","type":"IAC","phase":"Aproximación","num":"17","rwy":"35L","title":"RNP RWY 35L","file":"IAC17.jpg"},{"code":"IAC18","type":"IAC","phase":"Aproximación","num":"18","rwy":"","title":"IAC 18","file":"IAC18.jpg"},{"code":"IAC19","type":"IAC","phase":"Aproximación","num":"19","rwy":"","title":"IAC 19","file":"IAC19.jpg"},{"code":"IAC20","type":"IAC","phase":"Aproximación","num":"20","rwy":"","title":"IAC 20","file":"IAC20.jpg"},{"code":"SID01","type":"SID","phase":"Salida","num":"1","rwy":"","title":"SID 1","file":"SID01.jpg"},{"code":"SID02","type":"SID","phase":"Salida","num":"2","rwy":"","title":"SID 2","file":"SID02.jpg"},{"code":"SID03","type":"SID","phase":"Salida","num":"3","rwy":"","title":"SID 3","file":"SID03.jpg"},{"code":"SID04","type":"SID","phase":"Salida","num":"4","rwy":"","title":"SID 4","file":"SID04.jpg"},{"code":"SID05","type":"SID","phase":"Salida","num":"5","rwy":"","title":"Gelus 5B RNAV","file":"SID05.jpg"},{"code":"SID06","type":"SID","phase":"Salida","num":"6","rwy":"","title":"Dilok 7B RNAV","file":"SID06.jpg"},{"code":"SID07","type":"SID","phase":"Salida","num":"7","rwy":"","title":"Guvol 6B RNAV","file":"SID07.jpg"},{"code":"SID08","type":"SID","phase":"Salida","num":"8","rwy":"","title":"Donti 5B RNAV","file":"SID08.jpg"},{"code":"SID09","type":"SID","phase":"Salida","num":"9","rwy":"","title":"Nebeg 7C RNAV","file":"SID09.jpg"},{"code":"SID10","type":"SID","phase":"Salida","num":"10","rwy":"","title":"Albal 7C RNAV","file":"SID10.jpg"},{"code":"SID11","type":"SID","phase":"Salida","num":"11","rwy":"","title":"Liner 6C RNAV","file":"SID11.jpg"},{"code":"SID12","type":"SID","phase":"Salida","num":"12","rwy":"","title":"Angod 6C RNAV","file":"SID12.jpg"},{"code":"SID13","type":"SID","phase":"Salida","num":"13","rwy":"17R","title":"RNP RWY 17R","file":"SID13.jpg"},{"code":"SID14","type":"SID","phase":"Salida","num":"14","rwy":"17L","title":"RNP RWY 17L","file":"SID14.jpg"},{"code":"STAR01","type":"STAR","phase":"Llegada","num":"1","rwy":"","title":"STAR 1","file":"STAR01.jpg"},{"code":"STAR02","type":"STAR","phase":"Llegada","num":"2","rwy":"","title":"STAR 2","file":"STAR02.jpg"},{"code":"STAR03","type":"STAR","phase":"Llegada","num":"3","rwy":"","title":"STAR 3","file":"STAR03.jpg"},{"code":"STAR04","type":"STAR","phase":"Llegada","num":"4","rwy":"","title":"STAR 4","file":"STAR04.jpg"},{"code":"STAR05","type":"STAR","phase":"Llegada","num":"5","rwy":"","title":"STAR 5","file":"STAR05.jpg"},{"code":"STAR06","type":"STAR","phase":"Llegada","num":"6","rwy":"17","title":"RNAV RWY 17","file":"STAR06.jpg"},{"code":"STAR07","type":"STAR","phase":"Llegada","num":"7","rwy":"17","title":"RNAV RWY 17","file":"STAR07.jpg"},{"code":"STAR08","type":"STAR","phase":"Llegada","num":"8","rwy":"17","title":"RNAV RWY 17","file":"STAR08.jpg"},{"code":"STAR09","type":"STAR","phase":"Llegada","num":"9","rwy":"35","title":"RNAV RWY 35","file":"STAR09.jpg"},{"code":"STAR10","type":"STAR","phase":"Llegada","num":"10","rwy":"35","title":"RNAV RWY 35","file":"STAR10.jpg"},{"code":"STAR11","type":"STAR","phase":"Llegada","num":"11","rwy":"17","title":"RNAV RWY 17","file":"STAR11.jpg"},{"code":"ADC01","type":"ADC","phase":"Aeródromo","num":"","rwy":"","title":"Plano de aeródromo","file":"ADC01.jpg"},{"code":"ADC02","type":"ADC","phase":"Aeródromo","num":"","rwy":"","title":"Plano de aeródromo","file":"ADC02.jpg"},{"code":"GMC01","type":"GMC","phase":"Movimiento","num":"","rwy":"","title":"Movimiento en superficie","file":"GMC01.jpg"},{"code":"GMC02","type":"GMC","phase":"Movimiento","num":"","rwy":"","title":"Movimiento en superficie","file":"GMC02.jpg"},{"code":"PDC01","type":"PDC","phase":"Estacionamiento","num":"","rwy":"","title":"Estacionamiento","file":"PDC01.jpg"},{"code":"PDC02","type":"PDC","phase":"Estacionamiento","num":"","rwy":"","title":"Estacionamiento","file":"PDC02.jpg"},{"code":"PDC03","type":"PDC","phase":"Estacionamiento","num":"","rwy":"","title":"Estacionamiento","file":"PDC03.jpg"},{"code":"VAC01","type":"VAC","phase":"Visual","num":"","rwy":"","title":"Aproximación visual","file":"VAC01.jpg"},{"code":"VAC02","type":"VAC","phase":"Visual","num":"","rwy":"","title":"VAC","file":"VAC02.jpg"}]}/*__END__*/;
+
+const TYPE_META={
+  IAC:{c:"violet",lbl:"APROX (IAC)"}, SID:{c:"primary",lbl:"SALIDAS (SID)"},
+  STAR:{c:"emerald",lbl:"LLEGADAS (STAR)"}, ADC:{c:"ink-2",lbl:"AERÓDROMO (ADC)"},
+  GMC:{c:"ink-2",lbl:"RODAJE (GMC)"}, PDC:{c:"ink-2",lbl:"PARKING (PDC)"}, VAC:{c:"amber",lbl:"VISUAL (VAC)"},
+};
+const TYPE_ORDER=["IAC","SID","STAR","ADC","GMC","PDC","VAC"];
+
+/* Datos curados de la carta ILS Z Rwy 17L (SCEL IAC 1) — del AIP Vol. II */
+const IAC01_STRIP=[["LOC / CHN","110.3","IUEL"],["FINAL CRS","177°","MAG"],["APT ELEV","1.555","FT"],["GP / TCH","3° / 51'","D4.5"]];
+const IAC01_MINIMA=[["ILS CAT II (RA100)","1.650' (100')","RVR 350m","ink"],["ILS CAT II (RA150)","1.700' (150')","RVR 500m","ink"],
+    ["ILS CAT III-A","—","RVR 200m","emerald"],["ILS CAT III-B","—","RVR 50m","emerald"],["FAIL PASSIVE *","1.600' (50')","—","ink"]];
+
+/* ===== DATOS REALES SCEL (AIP Chile Vol. I — AD 2, AMDT 67) ===== */
+const SCEL={
+  tiles:[["ELEVACIÓN","1.555","FT"],["VAR MAG","1.1° E","2022"],["ALT TRANS","10.000","FT"],
+    ["TEMP REF","30","°C"],["ARFF","CAT 9","SEI"],["COMBUSTIBLE","JET A1","H24"]],
+  freqs:[["ATIS ARR","132.100"],["ATIS DEP","132.700"],["APROX (APP)","119.700"],["TORRE (TWR)","118.100"],
+    ["RODAJE E (GND)","122.200"],["RODAJE W (GND)","122.500"],["AUTORIZ (CLR)","136.700"],["INFO","122.400"]],
+};
+const NOTAMS=[
+  ["red","CRÍTICO OPERACIONAL","A1428/24","RWY 17R/35L CLSD DUE TO MAINT WIP",
+   "Pista 17R/35L cerrada por trabajos de mantenimiento en carpeta asfáltica. Planificar rodaje vía TWY Kilo hacia RWY 17L.","24/04/20 → 24/04/28"],
+  ["amber","PRECAUCIÓN NAVEGACIÓN","A1390/24","VOR/DME AMB 116.1 MHZ U/S FOR CALIBRATION",
+   "Radioayuda VOR/DME Santiago fuera de servicio por vuelo de calibración. Utilizar RNAV 1 GNSS para llegadas STAR y aproximaciones RNP.","24/04/18 → 24/04/25"],
+  ["primary","INFORMACIÓN / OBSTÁCULO","C0512/24","OBST CRANE ERECTED 2.1 NM N SCEL ELEV 1720FT LGTD",
+   "Grúa pluma de construcción a 2.1 NM al norte del umbral RWY 17L. Elevación máxima 1.720 FT AMSL. Balizamiento nocturno operativo.","PERMANENTE"],
+];
+
+/* ===== helpers ===== */
+const $=(s,r=document)=>r.querySelector(s);
+const el=(t,c,h)=>{const e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e;};
+const CHARTS=(CATALOG.charts||[]);
+const chartByCode=c=>CHARTS.find(x=>x.code===c);
+
+/* ===== AERÓDROMO ===== */
+function renderAD(){
+  const tiles=$("#ad-tiles");tiles.innerHTML="";
+  SCEL.tiles.forEach(([l,v,u])=>tiles.append(el("div","tile",
+    `<div class="l">${l}</div><div class="v">${v}</div><div class="u">${u}</div>`)));
+  const fr=$("#ad-freqs");fr.innerHTML="";
+  SCEL.freqs.forEach(([l,v])=>{
+    const b=el("button","freq tap",
+      `<div class="top"><div class="l">${l}</div><i class="ic cp" data-ic="copy"></i></div><div class="v">${v}</div>`);
+    b.onclick=()=>copyFreq(v,b);fr.append(b);
+  });
+  const counts={}; CHARTS.forEach(c=>counts[c.type]=(counts[c.type]||0)+1);
+  const cc=$("#ad-chart-cats");cc.innerHTML="";
+  cc.append(el("button","cat on tap",`TODAS <span class="n">${CHARTS.length}</span>`));
+  TYPE_ORDER.filter(t=>counts[t]).forEach(t=>cc.append(el("button","cat tap",`${t} <span class="n">${counts[t]}</span>`)));
+  const feat=["IAC01","IAC09","SID05","STAR06","ADC01"].map(chartByCode).filter(Boolean);
+  const ch=$("#ad-charts");ch.innerHTML="";
+  feat.forEach((c,idx)=>{
+    const tm=TYPE_META[c.type]||{c:"ink-2"};
+    const b=el("button","chart tap c-"+tm.c,
+      `<span class="badge">${c.type}</span>
+       <div class="grow"><div class="t trunc">${c.title}</div><div class="s trunc">SCEL ${c.code}${c.rwy?' · RWY '+c.rwy:''}</div></div>
+       ${idx===0?'<i class="ic pin" data-ic="pushpin"></i>':''}
+       <i class="ic go" data-ic="chevron"></i>`);
+    b.onclick=()=>openChart(c.code);ch.append(b);
+  });
+  drawIcons($("#scr-ad"));
+}
+
+/* ===== NAVEGADOR DE CARTAS ===== */
+let ctFilter=null;
+function renderBrowser(){
+  const counts={}; CHARTS.forEach(c=>counts[c.type]=(counts[c.type]||0)+1);
+  $("#ct-count").textContent=`${CHARTS.length} cartas · AIP Chile Vol. II · AMDT 103`;
+  const cats=$("#ct-cats");cats.innerHTML="";
+  const all=el("button","cat tap"+(ctFilter==null?" on":""),`TODAS <span class="n">${CHARTS.length}</span>`);
+  all.onclick=()=>{ctFilter=null;renderBrowser();};cats.append(all);
+  TYPE_ORDER.filter(t=>counts[t]).forEach(t=>{
+    const b=el("button","cat tap"+(ctFilter===t?" on":""),`${(TYPE_META[t]||{}).lbl||t} <span class="n">${counts[t]}</span>`);
+    b.onclick=()=>{ctFilter=t;renderBrowser();};cats.append(b);
+  });
+  const grid=$("#ct-grid");grid.innerHTML="";
+  CHARTS.filter(c=>!ctFilter||c.type===ctFilter).forEach(c=>{
+    const tm=TYPE_META[c.type]||{c:"ink-2"};
+    const card=el("button","cardc tap c-"+tm.c,
+      `<div class="thumb"><span class="bd">${c.type}${c.num?' '+c.num:''}</span>
+        <img loading="lazy" alt="${c.title}" src="${CHART_BASE+c.file}"></div>
+       <div class="cap"><div class="t">${c.title}</div><div class="s">SCEL ${c.code}${c.rwy?' · RWY '+c.rwy:''}</div></div>`);
+    card.onclick=()=>openChart(c.code);grid.append(card);
+  });
+}
+
+/* ===== VISOR ===== */
+let curChart=null;
+function openChart(code){
+  const c=chartByCode(code); if(!c)return;
+  curChart=c;
+  go('ct');
+  $("#ct-browser").hidden=true; $("#ct-viewer").hidden=false;
+  const tm=TYPE_META[c.type]||{c:"ink-2"};
+  const badge=$("#ctv-badge"); badge.textContent=c.type; badge.className="ct-app c-"+tm.c;
+  $("#ctv-title").textContent=c.title;
+  $("#ctv-meta").innerHTML=`<span>SCEL ${c.code}</span><span class="d">·</span><span>DGAC AMDT 103</span><span class="d">·</span><span class="sup">06 AGO 2026</span>`;
+  const isHero=(code==="IAC01");
+  const strip=$("#ct-strip");
+  if(isHero){strip.hidden=false;strip.innerHTML="";
+    IAC01_STRIP.forEach(([l,v,u])=>strip.append(el("div","it",
+      `<div class="l">${l}</div><div class="row2"><span class="v">${v}</span><span class="u">${u}</span></div>`)));
+    const mn=$("#ct-minima");mn.innerHTML="";
+    IAC01_MINIMA.forEach(([p,da,rvr,col])=>mn.append(el("div","rw",
+      `<div class="p" style="color:var(--${col})">${p}</div><div class="da">${da}</div><div class="rvr">${rvr}</div>`)));
+    $("#ct-extra").hidden=false;
+  }else{strip.hidden=true;$("#ct-extra").hidden=true;}
+  const inner=$("#chart-inner"); inner.innerHTML="";
+  $("#ct-loading").style.display="grid"; $("#ct-loading").textContent="Cargando carta…";
+  const img=new Image(); img.alt=c.title;
+  img.onload=()=>{inner.appendChild(img);$("#ct-loading").style.display="none";initViewer();};
+  img.onerror=()=>{$("#ct-loading").textContent="No se pudo cargar la carta. Abre el prototipo desde el repo (con la carpeta data/charts/).";};
+  img.src=CHART_BASE+c.file;
+  drawIcons($("#scr-ct"));
+  window.scrollTo({top:0,behavior:"instant"});
+}
+function closeChart(){$("#ct-viewer").hidden=true;$("#ct-browser").hidden=false;curChart=null;window.scrollTo({top:0,behavior:"instant"});}
+
+const V={z:1,min:1,max:6,x:0,y:0};
+function vp(){return $("#viewport")} function stage(){return $("#chart-stage")}
+function applyV(){stage().style.transform=`translate(${V.x}px,${V.y}px) scale(${V.z})`;const l=$("#czoom-lbl");if(l)l.textContent=Math.round(V.z*100)+"%";}
+function clampV(){const w=vp().clientWidth,h=vp().clientHeight;V.x=Math.min(0,Math.max(w-w*V.z,V.x));V.y=Math.min(0,Math.max(h-h*V.z,V.y));}
+function initViewer(){vp().classList.remove("night");$("#night-btn").classList.remove("p");cfit();}
+function cfit(){V.z=1;V.x=0;V.y=0;applyV();}
+function czoom(f,cx,cy){const w=vp().clientWidth,h=vp().clientHeight;if(cx==null){cx=w/2;cy=h/2;}
+  const nz=Math.min(V.max,Math.max(V.min,V.z*f));const k=nz/V.z;V.x=cx-(cx-V.x)*k;V.y=cy-(cy-V.y)*k;V.z=nz;clampV();applyV();}
+function cnight(){vp().classList.toggle("night");$("#night-btn").classList.toggle("p",vp().classList.contains("night"));}
+(function viewerGestures(){
+  let drag=false,px=0,py=0,pinch=0;
+  const pt=e=>{const t=e.touches?e.touches[0]:e;const r=vp().getBoundingClientRect();return{x:t.clientX-r.left,y:t.clientY-r.top};};
+  const onDown=e=>{drag=true;vp().classList.add("grab");const p=pt(e);px=p.x;py=p.y;};
+  const onMove=e=>{if(!drag)return;const p=pt(e);V.x+=p.x-px;V.y+=p.y-py;px=p.x;py=p.y;clampV();applyV();};
+  const onUp=()=>{drag=false;vp().classList.remove("grab");};
+  const dist=e=>{const a=e.touches[0],b=e.touches[1];return Math.hypot(a.clientX-b.clientX,a.clientY-b.clientY);};
+  const mid=e=>{const a=e.touches[0],b=e.touches[1];const r=vp().getBoundingClientRect();return{x:(a.clientX+b.clientX)/2-r.left,y:(a.clientY+b.clientY)/2-r.top};};
+  function bind(){const e0=vp();if(!e0||e0._b)return;e0._b=1;
+    e0.addEventListener("mousedown",onDown);window.addEventListener("mousemove",onMove);window.addEventListener("mouseup",onUp);
+    e0.addEventListener("wheel",e=>{e.preventDefault();const p=pt(e);czoom(e.deltaY<0?1.15:1/1.15,p.x,p.y);},{passive:false});
+    e0.addEventListener("touchstart",e=>{if(e.touches.length===1)onDown(e);else if(e.touches.length===2)pinch=dist(e);},{passive:true});
+    e0.addEventListener("touchmove",e=>{if(e.touches.length===2){e.preventDefault();const d=dist(e),c=mid(e);if(pinch)czoom(d/pinch,c.x,c.y);pinch=d;}else onMove(e);},{passive:false});
+    e0.addEventListener("touchend",e=>{if(e.touches.length===0){onUp();pinch=0;}});
+    e0.addEventListener("dblclick",e=>{const p=pt(e);czoom(V.z>1?1/V.z:2,p.x,p.y);});
+  }
+  window._bindViewer=bind;
+})();
+
+/* ===== NOTAMs ===== */
+function renderNO(){
+  const box=$("#notam-list");box.innerHTML="";
+  NOTAMS.forEach(([col,cat,id,title,body,val])=>box.append(el("div","notam c-"+col,
+    `<div class="bar"><span class="c"><span class="dot"></span>${cat}</span><span class="z">DEMO</span></div>
+     <div class="in"><div class="id">${id} <span class="z">NOTAMN</span></div>
+      <div class="t">${title}</div>
+      <div class="dec"><i class="ic" data-ic="translate"></i><p><b>Decodificación:</b> ${body}</p></div>
+      <div class="val"><i class="ic" data-ic="clock" style="font-size:13px"></i>${val}</div></div>`)));
+  drawIcons($("#scr-no"));
+}
+
+/* ===== NAV ===== */
+const TITLES={ad:"Aeródromos",ct:"Cartas",en:"Enroute",no:"NOTAMs"};
+function go(scr){
+  const real=(scr==="en")?"ad":scr;
+  ["ad","ct","no"].forEach(s=>$("#scr-"+s).classList.remove("on"));
+  $("#scr-"+real).classList.add("on");
+  if(real==="ct"&&!curChart){$("#ct-browser").hidden=false;$("#ct-viewer").hidden=true;}
+  $("#hdr-title").textContent=TITLES[scr]||"Aeródromos";
+  document.querySelectorAll(".navb").forEach(b=>b.classList.toggle("on",b.dataset.scr===scr));
+  window.scrollTo({top:0,behavior:"instant"});
+}
+document.querySelectorAll(".navb").forEach(b=>b.onclick=()=>{ if(b.dataset.scr==="ct")curChart=null; go(b.dataset.scr); });
+
+function copyFreq(v,node){
+  navigator.clipboard&&navigator.clipboard.writeText(v).catch(()=>{});
+  node.classList.add("copyflash");setTimeout(()=>node.classList.remove("copyflash"),900);
+  const t=$("#toast");t.textContent="Copiado  "+v+"  MHz";t.style.opacity="1";
+  clearTimeout(window._tt);window._tt=setTimeout(()=>t.style.opacity="0",1100);
+}
+function clock(){const d=new Date();$("#utc-clock").textContent=String(d.getUTCHours()).padStart(2,"0")+":"+String(d.getUTCMinutes()).padStart(2,"0")+"z";}
+
+renderAD();renderBrowser();renderNO();drawIcons();window._bindViewer&&window._bindViewer();go("ad");clock();setInterval(clock,10000);
+</script>
+</body>
+</html>

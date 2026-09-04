@@ -42,6 +42,8 @@ público. La automatización de ciclos AIRAC queda para una fase posterior.
 │       ├── aerodromo_briefing/   # Briefing de aeródromo (SCEL)
 │       ├── visor_cartas/         # Visor de carta (ILS Z RWY 17L)
 │       └── notams_suplementos/   # NOTAMs + Suplementos AIP
+├── prototipo/                # Prototipo interactivo (demo de aprobación)
+│   └── index.html            # App autónoma, 3 pantallas, sin deps de runtime
 └── docs/
     └── DATA_SOURCES.md       # Cómo obtener los PDF fuente
 ```
@@ -64,6 +66,26 @@ Prueba de viabilidad lograda sobre las ediciones reales de ambos volúmenes:
    navegable con color por parte, búsqueda instantánea, vista de aeródromo
    con filtro por fase de vuelo, y visor de cartas con zoom/pan/modo noche.
    Solo embebe las imágenes de SCEL para pesar poco (~1 MB).
+
+4. **`prototipo/index.html`** — prototipo mobile EFB de las 3 pantallas
+   (Aeródromos / Cartas / NOTAMs) sobre el sistema de diseño. **Autocontenido:
+   CSS propio + iconos SVG en línea, cero dependencias de runtime** (no
+   Tailwind CDN — se descartó porque colapsaba offline/con red flaky). El
+   briefing de SCEL usa datos **reales** del AD 2 (`data/aerodromes/SCEL.json`),
+   extraídos con `pdfplumber` del Vol. I. La pantalla de Cartas es un **navegador
+   de las 54 cartas reales de SCEL** (IAC/SID/STAR/ADC/GMC/PDC/VAC) renderizadas
+   del Vol. II con `pypdfium2` (`pipeline/render_scel_charts.py` → `data/charts/SCEL/`
+   + `catalog.json`), con filtros por fase y visor con zoom/pan/modo noche.
+   `prototipo/build.py` inyecta el catálogo en `index.html`; las imágenes se
+   cargan por ruta relativa. Las cartas de SCEL se versionan (demo autocontenida).
+
+### Datos de aeródromo (AD 2)
+- `data/aerodromes/SCEL.json` — datos AD 2 reales de SCEL (general, pistas +
+  distancias declaradas, frecuencias, radioayudas), verificados contra el PDF
+  del Vol. I (AMDT 67). Generalizar a los 38 aeródromos es trabajo de Fase 1.
+- Entorno: `pdfplumber`/`pypdf` requieren reparar cffi
+  (`pip install --break-system-packages --force-reinstall cffi`); para render
+  usar `pypdfium2` (wheel autocontenido) — `poppler-utils` no está disponible.
 
 ## Sistema de diseño
 

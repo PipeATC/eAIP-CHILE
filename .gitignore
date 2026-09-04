@@ -2,12 +2,18 @@
 source_pdfs/
 *.pdf
 
-# Imágenes de cartas renderizadas (regenerables)
-data/charts/
+# Imágenes de cartas renderizadas (regenerables), salvo las de SCEL que
+# usa el prototipo como demo autocontenida.
+data/charts/*
+!data/charts/SCEL
+data/charts/SCEL/*
+!data/charts/SCEL/*.jpg
+!data/charts/SCEL/*.json
 *.jpg
 *.png
-# ...pero sí versionamos los mockups de diseño (referencia del proyecto)
+# ...pero sí versionamos los mockups de diseño y las cartas de SCEL
 !design/**/*.png
+!data/charts/SCEL/*.jpg
 
 # Python
 __pycache__/
