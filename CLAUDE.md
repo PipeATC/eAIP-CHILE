@@ -72,8 +72,10 @@ Prueba de viabilidad lograda sobre las ediciones reales de ambos volúmenes:
    CSS propio + iconos SVG en línea, cero dependencias de runtime** (no
    Tailwind CDN — se descartó porque colapsaba offline/con red flaky). El
    briefing de SCEL usa datos **reales** del AD 2 (`data/aerodromes/SCEL.json`),
-   extraídos con `pdfplumber` del Vol. I. La imagen de la carta queda pendiente
-   del render del Vol. II.
+   extraídos con `pdfplumber` del Vol. I. El visor de Cartas muestra la **carta
+   real ILS Z Rwy 17L** (SCEL IAC 1, AMDT 103) renderizada del Vol. II con
+   `pypdfium2`, con zoom/pan y modo noche; se incrusta como data URI vía
+   `prototipo/build.py`.
 
 ### Datos de aeródromo (AD 2)
 - `data/aerodromes/SCEL.json` — datos AD 2 reales de SCEL (general, pistas +
