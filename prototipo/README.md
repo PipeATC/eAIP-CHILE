@@ -1,0 +1,33 @@
+# Prototipo EFB — AIP Chile
+
+Prototipo interactivo de la app (para la demostración de aprobación).
+Un solo archivo autónomo: **`index.html`**. Ábrelo en el navegador del
+teléfono o del escritorio.
+
+## Cómo verlo
+Abre `prototipo/index.html` en cualquier navegador. No requiere servidor,
+build ni conexión: **cero dependencias de runtime** (los iconos son SVG en
+línea y los estilos son CSS propio con los tokens de `design/DESIGN_SYSTEM.md`).
+Las fuentes Inter/JetBrains Mono se cargan de Google Fonts si hay red, y
+degradan a las del sistema si no.
+
+## Qué contiene
+Tres pantallas navegables con la barra inferior:
+
+1. **Aeródromos** — briefing de SCEL con **datos reales** extraídos del
+   AIP Chile Vol. I (AD 2, AMDT 67): elevación, VAR MAG, altitud de
+   transición, pistas, frecuencias (toca para copiar) y radioayudas.
+2. **Cartas** — visor de la ILS Z RWY 17L con la franja de datos **real**
+   (LOC IUEL 110.3, curso final, mínimos). El lienzo de la carta queda
+   listo para incrustar el render del Vol. II.
+3. **NOTAMs** — briefing operacional (datos de muestra).
+
+## Fidelidad de datos
+- **Reales (del AIP):** todo el briefing AD 2 de SCEL y los datos de la
+  carta ILS 17L. Fuente: `data/aerodromes/SCEL.json`.
+- **Muestra demo (etiquetada como tal):** METAR, NOTAM y radar — en
+  producción vienen de feeds en vivo, no del PDF del AIP.
+- **Pendiente:** la imagen de la carta (requiere el recorte del Vol. II).
+
+> ⚠️ PROTOTIPO — herramienta de consulta/estudio; no reemplaza la fuente
+> oficial certificada para navegación.
