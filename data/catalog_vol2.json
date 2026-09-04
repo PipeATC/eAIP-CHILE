@@ -1,0 +1,5243 @@
+{
+  "source": "AIP Chile Vol. II",
+  "total_pages": 927,
+  "aerodrome_count": 38,
+  "aerodromes": {
+    "SCAB": {
+      "icao": "SCAB",
+      "chart_count": 2,
+      "charts": [
+        {
+          "page": 812,
+          "icao": "SCAB",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "45'"
+        },
+        {
+          "page": 816,
+          "icao": "SCAB",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "45'"
+        }
+      ]
+    },
+    "SCAR": {
+      "icao": "SCAR",
+      "chart_count": 12,
+      "charts": [
+        {
+          "page": 176,
+          "icao": "SCAR",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "21",
+          "title": "D"
+        },
+        {
+          "page": 177,
+          "icao": "SCAR",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "21",
+          "title": "055°"
+        },
+        {
+          "page": 178,
+          "icao": "SCAR",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "21",
+          "title": "158°"
+        },
+        {
+          "page": 179,
+          "icao": "SCAR",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "21",
+          "title": "25"
+        },
+        {
+          "page": 180,
+          "icao": "SCAR",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "21",
+          "title": "ERISO"
+        },
+        {
+          "page": 186,
+          "icao": "SCAR",
+          "type": "PATC",
+          "phase": "Estacionamiento",
+          "rwy": null,
+          "title": "AP CHACALLUTA"
+        },
+        {
+          "page": 187,
+          "icao": "SCAR",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "03"
+        },
+        {
+          "page": 188,
+          "icao": "SCAR",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "ARICA / AP CHACALLUTA - SCAR"
+        },
+        {
+          "page": 189,
+          "icao": "SCAR",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "ARICA / AP CHACALLUTA - SCAR"
+        },
+        {
+          "page": 190,
+          "icao": "SCAR",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "ARICA / AP CHACALLUTA - SCAR"
+        },
+        {
+          "page": 191,
+          "icao": "SCAR",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "21",
+          "title": "ARICA / AP CHACALLUTA - SCAR"
+        },
+        {
+          "page": 192,
+          "icao": "SCAR",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "ARICA / AP CHACALLUTA - SCAR"
+        }
+      ]
+    },
+    "SCAT": {
+      "icao": "SCAT",
+      "chart_count": 19,
+      "charts": [
+        {
+          "page": 266,
+          "icao": "SCAT",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "17",
+          "title": "CALDERA - AD DESIERTO DE ATACAMA"
+        },
+        {
+          "page": 267,
+          "icao": "SCAT",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "35",
+          "title": "CALDERA - AD. DESIERTO DE ATACAMA"
+        },
+        {
+          "page": 268,
+          "icao": "SCAT",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "35",
+          "title": "STAR DOVKA 3B / NENAT 4A"
+        },
+        {
+          "page": 270,
+          "icao": "SCAT",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "17",
+          "title": "SUPKI"
+        },
+        {
+          "page": 271,
+          "icao": "SCAT",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "35",
+          "title": "NENAT"
+        },
+        {
+          "page": 272,
+          "icao": "SCAT",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "35",
+          "title": "358°"
+        },
+        {
+          "page": 273,
+          "icao": "SCAT",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "17",
+          "title": "EKUBO 2B"
+        },
+        {
+          "page": 274,
+          "icao": "SCAT",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "35",
+          "title": "358°"
+        },
+        {
+          "page": 275,
+          "icao": "SCAT",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "17",
+          "title": "2000’"
+        },
+        {
+          "page": 276,
+          "icao": "SCAT",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "17",
+          "title": "2000’"
+        },
+        {
+          "page": 285,
+          "icao": "SCAT",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "CALDERA / AD DESIERTO DE ATACAMA - SCAT"
+        },
+        {
+          "page": 286,
+          "icao": "SCAT",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "CALDERA / AD DESIERTO DE ATACAMA - SCAT STAR 6"
+        },
+        {
+          "page": 287,
+          "icao": "SCAT",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "CALDERA / AD DESIERTO DE ATACAMA - SCAT STAR 7"
+        },
+        {
+          "page": 288,
+          "icao": "SCAT",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "CALDERA / AD DESIERTO DE ATACAMA - SCAT SID 4"
+        },
+        {
+          "page": 289,
+          "icao": "SCAT",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "35",
+          "title": "CALDERA / AD DESIERTO DE ATACAMA - SCAT SID 5"
+        },
+        {
+          "page": 290,
+          "icao": "SCAT",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "CALDERA / AD DESIERTO DE ATACAMA - SCAT IAC 1"
+        },
+        {
+          "page": 291,
+          "icao": "SCAT",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "CALDERA / AD DESIERTO DE ATACAMA - SCAT IAC 2"
+        },
+        {
+          "page": 292,
+          "icao": "SCAT",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "CALDERA / AD DESIERTO DE ATACAMA - SCAT IAC 5"
+        },
+        {
+          "page": 293,
+          "icao": "SCAT",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "CALDERA / AD DESIERTO DE ATACAMA - SCAT IAC 6"
+        }
+      ]
+    },
+    "SCBA": {
+      "icao": "SCBA",
+      "chart_count": 27,
+      "charts": [
+        {
+          "page": 194,
+          "icao": "SCBA",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "09",
+          "title": "BALMACEDA - AD BALMACEDA"
+        },
+        {
+          "page": 196,
+          "icao": "SCBA",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "27",
+          "title": "U/T-102"
+        },
+        {
+          "page": 197,
+          "icao": "SCBA",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "27",
+          "title": "7500’"
+        },
+        {
+          "page": 198,
+          "icao": "SCBA",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "09",
+          "title": "1719 FT"
+        },
+        {
+          "page": 199,
+          "icao": "SCBA",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "09",
+          "title": "5000'"
+        },
+        {
+          "page": 200,
+          "icao": "SCBA",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "09",
+          "title": "5000'"
+        },
+        {
+          "page": 214,
+          "icao": "SCBA",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "CHILE"
+        },
+        {
+          "page": 216,
+          "icao": "SCBA",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "DASA /  SECCIÓN AIS - MAP"
+        },
+        {
+          "page": 217,
+          "icao": "SCBA",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "BALMACEDA / AD BALMACEDA - SCBA"
+        },
+        {
+          "page": 218,
+          "icao": "SCBA",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "BALMACEDA / AD BALMACEDA - SCBA"
+        },
+        {
+          "page": 219,
+          "icao": "SCBA",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "BALMACEDA / AD BALMACEDA - SCBA STAR 3"
+        },
+        {
+          "page": 220,
+          "icao": "SCBA",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "BALMACEDA / AD BALMACEDA - SCBA STAR 4"
+        },
+        {
+          "page": 221,
+          "icao": "SCBA",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "BALMACEDA / AD BALMACEDA - SCBA SID 3"
+        },
+        {
+          "page": 222,
+          "icao": "SCBA",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "09",
+          "title": "BALMACEDA / AD BALMACEDA - SCBA SID 4"
+        },
+        {
+          "page": 223,
+          "icao": "SCBA",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "BALMACEDA / AD BALMACEDA - SCBA IAC 3"
+        },
+        {
+          "page": 224,
+          "icao": "SCBA",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "BALMACEDA / AD BALMACEDA - SCBA IAC 4"
+        },
+        {
+          "page": 225,
+          "icao": "SCBA",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "BALMACEDA / AD BALMACEDA - SCBA IAC 5"
+        },
+        {
+          "page": 226,
+          "icao": "SCBA",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "BALMACEDA / AD BALMACEDA - SCBA IAC 5"
+        },
+        {
+          "page": 227,
+          "icao": "SCBA",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "BALMACEDA / AD BALMACEDA - SCBA IAC 6"
+        },
+        {
+          "page": 228,
+          "icao": "SCBA",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "BALMACEDA / AD BALMACEDA - SCBA IAC 6"
+        },
+        {
+          "page": 229,
+          "icao": "SCBA",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "BALMACEDA / AD BALMACEDA - SCBA IAC 7"
+        },
+        {
+          "page": 230,
+          "icao": "SCBA",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "BALMACEDA / AD BALMACEDA - SCBA IAC 7"
+        },
+        {
+          "page": 231,
+          "icao": "SCBA",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "BALMACEDA / AD BALMACEDA - SCBA IAC 9"
+        },
+        {
+          "page": 232,
+          "icao": "SCBA",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "BALMACEDA / AD BALMACEDA - SCBA IAC 10"
+        },
+        {
+          "page": 233,
+          "icao": "SCBA",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "BALMACEDA / AD BALMACEDA - SCBA IAC 10"
+        },
+        {
+          "page": 234,
+          "icao": "SCBA",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "BALMACEDA / AD BALMACEDA - SCBA IAC 11"
+        },
+        {
+          "page": 235,
+          "icao": "SCBA",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "BALMACEDA / AD BALMACEDA - SCBA IAC 11"
+        }
+      ]
+    },
+    "SCBQ": {
+      "icao": "SCBQ",
+      "chart_count": 1,
+      "charts": [
+        {
+          "page": 736,
+          "icao": "SCBQ",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "2000’"
+        }
+      ]
+    },
+    "SCCF": {
+      "icao": "SCCF",
+      "chart_count": 23,
+      "charts": [
+        {
+          "page": 236,
+          "icao": "SCCF",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "VAR 6.4° W 2023"
+        },
+        {
+          "page": 237,
+          "icao": "SCCF",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "28",
+          "title": "LOA"
+        },
+        {
+          "page": 238,
+          "icao": "SCCF",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "28",
+          "title": "LOA"
+        },
+        {
+          "page": 239,
+          "icao": "SCCF",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "10",
+          "title": "VAR 6.4° W 2023"
+        },
+        {
+          "page": 240,
+          "icao": "SCCF",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "28",
+          "title": "VUREL 3J"
+        },
+        {
+          "page": 242,
+          "icao": "SCCF",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "10",
+          "title": "10000'"
+        },
+        {
+          "page": 243,
+          "icao": "SCCF",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "10",
+          "title": "FL190"
+        },
+        {
+          "page": 248,
+          "icao": "SCCF",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "8000'"
+        },
+        {
+          "page": 249,
+          "icao": "SCCF",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "8000'"
+        },
+        {
+          "page": 251,
+          "icao": "SCCF",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": "28",
+          "title": "9000'"
+        },
+        {
+          "page": 252,
+          "icao": "SCCF",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": "10",
+          "title": "8000’"
+        },
+        {
+          "page": 254,
+          "icao": "SCCF",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "MARGUCEPAM"
+        },
+        {
+          "page": 255,
+          "icao": "SCCF",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "CALAMA / AD EL LOA - SCCF"
+        },
+        {
+          "page": 256,
+          "icao": "SCCF",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "CALAMA / AD EL LOA - SCCF STAR 3"
+        },
+        {
+          "page": 257,
+          "icao": "SCCF",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "CALAMA / AD EL LOA - SCCF STAR 4"
+        },
+        {
+          "page": 258,
+          "icao": "SCCF",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "28",
+          "title": "CALAMA / AD EL LOA - SCCF SID 4"
+        },
+        {
+          "page": 259,
+          "icao": "SCCF",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "CALAMA / AD EL LOA - SCCF SID 5"
+        },
+        {
+          "page": 260,
+          "icao": "SCCF",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "CALAMA / AD EL LOA - SCCF SID 6"
+        },
+        {
+          "page": 261,
+          "icao": "SCCF",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "CALAMA / AD EL LOA - SCCF IAC 4"
+        },
+        {
+          "page": 262,
+          "icao": "SCCF",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "CALAMA / AD EL LOA - SCCF IAC 5"
+        },
+        {
+          "page": 263,
+          "icao": "SCCF",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "CALAMA / AD EL LOA - SCCF IAC 6"
+        },
+        {
+          "page": 264,
+          "icao": "SCCF",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "CALAMA / AD EL LOA - SCCF IAC 7"
+        },
+        {
+          "page": 923,
+          "icao": "SCCF",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "SC-R25"
+        }
+      ]
+    },
+    "SCCH": {
+      "icao": "SCCH",
+      "chart_count": 15,
+      "charts": [
+        {
+          "page": 295,
+          "icao": "SCCH",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "22",
+          "title": "CAR"
+        },
+        {
+          "page": 296,
+          "icao": "SCCH",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "04",
+          "title": "CAR"
+        },
+        {
+          "page": 297,
+          "icao": "SCCH",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "22",
+          "title": "CAR"
+        },
+        {
+          "page": 298,
+          "icao": "SCCH",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "04",
+          "title": "CAR"
+        },
+        {
+          "page": 299,
+          "icao": "SCCH",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "22",
+          "title": "CAR"
+        },
+        {
+          "page": 300,
+          "icao": "SCCH",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "04",
+          "title": "CAR"
+        },
+        {
+          "page": 304,
+          "icao": "SCCH",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "ALT MNM 3000'"
+        },
+        {
+          "page": 305,
+          "icao": "SCCH",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "ALT MNM  3000'"
+        },
+        {
+          "page": 308,
+          "icao": "SCCH",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "CHILLAN / AD GRAL. BERNARDO O'HIGGINS - SCCH"
+        },
+        {
+          "page": 309,
+          "icao": "SCCH",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "22",
+          "title": "CHILLAN / AD GRAL. BERNARDO O'HIGGINS - SCCH STAR 2"
+        },
+        {
+          "page": 310,
+          "icao": "SCCH",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "CHILLAN / AD GRAL. BERNARDO O'HIGGINS - SCCH STAR 3"
+        },
+        {
+          "page": 311,
+          "icao": "SCCH",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "CHILLAN / AD GRAL. BERNARDO O'HIGGINS - SCCH SID 3"
+        },
+        {
+          "page": 312,
+          "icao": "SCCH",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "CHILLAN / AD GRAL. BERNARDO O'HIGGINS - SCCH SID 4"
+        },
+        {
+          "page": 313,
+          "icao": "SCCH",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "CHILLAN / AD GRAL. BERNARDO O'HIGGINS - SCCH IAC 5"
+        },
+        {
+          "page": 314,
+          "icao": "SCCH",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "CHILLAN / AD GRAL. BERNARDO O'HIGGINS - SCCH IAC 6"
+        }
+      ]
+    },
+    "SCCI": {
+      "icao": "SCCI",
+      "chart_count": 36,
+      "charts": [
+        {
+          "page": 657,
+          "icao": "SCCI",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "25",
+          "title": "PUNTA ARENAS"
+        },
+        {
+          "page": 658,
+          "icao": "SCCI",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "07",
+          "title": "PUNTA ARENAS"
+        },
+        {
+          "page": 659,
+          "icao": "SCCI",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "25",
+          "title": "PUNTA ARENAS"
+        },
+        {
+          "page": 660,
+          "icao": "SCCI",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "25",
+          "title": "PTA. ARENAS - AP PDTE. C. IBAÑEZ DEL C."
+        },
+        {
+          "page": 661,
+          "icao": "SCCI",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "30",
+          "title": "PTA. ARENAS - AP PDTE. C. IBAÑEZ DEL C."
+        },
+        {
+          "page": 662,
+          "icao": "SCCI",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "25",
+          "title": "30"
+        },
+        {
+          "page": 664,
+          "icao": "SCCI",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": "12",
+          "title": "VAR 12.7° E 2024"
+        },
+        {
+          "page": 666,
+          "icao": "SCCI",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "55'"
+        },
+        {
+          "page": 667,
+          "icao": "SCCI",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "AP. C. IBAÑEZ DEL CAMPO"
+        },
+        {
+          "page": 668,
+          "icao": "SCCI",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "AP. C. IBAÑEZ DEL CAMPO"
+        },
+        {
+          "page": 670,
+          "icao": "SCCI",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "AP. C. IBAÑEZ DEL CAMPO"
+        },
+        {
+          "page": 672,
+          "icao": "SCCI",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "LEFT DES"
+        },
+        {
+          "page": 673,
+          "icao": "SCCI",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "LEFT DES"
+        },
+        {
+          "page": 674,
+          "icao": "SCCI",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "AP. C. IBAÑEZ DEL CAMPO"
+        },
+        {
+          "page": 675,
+          "icao": "SCCI",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "AP. C. IBAÑEZ DEL CAMPO"
+        },
+        {
+          "page": 676,
+          "icao": "SCCI",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "1000´"
+        },
+        {
+          "page": 677,
+          "icao": "SCCI",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "AP. C. IBAÑEZ DEL CAMPO"
+        },
+        {
+          "page": 678,
+          "icao": "SCCI",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "AP. C. IBAÑEZ DEL CAMPO"
+        },
+        {
+          "page": 679,
+          "icao": "SCCI",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "DASA / SECCION AIS-MAP"
+        },
+        {
+          "page": 680,
+          "icao": "SCCI",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "AP. C. IBAÑEZ DEL CAMPO"
+        },
+        {
+          "page": 681,
+          "icao": "SCCI",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "DASA / SECCION AIS-MAP"
+        },
+        {
+          "page": 682,
+          "icao": "SCCI",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "1000´"
+        },
+        {
+          "page": 685,
+          "icao": "SCCI",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "Concentración de aves."
+        },
+        {
+          "page": 686,
+          "icao": "SCCI",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "PUNTA ARENAS / AP PDTE. CARLOS IBAÑEZ DEL CAMPO - SCCI"
+        },
+        {
+          "page": 687,
+          "icao": "SCCI",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "PUNTA ARENAS / AP PDTE. CARLOS IBAÑEZ DEL CAMPO - SCCI STAR 2"
+        },
+        {
+          "page": 688,
+          "icao": "SCCI",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "PUNTA ARENAS / AP PDTE. CARLOS IBAÑEZ DEL CAMPO - SCCI STAR 3"
+        },
+        {
+          "page": 689,
+          "icao": "SCCI",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "PUNTA ARENAS / AP PDTE. CARLOS IBAÑEZ DEL CAMPO - SCCI SID 3"
+        },
+        {
+          "page": 690,
+          "icao": "SCCI",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "PUNTA ARENAS / AP PDTE. CARLOS IBAÑEZ DEL CAMPO - SCCI IAC 3"
+        },
+        {
+          "page": 691,
+          "icao": "SCCI",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "PUNTA ARENAS / AP PDTE. CARLOS IBAÑEZ DEL CAMPO - SCCI IAC 13"
+        },
+        {
+          "page": 692,
+          "icao": "SCCI",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "PUNTA ARENAS / AP PDTE. CARLOS IBAÑEZ DEL CAMPO - SCCI IAC 14"
+        },
+        {
+          "page": 693,
+          "icao": "SCCI",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "PUNTA ARENAS / AP PDTE. CARLOS IBAÑEZ DEL CAMPO - SCCI IAC 15"
+        },
+        {
+          "page": 694,
+          "icao": "SCCI",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "PUNTA ARENAS / AP PDTE. CARLOS IBAÑEZ DEL CAMPO - SCCI IAC 16"
+        },
+        {
+          "page": 695,
+          "icao": "SCCI",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "PUNTA ARENAS / AP PDTE. CARLOS IBAÑEZ DEL CAMPO - SCCI IAC 17"
+        },
+        {
+          "page": 696,
+          "icao": "SCCI",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "PUNTA ARENAS / AP PDTE. CARLOS IBAÑEZ DEL CAMPO - SCCI IAC 18"
+        },
+        {
+          "page": 697,
+          "icao": "SCCI",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "PUNTA ARENAS / AP PDTE. CARLOS IBAÑEZ DEL CAMPO - SCCI IAC 19"
+        },
+        {
+          "page": 926,
+          "icao": "SCCI",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "GND"
+        }
+      ]
+    },
+    "SCCL": {
+      "icao": "SCCL",
+      "chart_count": 3,
+      "charts": [
+        {
+          "page": 277,
+          "icao": "SCCL",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "1000’ 2000’"
+        },
+        {
+          "page": 279,
+          "icao": "SCCL",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "2000’1000’"
+        },
+        {
+          "page": 280,
+          "icao": "SCCL",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "2000’1000’"
+        }
+      ]
+    },
+    "SCCY": {
+      "icao": "SCCY",
+      "chart_count": 4,
+      "charts": [
+        {
+          "page": 206,
+          "icao": "SCCY",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "UDOVI"
+        },
+        {
+          "page": 207,
+          "icao": "SCCY",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "VAR  9.2° E 2024"
+        },
+        {
+          "page": 211,
+          "icao": "SCCY",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "VAR  9.2° E 2024"
+        },
+        {
+          "page": 213,
+          "icao": "SCCY",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "U/T-102"
+        }
+      ]
+    },
+    "SCDA": {
+      "icao": "SCDA",
+      "chart_count": 29,
+      "charts": [
+        {
+          "page": 432,
+          "icao": "SCDA",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "19",
+          "title": "R009"
+        },
+        {
+          "page": 433,
+          "icao": "SCDA",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "19",
+          "title": "IQUIQUE - AP DIEGO ARACENA"
+        },
+        {
+          "page": 434,
+          "icao": "SCDA",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "19",
+          "title": "AKNUV"
+        },
+        {
+          "page": 435,
+          "icao": "SCDA",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "19",
+          "title": "IQUIQUE - AP DIEGO ARACENA"
+        },
+        {
+          "page": 436,
+          "icao": "SCDA",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "01",
+          "title": "600’"
+        },
+        {
+          "page": 437,
+          "icao": "SCDA",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "19",
+          "title": "T-103"
+        },
+        {
+          "page": 438,
+          "icao": "SCDA",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "19",
+          "title": "V-200U/L-300"
+        },
+        {
+          "page": 439,
+          "icao": "SCDA",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "19",
+          "title": "3000'"
+        },
+        {
+          "page": 440,
+          "icao": "SCDA",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "19",
+          "title": "BRADA 1"
+        },
+        {
+          "page": 443,
+          "icao": "SCDA",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "2000’"
+        },
+        {
+          "page": 445,
+          "icao": "SCDA",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": "19",
+          "title": "1000’"
+        },
+        {
+          "page": 446,
+          "icao": "SCDA",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "1000’"
+        },
+        {
+          "page": 447,
+          "icao": "SCDA",
+          "type": "PATC",
+          "phase": "Estacionamiento",
+          "rwy": null,
+          "title": "PLANO DE ESTACIONAMIENTO"
+        },
+        {
+          "page": 448,
+          "icao": "SCDA",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "AP DIEGO ARACENA - IQUIQUE"
+        },
+        {
+          "page": 449,
+          "icao": "SCDA",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "VUREL"
+        },
+        {
+          "page": 450,
+          "icao": "SCDA",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "U/Q-802"
+        },
+        {
+          "page": 451,
+          "icao": "SCDA",
+          "type": "VAC",
+          "phase": "Visual",
+          "rwy": null,
+          "title": "1000’"
+        },
+        {
+          "page": 452,
+          "icao": "SCDA",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "DIEGO ARACENA / IQUIQUE"
+        },
+        {
+          "page": 453,
+          "icao": "SCDA",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": "01",
+          "title": "VAR 6.2° W 2024"
+        },
+        {
+          "page": 454,
+          "icao": "SCDA",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "IQUIQUE / AP DIEGO ARACENA - SCDA"
+        },
+        {
+          "page": 455,
+          "icao": "SCDA",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "IQUIQUE / AP DIEGO ARACENA - SCDA STAR 2"
+        },
+        {
+          "page": 456,
+          "icao": "SCDA",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "IQUIQUE / AP DIEGO ARACENA - SCDA STAR 3"
+        },
+        {
+          "page": 457,
+          "icao": "SCDA",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "IQUIQUE / AP DIEGO ARACENA - SCDA STAR 4"
+        },
+        {
+          "page": 458,
+          "icao": "SCDA",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "19",
+          "title": "IQUIQUE / AP DIEGO ARACENA - SCDA SID 3"
+        },
+        {
+          "page": 459,
+          "icao": "SCDA",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "IQUIQUE / AP DIEGO ARACENA - SCDA SID 4"
+        },
+        {
+          "page": 460,
+          "icao": "SCDA",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "19",
+          "title": "IQUIQUE / AP DIEGO ARACENA - SCDA SID 5"
+        },
+        {
+          "page": 461,
+          "icao": "SCDA",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "IQUIQUE / AP DIEGO ARACENA - SCDA IAC 3"
+        },
+        {
+          "page": 462,
+          "icao": "SCDA",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "IQUIQUE / AP DIEGO ARACENA - SCDA IAC 4"
+        },
+        {
+          "page": 463,
+          "icao": "SCDA",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "IQUIQUE / AP DIEGO ARACENA - SCDA IAC 5"
+        }
+      ]
+    },
+    "SCEL": {
+      "icao": "SCEL",
+      "chart_count": 90,
+      "charts": [
+        {
+          "page": 59,
+          "icao": "SCEL",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "**"
+        },
+        {
+          "page": 698,
+          "icao": "SCEL",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "17",
+          "title": "FL140"
+        },
+        {
+          "page": 699,
+          "icao": "SCEL",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "17",
+          "title": "UGOLA"
+        },
+        {
+          "page": 700,
+          "icao": "SCEL",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "17",
+          "title": "VAR 0.9° E 2023"
+        },
+        {
+          "page": 701,
+          "icao": "SCEL",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "17R",
+          "title": "10000’10000’"
+        },
+        {
+          "page": 702,
+          "icao": "SCEL",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "35R",
+          "title": "357°"
+        },
+        {
+          "page": 703,
+          "icao": "SCEL",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "17",
+          "title": "FL180"
+        },
+        {
+          "page": 704,
+          "icao": "SCEL",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "17",
+          "title": "353°"
+        },
+        {
+          "page": 705,
+          "icao": "SCEL",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "17",
+          "title": "VAR 0.9° E 2023"
+        },
+        {
+          "page": 706,
+          "icao": "SCEL",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "35",
+          "title": "SIMOK 6D / ASIMO 5C/ UMKAL 7B RNAV"
+        },
+        {
+          "page": 707,
+          "icao": "SCEL",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "35",
+          "title": "STAR EROLO 4B / SABLA 5A RNAV"
+        },
+        {
+          "page": 708,
+          "icao": "SCEL",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "17",
+          "title": "SANTIAGO - AP A. MERINO B."
+        },
+        {
+          "page": 709,
+          "icao": "SCEL",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "17",
+          "title": "SANTIAGO - AP ARTURO MERINO BENITEZ"
+        },
+        {
+          "page": 710,
+          "icao": "SCEL",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "17",
+          "title": "DESIT"
+        },
+        {
+          "page": 711,
+          "icao": "SCEL",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "17",
+          "title": "4000’"
+        },
+        {
+          "page": 712,
+          "icao": "SCEL",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "35",
+          "title": "SANTIAGO - AP ARTURO MERINO BENITEZ"
+        },
+        {
+          "page": 713,
+          "icao": "SCEL",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "17R",
+          "title": "4000’"
+        },
+        {
+          "page": 714,
+          "icao": "SCEL",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "SANTIAGO - AP ARTURO MERINO BENITEZ"
+        },
+        {
+          "page": 715,
+          "icao": "SCEL",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "SANTIAGO - AP ARTURO MERINO BENITEZ"
+        },
+        {
+          "page": 716,
+          "icao": "SCEL",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "17L",
+          "title": "SEKSU"
+        },
+        {
+          "page": 717,
+          "icao": "SCEL",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "17L",
+          "title": "SANTIAGO - AP ARTURO MERINO BENITEZ"
+        },
+        {
+          "page": 718,
+          "icao": "SCEL",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "17L",
+          "title": "SANTIAGO - AP ARTURO MERINO BENITEZ"
+        },
+        {
+          "page": 719,
+          "icao": "SCEL",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "17L",
+          "title": "SANTIAGO - AP ARTURO MERINO BENITEZ"
+        },
+        {
+          "page": 720,
+          "icao": "SCEL",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "U/Q-803"
+        },
+        {
+          "page": 726,
+          "icao": "SCEL",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "*"
+        },
+        {
+          "page": 727,
+          "icao": "SCEL",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": "17R",
+          "title": "IMER"
+        },
+        {
+          "page": 729,
+          "icao": "SCEL",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "IMER"
+        },
+        {
+          "page": 730,
+          "icao": "SCEL",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "AP. ARTURO MERINO BENITEZ"
+        },
+        {
+          "page": 732,
+          "icao": "SCEL",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "IMER"
+        },
+        {
+          "page": 733,
+          "icao": "SCEL",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": "17L",
+          "title": "AP. ARTURO MERINO BENITEZ"
+        },
+        {
+          "page": 734,
+          "icao": "SCEL",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": "17L",
+          "title": "AP. ARTURO MERINO BENITEZ"
+        },
+        {
+          "page": 735,
+          "icao": "SCEL",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "357°177°"
+        },
+        {
+          "page": 738,
+          "icao": "SCEL",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": "17L",
+          "title": "2000'"
+        },
+        {
+          "page": 739,
+          "icao": "SCEL",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": "17R",
+          "title": "177°"
+        },
+        {
+          "page": 740,
+          "icao": "SCEL",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": "17R",
+          "title": "177°RNP"
+        },
+        {
+          "page": 741,
+          "icao": "SCEL",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": "35R",
+          "title": "2000’"
+        },
+        {
+          "page": 742,
+          "icao": "SCEL",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": "35L",
+          "title": "2000’"
+        },
+        {
+          "page": 743,
+          "icao": "SCEL",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": "17L",
+          "title": "2000'"
+        },
+        {
+          "page": 744,
+          "icao": "SCEL",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": "17R",
+          "title": "177°"
+        },
+        {
+          "page": 746,
+          "icao": "SCEL",
+          "type": "ADC",
+          "phase": "Aeródromo",
+          "rwy": null,
+          "title": "A"
+        },
+        {
+          "page": 747,
+          "icao": "SCEL",
+          "type": "ADC",
+          "phase": "Aeródromo",
+          "rwy": "17R",
+          "title": "DEPTO. CERTIF. Y FISCALIZ. DE AERODROMOS"
+        },
+        {
+          "page": 748,
+          "icao": "SCEL",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": "17L",
+          "title": "DGAC  AMDT 97 08 AGOSTO 2024"
+        },
+        {
+          "page": 749,
+          "icao": "SCEL",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": "17L",
+          "title": "SANTIAGO - AP ARTURO MERINO BENITEZ"
+        },
+        {
+          "page": 750,
+          "icao": "SCEL",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "HS1"
+        },
+        {
+          "page": 751,
+          "icao": "SCEL",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "AP Arturo Merino Benitez"
+        },
+        {
+          "page": 753,
+          "icao": "SCEL",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "17L",
+          "title": "DGAC  AMDT 86"
+        },
+        {
+          "page": 754,
+          "icao": "SCEL",
+          "type": "PATC",
+          "phase": "Estacionamiento",
+          "rwy": null,
+          "title": "HS1 VEHICLE TAXIWAY"
+        },
+        {
+          "page": 755,
+          "icao": "SCEL",
+          "type": "PATC",
+          "phase": "Estacionamiento",
+          "rwy": null,
+          "title": "AP ARTURO MERINO BENITEZ"
+        },
+        {
+          "page": 756,
+          "icao": "SCEL",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "Concentración Urbana"
+        },
+        {
+          "page": 757,
+          "icao": "SCEL",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "AP ARTURO MERINO BENITEZ / SANTIAGO"
+        },
+        {
+          "page": 759,
+          "icao": "SCEL",
+          "type": "VAC",
+          "phase": "Visual",
+          "rwy": null,
+          "title": "VAR 0.9° E 2023"
+        },
+        {
+          "page": 760,
+          "icao": "SCEL",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "SANTIAGO / AP ARTURO MERINO BENITEZ - SCEL"
+        },
+        {
+          "page": 761,
+          "icao": "SCEL",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "SANTIAGO / AP ARTURO MERINO BENITEZ - SCEL"
+        },
+        {
+          "page": 762,
+          "icao": "SCEL",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "SANTIAGO / AP ARTURO MERINO BENITEZ - SCEL"
+        },
+        {
+          "page": 763,
+          "icao": "SCEL",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "SANTIAGO / AP ARTURO MERINO BENITEZ - SCEL STAR 6"
+        },
+        {
+          "page": 764,
+          "icao": "SCEL",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "SANTIAGO / AP ARTURO MERINO BENITEZ - SCEL STAR 6"
+        },
+        {
+          "page": 765,
+          "icao": "SCEL",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "SANTIAGO / AP ARTURO MERINO BENITEZ - SCEL STAR 6"
+        },
+        {
+          "page": 766,
+          "icao": "SCEL",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "SANTIAGO / AP ARTURO MERINO BENITEZ - SCEL STAR 7"
+        },
+        {
+          "page": 767,
+          "icao": "SCEL",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "SANTIAGO / AP ARTURO MERINO BENITEZ - SCEL STAR 8"
+        },
+        {
+          "page": 768,
+          "icao": "SCEL",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "SANTIAGO / AP ARTURO MERINO BENITEZ - SCEL STAR 8"
+        },
+        {
+          "page": 769,
+          "icao": "SCEL",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "SANTIAGO / AP ARTURO MERINO BENITEZ - SCEL STAR 9"
+        },
+        {
+          "page": 770,
+          "icao": "SCEL",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "35R",
+          "title": "SANTIAGO / AP ARTURO MERINO BENITEZ - SCEL STAR 9"
+        },
+        {
+          "page": 771,
+          "icao": "SCEL",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "SANTIAGO / AP ARTURO MERINO BENITEZ - SCEL STAR 10"
+        },
+        {
+          "page": 772,
+          "icao": "SCEL",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "SANTIAGO / AP ARTURO MERINO BENITEZ - SCEL STAR 11"
+        },
+        {
+          "page": 773,
+          "icao": "SCEL",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "SANTIAGO / AP ARTURO MERINO BENITEZ - SCEL SID 5"
+        },
+        {
+          "page": 774,
+          "icao": "SCEL",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "SANTIAGO / AP ARTURO MERINO BENITEZ - SCEL SID 6"
+        },
+        {
+          "page": 775,
+          "icao": "SCEL",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "SANTIAGO / AP ARTURO MERINO BENITEZ - SCEL SID 7"
+        },
+        {
+          "page": 776,
+          "icao": "SCEL",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "17R",
+          "title": "SANTIAGO / AP ARTURO MERINO BENITEZ - SCEL SID 8"
+        },
+        {
+          "page": 777,
+          "icao": "SCEL",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "SANTIAGO / AP ARTURO MERINO BENITEZ - SCEL SID 9"
+        },
+        {
+          "page": 778,
+          "icao": "SCEL",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "SANTIAGO / AP ARTURO MERINO BENITEZ - SCEL SID 10"
+        },
+        {
+          "page": 779,
+          "icao": "SCEL",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "SANTIAGO / AP ARTURO MERINO BENITEZ - SCEL SID 11"
+        },
+        {
+          "page": 780,
+          "icao": "SCEL",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "17L",
+          "title": "SANTIAGO / AP ARTURO MERINO BENITEZ - SCEL SID 12"
+        },
+        {
+          "page": 781,
+          "icao": "SCEL",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "SANTIAGO / AP ARTURO MERINO BENITEZ - SCEL SID 13"
+        },
+        {
+          "page": 782,
+          "icao": "SCEL",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "SANTIAGO / AP ARTURO MERINO BENITEZ - SCEL SID 13"
+        },
+        {
+          "page": 783,
+          "icao": "SCEL",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "SANTIAGO / AP ARTURO MERINO BENITEZ - SCEL SID 13"
+        },
+        {
+          "page": 784,
+          "icao": "SCEL",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "SANTIAGO / AP ARTURO MERINO BENITEZ - SCEL SID 13"
+        },
+        {
+          "page": 785,
+          "icao": "SCEL",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "17R",
+          "title": "SANTIAGO / AP ARTURO MERINO BENITEZ - SCEL SID 13"
+        },
+        {
+          "page": 786,
+          "icao": "SCEL",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "SANTIAGO / AP ARTURO MERINO BENITEZ - SCEL SID 14"
+        },
+        {
+          "page": 787,
+          "icao": "SCEL",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "SANTIAGO / AP ARTURO MERINO BENITEZ - SCEL SID 14"
+        },
+        {
+          "page": 788,
+          "icao": "SCEL",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "SANTIAGO / AP ARTURO MERINO BENITEZ - SCEL SID 14"
+        },
+        {
+          "page": 789,
+          "icao": "SCEL",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "SANTIAGO / AP ARTURO MERINO BENITEZ - SCEL SID 14"
+        },
+        {
+          "page": 790,
+          "icao": "SCEL",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "SANTIAGO / AP ARTURO MERINO BENITEZ - SCEL IAC 6"
+        },
+        {
+          "page": 791,
+          "icao": "SCEL",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "SANTIAGO / AP ARTURO MERINO BENITEZ - SCEL IAC 13"
+        },
+        {
+          "page": 792,
+          "icao": "SCEL",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "SANTIAGO / AP ARTURO MERINO BENITEZ - SCEL IAC 14"
+        },
+        {
+          "page": 793,
+          "icao": "SCEL",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "SANTIAGO / AP ARTURO MERINO BENITEZ - SCEL IAC 15"
+        },
+        {
+          "page": 794,
+          "icao": "SCEL",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "SANTIAGO / AP ARTURO MERINO BENITEZ - SCEL IAC 16"
+        },
+        {
+          "page": 795,
+          "icao": "SCEL",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "SANTIAGO / AP ARTURO MERINO BENITEZ - SCEL IAC 17"
+        },
+        {
+          "page": 796,
+          "icao": "SCEL",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "SANTIAGO / AP ARTURO MERINO BENITEZ - SCEL IAC 18"
+        },
+        {
+          "page": 797,
+          "icao": "SCEL",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "SANTIAGO / AP ARTURO MERINO BENITEZ - SCEL IAC 19"
+        },
+        {
+          "page": 798,
+          "icao": "SCEL",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "SANTIAGO / AP ARTURO MERINO BENITEZ - SCEL IAC 20"
+        }
+      ]
+    },
+    "SCER": {
+      "icao": "SCER",
+      "chart_count": 1,
+      "charts": [
+        {
+          "page": 902,
+          "icao": "SCER",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "1000’"
+        }
+      ]
+    },
+    "SCFA": {
+      "icao": "SCFA",
+      "chart_count": 32,
+      "charts": [
+        {
+          "page": 133,
+          "icao": "SCFA",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "01",
+          "title": "114.9"
+        },
+        {
+          "page": 134,
+          "icao": "SCFA",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "19",
+          "title": "114.9D"
+        },
+        {
+          "page": 135,
+          "icao": "SCFA",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "114.9D"
+        },
+        {
+          "page": 136,
+          "icao": "SCFA",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "19",
+          "title": "ANTOFAGASTA - AP ANDRÉS SABELLA"
+        },
+        {
+          "page": 137,
+          "icao": "SCFA",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "01",
+          "title": "VAR 4.8° W 2024"
+        },
+        {
+          "page": 139,
+          "icao": "SCFA",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "19",
+          "title": "V-200"
+        },
+        {
+          "page": 140,
+          "icao": "SCFA",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "19",
+          "title": "U/V- 204"
+        },
+        {
+          "page": 141,
+          "icao": "SCFA",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "01",
+          "title": "D25"
+        },
+        {
+          "page": 142,
+          "icao": "SCFA",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "19",
+          "title": "ANTOFAGASTA - AP ANDRÉS SABELLA"
+        },
+        {
+          "page": 148,
+          "icao": "SCFA",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "4000’"
+        },
+        {
+          "page": 149,
+          "icao": "SCFA",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "1000’"
+        },
+        {
+          "page": 151,
+          "icao": "SCFA",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "1000’ 2000’"
+        },
+        {
+          "page": 154,
+          "icao": "SCFA",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "1000’"
+        },
+        {
+          "page": 155,
+          "icao": "SCFA",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": "01",
+          "title": "1000’ 2000’ 3000’"
+        },
+        {
+          "page": 156,
+          "icao": "SCFA",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": "19",
+          "title": "1000’ 2000’ 3000’"
+        },
+        {
+          "page": 157,
+          "icao": "SCFA",
+          "type": "PATC",
+          "phase": "Estacionamiento",
+          "rwy": null,
+          "title": "ANTOFAGASTA / CHILE"
+        },
+        {
+          "page": 158,
+          "icao": "SCFA",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "Punta Jorge Caleta La Chimba"
+        },
+        {
+          "page": 159,
+          "icao": "SCFA",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "SACON"
+        },
+        {
+          "page": 160,
+          "icao": "SCFA",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "U/V-200"
+        },
+        {
+          "page": 162,
+          "icao": "SCFA",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "ANTOFAGASTA / AP ANDRÉS SABELLA - SCFA"
+        },
+        {
+          "page": 163,
+          "icao": "SCFA",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "ANTOFAGASTA / AP ANDRÉS SABELLA - SCFA STAR 4"
+        },
+        {
+          "page": 164,
+          "icao": "SCFA",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "01",
+          "title": "ANTOFAGASTA / AP ANDRÉS SABELLA - SCFA STAR 5"
+        },
+        {
+          "page": 165,
+          "icao": "SCFA",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "01",
+          "title": "ANTOFAGASTA / AP ANDRÉS SABELLA - SCFA STAR 6"
+        },
+        {
+          "page": 166,
+          "icao": "SCFA",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "ANTOFAGASTA / AP ANDRÉS SABELLA - SCFA SID 4"
+        },
+        {
+          "page": 167,
+          "icao": "SCFA",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "ANTOFAGASTA / AP ANDRÉS SABELLA - SCFA"
+        },
+        {
+          "page": 168,
+          "icao": "SCFA",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "ANTOFAGASTA / AP ANDRÉS SABELLA - SCFA SID 6"
+        },
+        {
+          "page": 169,
+          "icao": "SCFA",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "ANTOFAGASTA / AP ANDRÉS SABELLA - SCFA"
+        },
+        {
+          "page": 170,
+          "icao": "SCFA",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "ANTOFAGASTA / AP ANDRÉS SABELLA - SCFA"
+        },
+        {
+          "page": 171,
+          "icao": "SCFA",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "ANTOFAGASTA / AP ANDRÉS SABELLA - SCFA"
+        },
+        {
+          "page": 172,
+          "icao": "SCFA",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "ANTOFAGASTA / AP ANDRÉS SABELLA - SCFA"
+        },
+        {
+          "page": 173,
+          "icao": "SCFA",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "ANTOFAGASTA / AP ANDRÉS SABELLA - SCFA"
+        },
+        {
+          "page": 914,
+          "icao": "SCFA",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "SC-R25"
+        }
+      ]
+    },
+    "SCGE": {
+      "icao": "SCGE",
+      "chart_count": 16,
+      "charts": [
+        {
+          "page": 537,
+          "icao": "SCGE",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "18",
+          "title": "LOS ANGELES-AD MARIA DOLORES"
+        },
+        {
+          "page": 538,
+          "icao": "SCGE",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "36",
+          "title": "LOS ANGELES-AD MARIA DOLORES"
+        },
+        {
+          "page": 539,
+          "icao": "SCGE",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "18",
+          "title": "LOS ANGELES - AD MARIA DOLORES"
+        },
+        {
+          "page": 540,
+          "icao": "SCGE",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "36",
+          "title": "LOS ANGELES - AD MARIA DOLORES"
+        },
+        {
+          "page": 541,
+          "icao": "SCGE",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "1000’"
+        },
+        {
+          "page": 543,
+          "icao": "SCGE",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": "36",
+          "title": "72° 30'"
+        },
+        {
+          "page": 544,
+          "icao": "SCGE",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "ALT MNM 3000'"
+        },
+        {
+          "page": 546,
+          "icao": "SCGE",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "ALT MNM 3000'"
+        },
+        {
+          "page": 547,
+          "icao": "SCGE",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "72° 35'40'"
+        },
+        {
+          "page": 548,
+          "icao": "SCGE",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "LOS ANGELES / AD MARIA DOLORES - SCGE"
+        },
+        {
+          "page": 549,
+          "icao": "SCGE",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "18",
+          "title": "LOS ANGELES / AD MARIA DOLORES - SCGE STAR 1"
+        },
+        {
+          "page": 550,
+          "icao": "SCGE",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "36",
+          "title": "LOS ANGELES / AD MARIA DOLORES - SCGE STAR 2"
+        },
+        {
+          "page": 551,
+          "icao": "SCGE",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "18",
+          "title": "LOS ANGELES / AD MARIA DOLORES - SCGE SID 1"
+        },
+        {
+          "page": 552,
+          "icao": "SCGE",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "36",
+          "title": "LOS ANGELES / AD MARIA DOLORES - SCGE SID 2"
+        },
+        {
+          "page": 553,
+          "icao": "SCGE",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "LOS ANGELES / AD MARIA DOLORES - SCGE IAC 5"
+        },
+        {
+          "page": 554,
+          "icao": "SCGE",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "LOS ANGELES / AD MARIA DOLORES - SCGE IAC 6"
+        }
+      ]
+    },
+    "SCGZ": {
+      "icao": "SCGZ",
+      "chart_count": 11,
+      "charts": [
+        {
+          "page": 644,
+          "icao": "SCGZ",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "26",
+          "title": "4000’"
+        },
+        {
+          "page": 645,
+          "icao": "SCGZ",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "26",
+          "title": "VAR 11.5° E 2024"
+        },
+        {
+          "page": 646,
+          "icao": "SCGZ",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "08",
+          "title": "VAR 11.5° E 2024"
+        },
+        {
+          "page": 647,
+          "icao": "SCGZ",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "2000'3000'"
+        },
+        {
+          "page": 649,
+          "icao": "SCGZ",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": "26",
+          "title": "1000’"
+        },
+        {
+          "page": 651,
+          "icao": "SCGZ",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": "26",
+          "title": "GUARDIAMARINA ZAÑARTU / PTO. WILLIAMS"
+        },
+        {
+          "page": 652,
+          "icao": "SCGZ",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "PUERTO WILLIAMS / AD GUARDIA MARINA ZAÑARTU - SCGZ"
+        },
+        {
+          "page": 653,
+          "icao": "SCGZ",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "PUERTO WILLIAMS / AD GUARDIA MARINA ZAÑARTU - SCGZ STAR 1"
+        },
+        {
+          "page": 654,
+          "icao": "SCGZ",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "26",
+          "title": "PUERTO WILLIAMS / AD GUARDIA MARINA ZAÑARTU - SCGZ SID 2"
+        },
+        {
+          "page": 655,
+          "icao": "SCGZ",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "08",
+          "title": "PUERTO WILLIAMS / AD GUARDIA MARINA ZAÑARTU - SCGZ SID 3"
+        },
+        {
+          "page": 656,
+          "icao": "SCGZ",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "PUERTO WILLIAMS / AD GUARDIA MARINA ZAÑARTU - SCGZ IAC 2"
+        }
+      ]
+    },
+    "SCHA": {
+      "icao": "SCHA",
+      "chart_count": 1,
+      "charts": [
+        {
+          "page": 284,
+          "icao": "SCHA",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "U/Q-802"
+        }
+      ]
+    },
+    "SCHC": {
+      "icao": "SCHC",
+      "chart_count": 4,
+      "charts": [
+        {
+          "page": 725,
+          "icao": "SCHC",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "' 25'35'40'45 2916’"
+        },
+        {
+          "page": 728,
+          "icao": "SCHC",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "' 25'35'40'45 2916’"
+        },
+        {
+          "page": 731,
+          "icao": "SCHC",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "2000'"
+        },
+        {
+          "page": 745,
+          "icao": "SCHC",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": "17R",
+          "title": "2000'"
+        }
+      ]
+    },
+    "SCIE": {
+      "icao": "SCIE",
+      "chart_count": 37,
+      "charts": [
+        {
+          "page": 315,
+          "icao": "SCIE",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "36°45'20\"S 73°03'11\"W"
+        },
+        {
+          "page": 316,
+          "icao": "SCIE",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "02",
+          "title": "CONCEPCION-AD CARRIEL SUR (INTL O/R)"
+        },
+        {
+          "page": 317,
+          "icao": "SCIE",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "02",
+          "title": "VAR 5.1° E 2022"
+        },
+        {
+          "page": 318,
+          "icao": "SCIE",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "20",
+          "title": "VAR 4.9° E 2023"
+        },
+        {
+          "page": 319,
+          "icao": "SCIE",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "02",
+          "title": "CONCEPCION-AD CARRIEL SUR (INTL O/R)"
+        },
+        {
+          "page": 320,
+          "icao": "SCIE",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "02",
+          "title": "CONCEPCION-AD CARRIEL SUR (INTL O/R)"
+        },
+        {
+          "page": 321,
+          "icao": "SCIE",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "02",
+          "title": "VAR 5.1° E 2022"
+        },
+        {
+          "page": 322,
+          "icao": "SCIE",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "20",
+          "title": "SOSTA 2K"
+        },
+        {
+          "page": 323,
+          "icao": "SCIE",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "02",
+          "title": "SOSTA 3L"
+        },
+        {
+          "page": 324,
+          "icao": "SCIE",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "20",
+          "title": "ESIDO 3J"
+        },
+        {
+          "page": 325,
+          "icao": "SCIE",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "02",
+          "title": "VAR 4.9° E 2023"
+        },
+        {
+          "page": 326,
+          "icao": "SCIE",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": "02",
+          "title": "GND"
+        },
+        {
+          "page": 329,
+          "icao": "SCIE",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "GND"
+        },
+        {
+          "page": 332,
+          "icao": "SCIE",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": "02",
+          "title": "0"
+        },
+        {
+          "page": 333,
+          "icao": "SCIE",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": "20",
+          "title": "FINAL APCH CRS"
+        },
+        {
+          "page": 337,
+          "icao": "SCIE",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": "20",
+          "title": "FINAL APCH CRS"
+        },
+        {
+          "page": 339,
+          "icao": "SCIE",
+          "type": "PATC",
+          "phase": "Estacionamiento",
+          "rwy": null,
+          "title": "CONCEPCION / CHILE"
+        },
+        {
+          "page": 340,
+          "icao": "SCIE",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "V-103 T-104"
+        },
+        {
+          "page": 341,
+          "icao": "SCIE",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "SCIE SMGCS"
+        },
+        {
+          "page": 343,
+          "icao": "SCIE",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "0 5 NM 10 NM"
+        },
+        {
+          "page": 344,
+          "icao": "SCIE",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "AD CARRIEL SUR / CONCEPCIÓN"
+        },
+        {
+          "page": 346,
+          "icao": "SCIE",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "CONCEPCION / AD CARRIEL SUR - SCIE"
+        },
+        {
+          "page": 347,
+          "icao": "SCIE",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "CONCEPCION / AD CARRIEL SUR - SCIE STAR 2"
+        },
+        {
+          "page": 348,
+          "icao": "SCIE",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "CONCEPCION / AD CARRIEL SUR - SCIE STAR 2"
+        },
+        {
+          "page": 349,
+          "icao": "SCIE",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "CONCEPCION / AD CARRIEL SUR - SCIE STAR 3"
+        },
+        {
+          "page": 350,
+          "icao": "SCIE",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "CONCEPCION / AD CARRIEL SUR - SCIE STAR 4"
+        },
+        {
+          "page": 351,
+          "icao": "SCIE",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "20",
+          "title": "CONCEPCION / AD CARRIEL SUR - SCIE STAR 4"
+        },
+        {
+          "page": 352,
+          "icao": "SCIE",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "CONCEPCION / AD CARRIEL SUR - SCIE STAR 5"
+        },
+        {
+          "page": 353,
+          "icao": "SCIE",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "CONCEPCION / AD CARRIEL SUR - SCIE STAR 6"
+        },
+        {
+          "page": 354,
+          "icao": "SCIE",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "CONCEPCION / AD CARRIEL SUR - SCIE SID 3"
+        },
+        {
+          "page": 355,
+          "icao": "SCIE",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "CONCEPCION / AD CARRIEL SUR - SCIE SID 4"
+        },
+        {
+          "page": 356,
+          "icao": "SCIE",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "CONCEPCION / AD CARRIEL SUR - SCIE SID 4"
+        },
+        {
+          "page": 357,
+          "icao": "SCIE",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "CONCEPCION / AD CARRIEL SUR - SCIE SID 5"
+        },
+        {
+          "page": 358,
+          "icao": "SCIE",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "CONCEPCION / AD CARRIEL SUR - SCIE IAC 5"
+        },
+        {
+          "page": 359,
+          "icao": "SCIE",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "CONCEPCION / AD CARRIEL SUR - SCIE IAC 9"
+        },
+        {
+          "page": 360,
+          "icao": "SCIE",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "CONCEPCION / AD CARRIEL SUR - SCIE IAC 10"
+        },
+        {
+          "page": 361,
+          "icao": "SCIE",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "CONCEPCION / AD CARRIEL SUR - SCIE IAC 11"
+        }
+      ]
+    },
+    "SCIP": {
+      "icao": "SCIP",
+      "chart_count": 22,
+      "charts": [
+        {
+          "page": 464,
+          "icao": "SCIP",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "10",
+          "title": "ISLA DE PASCUA - AP. MATAVERI"
+        },
+        {
+          "page": 465,
+          "icao": "SCIP",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "10",
+          "title": "ISLA DE PASCUA - AP. MATAVERI"
+        },
+        {
+          "page": 466,
+          "icao": "SCIP",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "10",
+          "title": "U/T-316"
+        },
+        {
+          "page": 467,
+          "icao": "SCIP",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "10",
+          "title": "U/L-348"
+        },
+        {
+          "page": 468,
+          "icao": "SCIP",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "28",
+          "title": "U/L-348"
+        },
+        {
+          "page": 469,
+          "icao": "SCIP",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "28",
+          "title": "ISLA DE PASCUA - AP. MATAVERI"
+        },
+        {
+          "page": 474,
+          "icao": "SCIP",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "1000'"
+        },
+        {
+          "page": 480,
+          "icao": "SCIP",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "x"
+        },
+        {
+          "page": 481,
+          "icao": "SCIP",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "ISLA DE PASCUA / AP MATAVERI - SCIP"
+        },
+        {
+          "page": 482,
+          "icao": "SCIP",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "10",
+          "title": "ISLA DE PASCUA / AP MATAVERI - SCIP STAR 1"
+        },
+        {
+          "page": 483,
+          "icao": "SCIP",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "ISLA DE PASCUA / AP MATAVERI - SCIP STAR 2"
+        },
+        {
+          "page": 484,
+          "icao": "SCIP",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "28",
+          "title": "ISLA DE PASCUA / AP MATAVERI - SCIP STAR 2"
+        },
+        {
+          "page": 485,
+          "icao": "SCIP",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "ISLA DE PASCUA / AP MATAVERI - SCIP SID 1"
+        },
+        {
+          "page": 486,
+          "icao": "SCIP",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "ISLA DE PASCUA / AP MATAVERI - SCIP SID 2"
+        },
+        {
+          "page": 487,
+          "icao": "SCIP",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "ISLA DE PASCUA / AP MATAVERI - SCIP SID 3"
+        },
+        {
+          "page": 488,
+          "icao": "SCIP",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "ISLA DE PASCUA / AP MATAVERI - SCIP SID 4"
+        },
+        {
+          "page": 489,
+          "icao": "SCIP",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "ISLA DE PASCUA / AP MATAVERI - SCIP IAC 2"
+        },
+        {
+          "page": 490,
+          "icao": "SCIP",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "ISLA DE PASCUA / AP MATAVERI - SCIP IAC 5"
+        },
+        {
+          "page": 491,
+          "icao": "SCIP",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "ISLA DE PASCUA / AP MATAVERI - SCIP IAC 6"
+        },
+        {
+          "page": 492,
+          "icao": "SCIP",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "ISLA DE PASCUA / AP MATAVERI - SCIP IAC 7"
+        },
+        {
+          "page": 493,
+          "icao": "SCIP",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "ISLA DE PASCUA / AP MATAVERI - SCIP IAC 8"
+        },
+        {
+          "page": 494,
+          "icao": "SCIP",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "ISLA DE PASCUA / AP MATAVERI - SCIP IAC 9"
+        }
+      ]
+    },
+    "SCJO": {
+      "icao": "SCJO",
+      "chart_count": 23,
+      "charts": [
+        {
+          "page": 575,
+          "icao": "SCJO",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "15",
+          "title": "D15 OSOISUDO 2A"
+        },
+        {
+          "page": 576,
+          "icao": "SCJO",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "VLD VOR/DME"
+        },
+        {
+          "page": 577,
+          "icao": "SCJO",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "15",
+          "title": "ISUDO 3C"
+        },
+        {
+          "page": 578,
+          "icao": "SCJO",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "33",
+          "title": "ISUDO 2E"
+        },
+        {
+          "page": 579,
+          "icao": "SCJO",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "15",
+          "title": "SCJO - SID 1 RWY 15"
+        },
+        {
+          "page": 580,
+          "icao": "SCJO",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "33",
+          "title": "SCJO - SID 2 RWY 33"
+        },
+        {
+          "page": 581,
+          "icao": "SCJO",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "15",
+          "title": "SCJO - SID 3 RNAV RWY 15"
+        },
+        {
+          "page": 582,
+          "icao": "SCJO",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "33",
+          "title": "SCJO - SID 4 RNAV RWY 33"
+        },
+        {
+          "page": 591,
+          "icao": "SCJO",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "RNP Z Rwy 15 (AR)"
+        },
+        {
+          "page": 592,
+          "icao": "SCJO",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "VAR 7.1° E 2024"
+        },
+        {
+          "page": 593,
+          "icao": "SCJO",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "OSORNO / AD CAÑAL BAJO - SCJO"
+        },
+        {
+          "page": 594,
+          "icao": "SCJO",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "OSORNO / AD CAÑAL BAJO - SCJO STAR 3"
+        },
+        {
+          "page": 595,
+          "icao": "SCJO",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "33",
+          "title": "OSORNO / AD CAÑAL BAJO - SCJO STAR 4"
+        },
+        {
+          "page": 596,
+          "icao": "SCJO",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "OSORNO / AD CAÑAL BAJO - SCJO SID 3"
+        },
+        {
+          "page": 597,
+          "icao": "SCJO",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "33",
+          "title": "OSORNO / AD CAÑAL BAJO - SCJO SID 4"
+        },
+        {
+          "page": 598,
+          "icao": "SCJO",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "OSORNO / AD CAÑAL BAJO - SCJO IAC 6"
+        },
+        {
+          "page": 599,
+          "icao": "SCJO",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "OSORNO / AD CAÑAL BAJO - SCJO IAC 7"
+        },
+        {
+          "page": 600,
+          "icao": "SCJO",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "OSORNO / AD CAÑAL BAJO - SCJO IAC 8"
+        },
+        {
+          "page": 601,
+          "icao": "SCJO",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "OSORNO / AD CAÑAL BAJO - SCJO IAC 9"
+        },
+        {
+          "page": 602,
+          "icao": "SCJO",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "33"
+        },
+        {
+          "page": 603,
+          "icao": "SCJO",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "PROCEDIMIENTO LOCAL"
+        },
+        {
+          "page": 617,
+          "icao": "SCJO",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "17",
+          "title": "CARTA DE SALIDA NORMALIZADA"
+        },
+        {
+          "page": 916,
+          "icao": "SCJO",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "4"
+        }
+      ]
+    },
+    "SCLC": {
+      "icao": "SCLC",
+      "chart_count": 1,
+      "charts": [
+        {
+          "page": 804,
+          "icao": "SCLC",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "SC - P44"
+        }
+      ]
+    },
+    "SCNT": {
+      "icao": "SCNT",
+      "chart_count": 7,
+      "charts": [
+        {
+          "page": 555,
+          "icao": "SCNT",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "28",
+          "title": "VAR 13.1° E  2024"
+        },
+        {
+          "page": 556,
+          "icao": "SCNT",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "28",
+          "title": "287°"
+        },
+        {
+          "page": 557,
+          "icao": "SCNT",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "10",
+          "title": "122°"
+        },
+        {
+          "page": 558,
+          "icao": "SCNT",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "28",
+          "title": "SINEL"
+        },
+        {
+          "page": 559,
+          "icao": "SCNT",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "10",
+          "title": "SINEL"
+        },
+        {
+          "page": 566,
+          "icao": "SCNT",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "NATALES / AD TTE. JULIO GALLARDO - SCNT"
+        },
+        {
+          "page": 683,
+          "icao": "SCNT",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "G-550"
+        }
+      ]
+    },
+    "SCOV": {
+      "icao": "SCOV",
+      "chart_count": 3,
+      "charts": [
+        {
+          "page": 604,
+          "icao": "SCOV",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "(IAF)"
+        },
+        {
+          "page": 607,
+          "icao": "SCOV",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "OVALLE / AD EL TUQUI - SCOV"
+        },
+        {
+          "page": 608,
+          "icao": "SCOV",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "OVALLE / AD EL TUQUI - SCOV IAC 1"
+        }
+      ]
+    },
+    "SCPQ": {
+      "icao": "SCPQ",
+      "chart_count": 20,
+      "charts": [
+        {
+          "page": 363,
+          "icao": "SCPQ",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "17",
+          "title": "DALCAHUE- AD MOCOPULLI"
+        },
+        {
+          "page": 364,
+          "icao": "SCPQ",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "35",
+          "title": "DALCAHUE - AD MOCOPULLI"
+        },
+        {
+          "page": 365,
+          "icao": "SCPQ",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "17",
+          "title": "VAR 8.7° E 2024"
+        },
+        {
+          "page": 366,
+          "icao": "SCPQ",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "35",
+          "title": "1000’"
+        },
+        {
+          "page": 367,
+          "icao": "SCPQ",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "17",
+          "title": "DALCAHUE - AD MOCOPULLI"
+        },
+        {
+          "page": 368,
+          "icao": "SCPQ",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "35",
+          "title": "1000’"
+        },
+        {
+          "page": 369,
+          "icao": "SCPQ",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "17",
+          "title": "DALCAHUE - AD MOCOPULLI"
+        },
+        {
+          "page": 370,
+          "icao": "SCPQ",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "1000’"
+        },
+        {
+          "page": 371,
+          "icao": "SCPQ",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "*"
+        },
+        {
+          "page": 372,
+          "icao": "SCPQ",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": "35",
+          "title": "1000’"
+        },
+        {
+          "page": 373,
+          "icao": "SCPQ",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "1000’"
+        },
+        {
+          "page": 374,
+          "icao": "SCPQ",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": "35",
+          "title": "1000’"
+        },
+        {
+          "page": 376,
+          "icao": "SCPQ",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "DALCAHUE / AD MOCOPULLI - SCPQ"
+        },
+        {
+          "page": 377,
+          "icao": "SCPQ",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "DALCAHUE / AD MOCOPULLI - SCPQ STAR 3"
+        },
+        {
+          "page": 378,
+          "icao": "SCPQ",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "17",
+          "title": "DALCAHUE / AD MOCOPULLI - SCPQ STAR 4"
+        },
+        {
+          "page": 379,
+          "icao": "SCPQ",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "35",
+          "title": "DALCAHUE / AD MOCOPULLI - SCPQ SID 3"
+        },
+        {
+          "page": 380,
+          "icao": "SCPQ",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "DALCAHUE / AD MOCOPULLI - SCPQ SID 4"
+        },
+        {
+          "page": 381,
+          "icao": "SCPQ",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "DALCAHUE / AD MOCOPULLI - SCPQ IAC 1"
+        },
+        {
+          "page": 382,
+          "icao": "SCPQ",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "DALCAHUE / AD MOCOPULLI - SCPQ IAC 4"
+        },
+        {
+          "page": 383,
+          "icao": "SCPQ",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "DALCAHUE / AD MOCOPULLI - SCPQ IAC 5"
+        }
+      ]
+    },
+    "SCQP": {
+      "icao": "SCQP",
+      "chart_count": 37,
+      "charts": [
+        {
+          "page": 385,
+          "icao": "SCQP",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "19",
+          "title": "DGAC  AMDT 98CAMBIO: RDL / VAR"
+        },
+        {
+          "page": 386,
+          "icao": "SCQP",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "01",
+          "title": "DGAC   AMDT 98"
+        },
+        {
+          "page": 387,
+          "icao": "SCQP",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "19",
+          "title": "6000’ 8000’ FL130"
+        },
+        {
+          "page": 388,
+          "icao": "SCQP",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "19",
+          "title": "VAR 5.7° E 2024"
+        },
+        {
+          "page": 389,
+          "icao": "SCQP",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "01",
+          "title": "VAR 5.7° E  2024"
+        },
+        {
+          "page": 390,
+          "icao": "SCQP",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "01",
+          "title": "VAR 5.7° E 2024"
+        },
+        {
+          "page": 391,
+          "icao": "SCQP",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "VAR 5.7° E 2024"
+        },
+        {
+          "page": 392,
+          "icao": "SCQP",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "19",
+          "title": "VAR 5.7° E 2024"
+        },
+        {
+          "page": 393,
+          "icao": "SCQP",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "01",
+          "title": "4000’"
+        },
+        {
+          "page": 394,
+          "icao": "SCQP",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "19",
+          "title": "ARAUCANIA"
+        },
+        {
+          "page": 399,
+          "icao": "SCQP",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "AD. LA ARAUCANIA"
+        },
+        {
+          "page": 401,
+          "icao": "SCQP",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "AD. LA ARAUCANIA"
+        },
+        {
+          "page": 402,
+          "icao": "SCQP",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "AD. LA ARAUCANIA"
+        },
+        {
+          "page": 404,
+          "icao": "SCQP",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "AD. LA ARAUCANIA"
+        },
+        {
+          "page": 405,
+          "icao": "SCQP",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "VER PAG."
+        },
+        {
+          "page": 406,
+          "icao": "SCQP",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "AD. LA ARAUCANIA"
+        },
+        {
+          "page": 407,
+          "icao": "SCQP",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": "01",
+          "title": "AD. LA ARAUCANIA"
+        },
+        {
+          "page": 408,
+          "icao": "SCQP",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": "19",
+          "title": "'"
+        },
+        {
+          "page": 410,
+          "icao": "SCQP",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "PANEX"
+        },
+        {
+          "page": 411,
+          "icao": "SCQP",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "Plaza de peaje"
+        },
+        {
+          "page": 412,
+          "icao": "SCQP",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "SCQP  BCAC  RET D G A C"
+        },
+        {
+          "page": 415,
+          "icao": "SCQP",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "SCQP SMGCS"
+        },
+        {
+          "page": 417,
+          "icao": "SCQP",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "FREIRE / AD LA ARAUCANIA - SCQP"
+        },
+        {
+          "page": 418,
+          "icao": "SCQP",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "FREIRE /AD LA ARAUCANIA - SCQP STAR 5"
+        },
+        {
+          "page": 419,
+          "icao": "SCQP",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "01",
+          "title": "FREIRE /AD LA ARAUCANIA - SCQP STAR 6"
+        },
+        {
+          "page": 420,
+          "icao": "SCQP",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "FREIRE /AD LA ARAUCANIA - SCQP STAR 7"
+        },
+        {
+          "page": 421,
+          "icao": "SCQP",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "FREIRE /AD LA ARAUCANIA - SCQP STAR 8"
+        },
+        {
+          "page": 422,
+          "icao": "SCQP",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "FREIRE /AD LA ARAUCANIA - SCQP STAR 9"
+        },
+        {
+          "page": 423,
+          "icao": "SCQP",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "FREIRE /AD LA ARAUCANIA - SCQP SID 4"
+        },
+        {
+          "page": 424,
+          "icao": "SCQP",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "FREIRE /AD LA ARAUCANIA - SCQP SID 5"
+        },
+        {
+          "page": 425,
+          "icao": "SCQP",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "FREIRE /AD LA ARAUCANIA - SCQP SID 6"
+        },
+        {
+          "page": 426,
+          "icao": "SCQP",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "FREIRE /AD LA ARAUCANIA - SCQP IAC 1"
+        },
+        {
+          "page": 427,
+          "icao": "SCQP",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "FREIRE /AD LA ARAUCANIA - SCQP IAC 3"
+        },
+        {
+          "page": 428,
+          "icao": "SCQP",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "FREIRE /AD LA ARAUCANIA - SCQP IAC 4"
+        },
+        {
+          "page": 429,
+          "icao": "SCQP",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "FREIRE /AD LA ARAUCANIA - SCQP IAC 8"
+        },
+        {
+          "page": 430,
+          "icao": "SCQP",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "FREIRE /AD LA ARAUCANIA - SCQP IAC 9"
+        },
+        {
+          "page": 431,
+          "icao": "SCQP",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "FREIRE /AD LA ARAUCANIA - SCQP IAC 10"
+        }
+      ]
+    },
+    "SCRD": {
+      "icao": "SCRD",
+      "chart_count": 9,
+      "charts": [
+        {
+          "page": 891,
+          "icao": "SCRD",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "1000'"
+        },
+        {
+          "page": 893,
+          "icao": "SCRD",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "1000’"
+        },
+        {
+          "page": 894,
+          "icao": "SCRD",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "1000'"
+        },
+        {
+          "page": 895,
+          "icao": "SCRD",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "1000’"
+        },
+        {
+          "page": 896,
+          "icao": "SCRD",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "1000'"
+        },
+        {
+          "page": 897,
+          "icao": "SCRD",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "1000'"
+        },
+        {
+          "page": 898,
+          "icao": "SCRD",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "SC-P50"
+        },
+        {
+          "page": 899,
+          "icao": "SCRD",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "1000’"
+        },
+        {
+          "page": 901,
+          "icao": "SCRD",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "1000’"
+        }
+      ]
+    },
+    "SCRM": {
+      "icao": "SCRM",
+      "chart_count": 8,
+      "charts": [
+        {
+          "page": 118,
+          "icao": "SCRM",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "29",
+          "title": "1000'"
+        },
+        {
+          "page": 119,
+          "icao": "SCRM",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "11",
+          "title": "108°"
+        },
+        {
+          "page": 126,
+          "icao": "SCRM",
+          "type": "ADC",
+          "phase": "Aeródromo",
+          "rwy": null,
+          "title": "ESCALA GRAFICA"
+        },
+        {
+          "page": 127,
+          "icao": "SCRM",
+          "type": "PATC",
+          "phase": "Estacionamiento",
+          "rwy": null,
+          "title": "SCRM   PDC AMDT 102 14 MAYO 2026"
+        },
+        {
+          "page": 128,
+          "icao": "SCRM",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "ZAEP 150"
+        },
+        {
+          "page": 130,
+          "icao": "SCRM",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "ANTARTICA / AD TENIENTE RODOLFO MARSH - SCRM"
+        },
+        {
+          "page": 131,
+          "icao": "SCRM",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "ANTARTICA / AD TENIENTE RODOLFO MARSH - SCRM IAC 4"
+        },
+        {
+          "page": 132,
+          "icao": "SCRM",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "ANTARTICA / AD TENIENTE RODOLFO MARSH - SCRM IAC 5"
+        }
+      ]
+    },
+    "SCSE": {
+      "icao": "SCSE",
+      "chart_count": 38,
+      "charts": [
+        {
+          "page": 495,
+          "icao": "SCSE",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "12",
+          "title": "STAR TONGOY 1A / SEBTO 4A / SEBTO 3B"
+        },
+        {
+          "page": 496,
+          "icao": "SCSE",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "12",
+          "title": "STAR MUGOS 4A / MUGOS 2B / MIBAS 3A"
+        },
+        {
+          "page": 497,
+          "icao": "SCSE",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "30",
+          "title": "LA SERENA- AD. LA FLORIDA"
+        },
+        {
+          "page": 498,
+          "icao": "SCSE",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "30",
+          "title": "LA SERENA- AD. LA FLORIDA"
+        },
+        {
+          "page": 499,
+          "icao": "SCSE",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "30",
+          "title": "LA SERENA- AD. LA FLORIDA"
+        },
+        {
+          "page": 500,
+          "icao": "SCSE",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "12",
+          "title": "LA SERENA- AD. LA FLORIDA"
+        },
+        {
+          "page": 501,
+          "icao": "SCSE",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "30",
+          "title": "LA SERENA"
+        },
+        {
+          "page": 502,
+          "icao": "SCSE",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "12",
+          "title": "LA SERENA - AD LA FLORIDA"
+        },
+        {
+          "page": 503,
+          "icao": "SCSE",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "12",
+          "title": "LA SERENA - AD LA FLORIDA"
+        },
+        {
+          "page": 504,
+          "icao": "SCSE",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "30",
+          "title": "LA SERENA - AD LA FLORIDA"
+        },
+        {
+          "page": 505,
+          "icao": "SCSE",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "12",
+          "title": "LA SERENA - AD LA FLORIDA"
+        },
+        {
+          "page": 506,
+          "icao": "SCSE",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "2000'"
+        },
+        {
+          "page": 507,
+          "icao": "SCSE",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "DASA / SECCION AIS-MAP"
+        },
+        {
+          "page": 508,
+          "icao": "SCSE",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "2000'"
+        },
+        {
+          "page": 510,
+          "icao": "SCSE",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": "30",
+          "title": "Nivel de Transición por ATC"
+        },
+        {
+          "page": 512,
+          "icao": "SCSE",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "1000"
+        },
+        {
+          "page": 513,
+          "icao": "SCSE",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "1000"
+        },
+        {
+          "page": 514,
+          "icao": "SCSE",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "1000"
+        },
+        {
+          "page": 515,
+          "icao": "SCSE",
+          "type": "VAC",
+          "phase": "Visual",
+          "rwy": null,
+          "title": "5 NM"
+        },
+        {
+          "page": 518,
+          "icao": "SCSE",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "500 m0500 m"
+        },
+        {
+          "page": 519,
+          "icao": "SCSE",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "LA SERENA / AD LA FLORIDA - SCSE"
+        },
+        {
+          "page": 520,
+          "icao": "SCSE",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "LA SERENA / AD LA FLORIDA - SCSE"
+        },
+        {
+          "page": 521,
+          "icao": "SCSE",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "LA SERENA / AD LA FLORIDA - SCSE STAR 3"
+        },
+        {
+          "page": 522,
+          "icao": "SCSE",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "LA SERENA / AD LA FLORIDA - SCSE STAR 4"
+        },
+        {
+          "page": 523,
+          "icao": "SCSE",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "30",
+          "title": "LA SERENA / AD LA FLORIDA - SCSE STAR 4"
+        },
+        {
+          "page": 524,
+          "icao": "SCSE",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "LA SERENA / AD LA FLORIDA - SCSE STAR 5"
+        },
+        {
+          "page": 525,
+          "icao": "SCSE",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "LA SERENA / AD LA FLORIDA - SCSE STAR 6"
+        },
+        {
+          "page": 526,
+          "icao": "SCSE",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "LA SERENA / AD LA FLORIDA - SCSE SID 2"
+        },
+        {
+          "page": 527,
+          "icao": "SCSE",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "LA SERENA / AD LA FLORIDA - SCSE SID 3"
+        },
+        {
+          "page": 528,
+          "icao": "SCSE",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "LA SERENA / AD LA FLORIDA - SCSE SID 4"
+        },
+        {
+          "page": 529,
+          "icao": "SCSE",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "LA SERENA / AD LA FLORIDA - SCSE SID 5"
+        },
+        {
+          "page": 530,
+          "icao": "SCSE",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "LA SERENA / AD LA FLORIDA - SCSE IAC 3"
+        },
+        {
+          "page": 531,
+          "icao": "SCSE",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "LA SERENA / AD LA FLORIDA - SCSE IAC 3"
+        },
+        {
+          "page": 532,
+          "icao": "SCSE",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "LA SERENA / AD LA FLORIDA - SCSE IAC 4"
+        },
+        {
+          "page": 533,
+          "icao": "SCSE",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "LA SERENA / AD LA FLORIDA - SCSE IAC 5"
+        },
+        {
+          "page": 534,
+          "icao": "SCSE",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "LA SERENA / AD LA FLORIDA - SCSE IAC 6"
+        },
+        {
+          "page": 535,
+          "icao": "SCSE",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "LA SERENA / AD LA FLORIDA - SCSE IAC 7"
+        },
+        {
+          "page": 536,
+          "icao": "SCSE",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "LA SERENA / AD LA FLORIDA - SCSE IAC 8"
+        }
+      ]
+    },
+    "SCSN": {
+      "icao": "SCSN",
+      "chart_count": 8,
+      "charts": [
+        {
+          "page": 758,
+          "icao": "SCSN",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "ANGOD"
+        },
+        {
+          "page": 809,
+          "icao": "SCSN",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "23",
+          "title": "234°"
+        },
+        {
+          "page": 817,
+          "icao": "SCSN",
+          "type": "VAC",
+          "phase": "Visual",
+          "rwy": null,
+          "title": "SANTO DOMINGO"
+        },
+        {
+          "page": 818,
+          "icao": "SCSN",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "SCSN  RET  D G A C"
+        },
+        {
+          "page": 819,
+          "icao": "SCSN",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "SANTO DOMINGO / AD SANTO DOMINGO - SCSN"
+        },
+        {
+          "page": 820,
+          "icao": "SCSN",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "SANTO DOMINGO / AD SANTO DOMINGO - SCSN SID 1"
+        },
+        {
+          "page": 821,
+          "icao": "SCSN",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "SANTO DOMINGO / AD SANTO DOMINGO - SCSN IAC 5"
+        },
+        {
+          "page": 822,
+          "icao": "SCSN",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "SANTO DOMINGO / AD SANTO DOMINGO - SCSN IAC 6"
+        }
+      ]
+    },
+    "SCTB": {
+      "icao": "SCTB",
+      "chart_count": 8,
+      "charts": [
+        {
+          "page": 799,
+          "icao": "SCTB",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "01",
+          "title": "STAR  ANGOD 1E RNAV"
+        },
+        {
+          "page": 800,
+          "icao": "SCTB",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "19",
+          "title": "MAX 175 KIAS"
+        },
+        {
+          "page": 801,
+          "icao": "SCTB",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "19",
+          "title": "SANTIAGO"
+        },
+        {
+          "page": 802,
+          "icao": "SCTB",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "VAR 0.7° E 2023"
+        },
+        {
+          "page": 805,
+          "icao": "SCTB",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "Disposiciones Operacionales"
+        },
+        {
+          "page": 806,
+          "icao": "SCTB",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "SANTIAGO / AD EULOGIO SANCHEZ - SCTB"
+        },
+        {
+          "page": 807,
+          "icao": "SCTB",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "SANTIAGO / AD EULOGIO SANCHEZ - SCTB STAR 1"
+        },
+        {
+          "page": 808,
+          "icao": "SCTB",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "SANTIAGO / AD EULOGIO SANCHEZ - SCTB IAC 1"
+        }
+      ]
+    },
+    "SCTE": {
+      "icao": "SCTE",
+      "chart_count": 20,
+      "charts": [
+        {
+          "page": 612,
+          "icao": "SCTE",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "35",
+          "title": "VAR 7.6° E 2024"
+        },
+        {
+          "page": 613,
+          "icao": "SCTE",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "17",
+          "title": "VAR 7.6° E 2024"
+        },
+        {
+          "page": 614,
+          "icao": "SCTE",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "17",
+          "title": "352°"
+        },
+        {
+          "page": 615,
+          "icao": "SCTE",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "17",
+          "title": "GUTIN 4B"
+        },
+        {
+          "page": 616,
+          "icao": "SCTE",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "17",
+          "title": "D"
+        },
+        {
+          "page": 618,
+          "icao": "SCTE",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "17",
+          "title": "PTO. MONTT - AP EL TEPUAL"
+        },
+        {
+          "page": 620,
+          "icao": "SCTE",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "*"
+        },
+        {
+          "page": 628,
+          "icao": "SCTE",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "ALT MNM  3000’"
+        },
+        {
+          "page": 632,
+          "icao": "SCTE",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "Concentración de aves."
+        },
+        {
+          "page": 633,
+          "icao": "SCTE",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "PUERTO MONTT / AP. EL TEPUAL - SCTE"
+        },
+        {
+          "page": 634,
+          "icao": "SCTE",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "PUERTO MONTT/ AP EL TEPUAL - SCTE STAR 2"
+        },
+        {
+          "page": 635,
+          "icao": "SCTE",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "PUERTO MONTT/ AP EL TEPUAL - SCTE STAR 3"
+        },
+        {
+          "page": 636,
+          "icao": "SCTE",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "PUERTO MONTT / AP EL TEPUAL - SCTE SID 4"
+        },
+        {
+          "page": 637,
+          "icao": "SCTE",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "PUERTO MONTT / AP EL TEPUAL - SCTE SID 5"
+        },
+        {
+          "page": 638,
+          "icao": "SCTE",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "PUERTO MONTT / AP EL TEPUAL - SCTE IAC 1"
+        },
+        {
+          "page": 639,
+          "icao": "SCTE",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "PUERTO MONTT / AP EL TEPUAL - SCTE IAC 7"
+        },
+        {
+          "page": 640,
+          "icao": "SCTE",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "PUERTO MONTT / AP EL TEPUAL - SCTE IAC 8"
+        },
+        {
+          "page": 641,
+          "icao": "SCTE",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "PUERTO MONTT / AP EL TEPUAL - SCTE IAC 9"
+        },
+        {
+          "page": 642,
+          "icao": "SCTE",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "PUERTO MONTT / AP EL TEPUAL - SCTE IAC 10"
+        },
+        {
+          "page": 925,
+          "icao": "SCTE",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "Segundo Corral"
+        }
+      ]
+    },
+    "SCTL": {
+      "icao": "SCTL",
+      "chart_count": 10,
+      "charts": [
+        {
+          "page": 823,
+          "icao": "SCTL",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": "03",
+          "title": "TALCA - AD PANGUILEMO"
+        },
+        {
+          "page": 824,
+          "icao": "SCTL",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": "03",
+          "title": "DASA / SECCION AIS-MAP"
+        },
+        {
+          "page": 825,
+          "icao": "SCTL",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "1000’"
+        },
+        {
+          "page": 827,
+          "icao": "SCTL",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "1000’"
+        },
+        {
+          "page": 828,
+          "icao": "SCTL",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "TALCA - CHILE"
+        },
+        {
+          "page": 829,
+          "icao": "SCTL",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "TALCA / AD PANGUILEMO - SCTL"
+        },
+        {
+          "page": 830,
+          "icao": "SCTL",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "TALCA / AD PANGUILEMO - SCTL VDRC NORTE"
+        },
+        {
+          "page": 831,
+          "icao": "SCTL",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": "21",
+          "title": "TALCA / AD PANGUILEMO - SCTL VDRC NORTE"
+        },
+        {
+          "page": 832,
+          "icao": "SCTL",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "TALCA / AD PANGUILEMO - SCTL IAC 1"
+        },
+        {
+          "page": 833,
+          "icao": "SCTL",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "TALCA / AD PANGUILEMO - SCTL IAC 2"
+        }
+      ]
+    },
+    "SCTO": {
+      "icao": "SCTO",
+      "chart_count": 10,
+      "charts": [
+        {
+          "page": 861,
+          "icao": "SCTO",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "19",
+          "title": "STAR ARMUL 3A / ARMUL 3B RNAV"
+        },
+        {
+          "page": 862,
+          "icao": "SCTO",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "01",
+          "title": "STAR ETEMA 2A RNAV"
+        },
+        {
+          "page": 863,
+          "icao": "SCTO",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "VAR 4.7° E 2026"
+        },
+        {
+          "page": 865,
+          "icao": "SCTO",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": "01",
+          "title": "VAR 4.7° E 2026"
+        },
+        {
+          "page": 866,
+          "icao": "SCTO",
+          "type": "VAC",
+          "phase": "Visual",
+          "rwy": "13",
+          "title": "VICTORIA"
+        },
+        {
+          "page": 868,
+          "icao": "SCTO",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "VICTORIA / AD VICTORIA - SCTO"
+        },
+        {
+          "page": 869,
+          "icao": "SCTO",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "VICTORIA / AD VICTORIA - SCTO STAR1"
+        },
+        {
+          "page": 870,
+          "icao": "SCTO",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "VICTORIA / AD VICTORIA - SCTO STAR 2"
+        },
+        {
+          "page": 871,
+          "icao": "SCTO",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "VICTORIA / AD VICTORIA - SCTO IAC1"
+        },
+        {
+          "page": 872,
+          "icao": "SCTO",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "VICTORIA / AD VICTORIA - SCTO IAC 2"
+        }
+      ]
+    },
+    "SCVD": {
+      "icao": "SCVD",
+      "chart_count": 18,
+      "charts": [
+        {
+          "page": 836,
+          "icao": "SCVD",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "17",
+          "title": "STAR NEKOR 3M/KIBEL 1B/ISUDO 4K/GUXER 3B RNAV"
+        },
+        {
+          "page": 837,
+          "icao": "SCVD",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "35",
+          "title": "STAR ILNUT 1A/KIBEL 1C/ISUDO 1A/GUXER 3C RNAV"
+        },
+        {
+          "page": 838,
+          "icao": "SCVD",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "35",
+          "title": "2100'"
+        },
+        {
+          "page": 839,
+          "icao": "SCVD",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "17",
+          "title": "62 FT"
+        },
+        {
+          "page": 840,
+          "icao": "SCVD",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "17",
+          "title": "V-200Q-809"
+        },
+        {
+          "page": 841,
+          "icao": "SCVD",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "35",
+          "title": "V-200Q-809"
+        },
+        {
+          "page": 843,
+          "icao": "SCVD",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "MINIMOS ATERRIZAJE"
+        },
+        {
+          "page": 850,
+          "icao": "SCVD",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "Concentración Urbana"
+        },
+        {
+          "page": 851,
+          "icao": "SCVD",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "SCVD  BCAC  RET D G A C"
+        },
+        {
+          "page": 852,
+          "icao": "SCVD",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "VALDIVIA / AD PICHOY - SCVD"
+        },
+        {
+          "page": 853,
+          "icao": "SCVD",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "VALDIVIA / AD PICHOY - SCVD STAR 3"
+        },
+        {
+          "page": 854,
+          "icao": "SCVD",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "VALDIVIA / AD PICHOY - SCVD STAR 4"
+        },
+        {
+          "page": 855,
+          "icao": "SCVD",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": null,
+          "title": "VALDIVIA / AD PICHOY - SCVD SID 3"
+        },
+        {
+          "page": 856,
+          "icao": "SCVD",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "35",
+          "title": "VALDIVIA / AD PICHOY - SCVD SID 4"
+        },
+        {
+          "page": 857,
+          "icao": "SCVD",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "VALDIVIA / AD PICHOY - SCVD IAC 4"
+        },
+        {
+          "page": 858,
+          "icao": "SCVD",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "VALDIVIA / AD PICHOY - SCVD IAC 5"
+        },
+        {
+          "page": 859,
+          "icao": "SCVD",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "VALDIVIA / AD PICHOY - SCVD IAC 6"
+        },
+        {
+          "page": 860,
+          "icao": "SCVD",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "VALDIVIA / AD PICHOY - SCVD IAC 7"
+        }
+      ]
+    },
+    "SCVI": {
+      "icao": "SCVI",
+      "chart_count": 7,
+      "charts": [
+        {
+          "page": 873,
+          "icao": "SCVI",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": "15",
+          "title": "VILLARRICA - AD VILLARRICA"
+        },
+        {
+          "page": 874,
+          "icao": "SCVI",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": "15",
+          "title": "2000'"
+        },
+        {
+          "page": 876,
+          "icao": "SCVI",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": "33",
+          "title": "Río Tolten"
+        },
+        {
+          "page": 878,
+          "icao": "SCVI",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "VILLARRICA / AD VILLARRICA - SCVI"
+        },
+        {
+          "page": 879,
+          "icao": "SCVI",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": "33",
+          "title": "VILLARRICA / AD VILLARRICA - SCVI VDRC N"
+        },
+        {
+          "page": 880,
+          "icao": "SCVI",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "VILLARICA / AD VILLARRICA - SCVI IAC1"
+        },
+        {
+          "page": 881,
+          "icao": "SCVI",
+          "type": "IAC",
+          "phase": "Aproximación",
+          "rwy": null,
+          "title": "VILLARICA / AD VILLARRICA - SCVI IAC 2"
+        }
+      ]
+    },
+    "SCVL": {
+      "icao": "SCVL",
+      "chart_count": 3,
+      "charts": [
+        {
+          "page": 842,
+          "icao": "SCVL",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": "35",
+          "title": "2346'"
+        },
+        {
+          "page": 845,
+          "icao": "SCVL",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "2346'"
+        },
+        {
+          "page": 847,
+          "icao": "SCVL",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": "35",
+          "title": "2346'"
+        }
+      ]
+    },
+    "SCVM": {
+      "icao": "SCVM",
+      "chart_count": 11,
+      "charts": [
+        {
+          "page": 882,
+          "icao": "SCVM",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "05",
+          "title": "051°"
+        },
+        {
+          "page": 883,
+          "icao": "SCVM",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": "05",
+          "title": "VAR 1.1° E 2024"
+        },
+        {
+          "page": 884,
+          "icao": "SCVM",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "D28 VTN"
+        },
+        {
+          "page": 885,
+          "icao": "SCVM",
+          "type": "STAR",
+          "phase": "Llegada",
+          "rwy": null,
+          "title": "32°44'19\"S 71°29'46\"W"
+        },
+        {
+          "page": 887,
+          "icao": "SCVM",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "23",
+          "title": "DGO VOR/DME"
+        },
+        {
+          "page": 888,
+          "icao": "SCVM",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "05",
+          "title": "Distancia directa:"
+        },
+        {
+          "page": 889,
+          "icao": "SCVM",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "05",
+          "title": "VIÑA DEL MAR - AD VIÑA DEL MAR"
+        },
+        {
+          "page": 890,
+          "icao": "SCVM",
+          "type": "SID",
+          "phase": "Salida",
+          "rwy": "05",
+          "title": "VIÑA DEL MAR - AD VIÑA DEL MAR"
+        },
+        {
+          "page": 892,
+          "icao": "SCVM",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": "23",
+          "title": "VIÑA DEL MAR"
+        },
+        {
+          "page": 903,
+          "icao": "SCVM",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "VIÑA DEL MAR"
+        },
+        {
+          "page": 904,
+          "icao": "SCVM",
+          "type": "OTRO",
+          "phase": "Otros",
+          "rwy": null,
+          "title": "VIÑA DEL MAR / AD VIÑA DEL MAR - SCVM"
+        }
+      ]
+    }
+  }
+}

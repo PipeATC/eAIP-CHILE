@@ -1,0 +1,21 @@
+# PDF fuente (pesados, no versionar)
+source_pdfs/
+*.pdf
+
+# Imágenes de cartas renderizadas (regenerables)
+data/charts/
+*.jpg
+*.png
+# ...pero sí versionamos los mockups de diseño (referencia del proyecto)
+!design/**/*.png
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node / Expo (fase app)
+node_modules/
+.expo/
+dist/
