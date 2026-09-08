@@ -21,7 +21,18 @@ __pycache__/
 .venv/
 venv/
 
-# Node / Expo (fase app)
+# Node / Expo / Vite (app PWA)
 node_modules/
 .expo/
 dist/
+.vite/
+dev-dist/
+
+# PWA app: datos sincronizados desde /data (regenerables con npm run sync-data)
+app/public/data/
+app/public/charts/
+# ...pero sí versionamos los iconos de la PWA (los ignora *.png de arriba)
+!app/public/icons/*.png
+
+# TypeScript incremental
+*.tsbuildinfo
