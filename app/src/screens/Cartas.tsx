@@ -4,10 +4,12 @@ import { ChartViewer } from '../components/ChartViewer'
 import { chartUrl, TYPE_META, TYPE_ORDER, CURATED_CHART_DATA } from '../data'
 import type { Chart } from '../types'
 
-export function Cartas({ icao, charts, selected, onOpen, onClose }: {
+export function Cartas({ icao, charts, selected, pinned, onTogglePin, onOpen, onClose }: {
   icao: string
   charts: Chart[]
   selected: string | null
+  pinned: string[]
+  onTogglePin: (code: string) => void
   onOpen: (code: string) => void
   onClose: () => void
 }) {
@@ -34,10 +36,14 @@ export function Cartas({ icao, charts, selected, onOpen, onClose }: {
               <span>DGAC AMDT 103</span><span className="d">·</span><span className="sup">06 AGO 2026</span>
             </div>
           </div>
+          <button className={'pin-btn tap' + (pinned.includes(chart.code) ? ' on' : '')}
+            onClick={() => onTogglePin(chart.code)} aria-label="Anclar carta" title="Anclar a Aeródromos">
+            <Icon name="pushpin" size={18} fill={pinned.includes(chart.code) ? 1 : 0} />
+          </button>
         </div>
 
         <div className="viewer-split">
-          <ChartViewer src={chartUrl(icao, chart.file)} alt={`${chart.title} — ${icao} ${chart.code}`} />
+          <ChartViewer src={chartUrl(icao, chart.file)} alt={`${chart.title} — ${icao} ${chart.code}`} code={chart.code} />
 
           <div>
             {extra && (

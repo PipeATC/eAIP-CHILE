@@ -28,6 +28,12 @@ const P: Record<string, string> = {
   ruler: '<path d="M3 15 15 3l6 6L9 21Z"/><path d="m7.5 10.5 2 2M11 7l2 2M14.5 10.5l1.5 1.5"/>',
   route: '<circle cx="6" cy="19" r="2.2"/><circle cx="18" cy="5" r="2.2"/><path d="M6.5 16.8V9.5a4 4 0 0 1 4-4H14M17.5 7.2v7.3a4 4 0 0 1-4 4H10"/>',
   siren: '<path d="M7 18v-4.5a5 5 0 0 1 10 0V18"/><path d="M5 18h14v3H5z"/><path d="M12 4.5V2M4.8 8 3.4 7M19.2 8l1.4-1"/>',
+  expand: '<path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>',
+  compress: '<path d="M9 3v6H3M15 21v-6h6M3 9l6-6M21 15l-6 6"/>',
+  pencil: '<path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/>',
+  eraser: '<path d="m7 21-4-4a2 2 0 0 1 0-3l9-9a2 2 0 0 1 3 0l4 4a2 2 0 0 1 0 3l-8 8Z"/><path d="M7.5 13.5 12 18M6 21h13"/>',
+  undo: '<path d="M9 14 4 9l5-5"/><path d="M4 9h11a5 5 0 0 1 0 10h-4"/>',
+  trash: '<path d="M4 7h16M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2M6 7l1 13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1l1-13"/>',
 }
 
 export type IconName = keyof typeof P

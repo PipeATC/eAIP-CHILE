@@ -19,6 +19,10 @@ function parseHash(): { screen: Screen; chart: string | null } {
 
 const TITLES: Record<Screen, string> = { ad: 'Aeródromos', ct: 'Cartas', no: 'NOTAMs' }
 
+function loadPinned(icao: string): string[] {
+  try { const s = localStorage.getItem('aip.pinned.' + icao); return s ? JSON.parse(s) : [] } catch { return [] }
+}
+
 function Brandmark() {
   return (
     <svg width="34" height="34" viewBox="0 0 34 34" aria-label="IFIS">
@@ -36,6 +40,7 @@ export function App() {
   const [error, setError] = useState<string | null>(null)
   const [utc, setUtc] = useState('--:--z')
   const [toastMsg, setToastMsg] = useState('')
+  const [pinned, setPinned] = useState<string[]>(() => loadPinned(ICAO))
   const toastTimer = useRef<number | undefined>(undefined)
 
   useEffect(() => {
@@ -67,6 +72,15 @@ export function App() {
     window.clearTimeout(toastTimer.current)
     toastTimer.current = window.setTimeout(() => setToastMsg(''), 1200)
   }, [])
+
+  const togglePin = useCallback((codeToPin: string) => {
+    setPinned(prev => {
+      const next = prev.includes(codeToPin) ? prev.filter(c => c !== codeToPin) : [...prev, codeToPin]
+      try { localStorage.setItem('aip.pinned.' + ICAO, JSON.stringify(next)) } catch { /* ignore */ }
+      return next
+    })
+    toast(pinned.includes(codeToPin) ? 'Carta desanclada' : 'Carta anclada')
+  }, [pinned, toast])
 
   const { screen, chart } = route
 
@@ -118,8 +132,8 @@ export function App() {
         {!error && (!ad || !cat) && <div className="loadscreen">Cargando datos de {ICAO}…</div>}
         {ad && cat && (
           <div className="wrap">
-            {screen === 'ad' && <Aerodromo ad={ad} charts={cat.charts} onOpenChart={openChart} onSeeAll={() => nav('ct')} onToast={toast} onNotams={() => nav('no')} />}
-            {screen === 'ct' && <Cartas icao={ICAO} charts={cat.charts} selected={chart} onOpen={openChart} onClose={closeChart} />}
+            {screen === 'ad' && <Aerodromo ad={ad} charts={cat.charts} pinned={pinned} onOpenChart={openChart} onSeeAll={() => nav('ct')} onToast={toast} onNotams={() => nav('no')} />}
+            {screen === 'ct' && <Cartas icao={ICAO} charts={cat.charts} selected={chart} pinned={pinned} onTogglePin={togglePin} onOpen={openChart} onClose={closeChart} />}
             {screen === 'no' && <Notams />}
           </div>
         )}

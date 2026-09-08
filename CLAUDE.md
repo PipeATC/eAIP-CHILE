@@ -91,8 +91,17 @@ Prueba de viabilidad lograda sobre las ediciones reales de ambos volúmenes:
    de datos (`src/data.ts`) hace `fetch` de `data/aerodromes/<ICAO>.json` y
    `charts/<ICAO>/catalog.json`; `scripts/sync-data.mjs` copia `/data` a
    `app/public/` (predev/prebuild). Añadir un aeródromo = su JSON + cartas.
+   Visor de cartas (`components/ChartViewer.tsx`): ajuste-a-pantalla (contain),
+   zoom/pan/pinch, **pantalla completa** (Fullscreen API), modo noche y un
+   **scratchpad** para anotar con lápiz/dedo (colores, goma, deshacer, limpiar)
+   anclado a la carta y persistido en localStorage (`aip.notes.<code>`). Las
+   cartas se **anclan con pin** desde el visor (`aip.pinned.<ICAO>`) y aparecen
+   en la pantalla de Aeródromos.
    > Nota: esto reemplaza el stack "React Native + Expo" que la Fase 3 fijaba
    > antes; el usuario decidió **PWA**.
+6. **`.github/workflows/deploy-pages.yml`** — CI que compila `app/` (Vite) y
+   publica en GitHub Pages con base `/<repo>/`. Requiere Settings → Pages →
+   Source = "GitHub Actions".
 
 ### Datos de aeródromo (AD 2)
 - `data/aerodromes/SCEL.json` — datos AD 2 reales de SCEL (general, pistas +
