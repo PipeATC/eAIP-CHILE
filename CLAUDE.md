@@ -42,8 +42,12 @@ público. La automatización de ciclos AIRAC queda para una fase posterior.
 │       ├── aerodromo_briefing/   # Briefing de aeródromo (SCEL)
 │       ├── visor_cartas/         # Visor de carta (ILS Z RWY 17L)
 │       └── notams_suplementos/   # NOTAMs + Suplementos AIP
-├── prototipo/                # Prototipo interactivo (demo de aprobación)
-│   └── index.html            # App autónoma, 3 pantallas, sin deps de runtime
+├── prototipo/                # Prototipo interactivo (maqueta autónoma)
+│   └── index.html            # 3 pantallas, sin deps de runtime
+├── app/                      # ★ PWA funcional (Vite + React + TypeScript)
+│   ├── src/                  # App.tsx, screens/, components/, data.ts, theme.css
+│   ├── public/icons/         # iconos PWA (versionados)
+│   └── vite.config.ts        # vite-plugin-pwa (manifest + service worker)
 └── docs/
     └── DATA_SOURCES.md       # Cómo obtener los PDF fuente
 ```
@@ -78,6 +82,17 @@ Prueba de viabilidad lograda sobre las ediciones reales de ambos volúmenes:
    + `catalog.json`), con filtros por fase y visor con zoom/pan/modo noche.
    `prototipo/build.py` inyecta el catálogo en `index.html`; las imágenes se
    cargan por ruta relativa. Las cartas de SCEL se versionan (demo autocontenida).
+
+5. **`app/`** — **PWA funcional** (Vite + React + TypeScript + vite-plugin-pwa),
+   el producto en desarrollo. Instalable y **offline-first** (service worker:
+   precachea app shell + JSON, runtime-cache de cartas), **responsive** (nav
+   inferior en móvil; riel lateral + doble columna en tablet/escritorio; visor
+   de carta a pantalla dividida). Arranca con los datos reales de SCEL. La capa
+   de datos (`src/data.ts`) hace `fetch` de `data/aerodromes/<ICAO>.json` y
+   `charts/<ICAO>/catalog.json`; `scripts/sync-data.mjs` copia `/data` a
+   `app/public/` (predev/prebuild). Añadir un aeródromo = su JSON + cartas.
+   > Nota: esto reemplaza el stack "React Native + Expo" que la Fase 3 fijaba
+   > antes; el usuario decidió **PWA**.
 
 ### Datos de aeródromo (AD 2)
 - `data/aerodromes/SCEL.json` — datos AD 2 reales de SCEL (general, pistas +
