@@ -17,9 +17,10 @@ function freqLabel(f: Frequency): string {
 
 const OTHER_ADS = [['SCFA', 'ANF'], ['SCCF', 'CJC'], ['SCTE', 'PMC'], ['SCIE', 'CCP']]
 
-export function Aerodromo({ ad, charts, onOpenChart, onSeeAll, onToast, onNotams }: {
+export function Aerodromo({ ad, charts, pinned, onOpenChart, onSeeAll, onToast, onNotams }: {
   ad: Aerodrome
   charts: Chart[]
+  pinned: string[]
   onOpenChart: (code: string) => void
   onSeeAll: () => void
   onToast: (m: string) => void
@@ -36,8 +37,7 @@ export function Aerodromo({ ad, charts, onOpenChart, onSeeAll, onToast, onNotams
   ]
   const counts: Record<string, number> = {}
   charts.forEach(c => { counts[c.type] = (counts[c.type] || 0) + 1 })
-  const featured = ['IAC01', 'IAC09', 'SID05', 'STAR06', 'ADC01']
-    .map(code => charts.find(c => c.code === code)).filter(Boolean) as Chart[]
+  const pinnedCharts = pinned.map(code => charts.find(c => c.code === code)).filter(Boolean) as Chart[]
 
   const copy = (f: string) => {
     navigator.clipboard?.writeText(f).catch(() => {})
@@ -126,26 +126,37 @@ export function Aerodromo({ ad, charts, onOpenChart, onSeeAll, onToast, onNotams
       </div>
 
       <div className="sec">
-        <div className="sec-head"><Icon name="map" /><h2>CARTAS AERONÁUTICAS</h2>
+        <div className="sec-head"><Icon name="pushpin" /><h2>CARTAS ANCLADAS</h2>
           <button className="linkbtn r tap" onClick={onSeeAll} style={{ marginLeft: 'auto' }}>VER TODAS ({charts.length}) ›</button></div>
-        <div className="scroll-x">
-          <button className="cat on tap">TODAS <span className="n">{charts.length}</span></button>
+        {pinnedCharts.length > 0 ? (
+          <div className="charts">
+            {pinnedCharts.map(c => {
+              const tm = TYPE_META[c.type] || { c: 'ink-2' }
+              return (
+                <button key={c.code} className={'chart tap c-' + tm.c} onClick={() => onOpenChart(c.code)}>
+                  <span className="badge">{c.type}</span>
+                  <div className="grow"><div className="t trunc">{c.title}</div><div className="s trunc">SCEL {c.code}{c.rwy ? ' · RWY ' + c.rwy : ''}</div></div>
+                  <Icon name="pushpin" className="pin" size={16} fill={1} />
+                  <Icon name="chevron" className="go" size={18} />
+                </button>
+              )
+            })}
+          </div>
+        ) : (
+          <button className="pin-empty tap" onClick={onSeeAll}>
+            <Icon name="pushpin" size={22} />
+            <div>
+              <div className="t">Aún no anclas cartas</div>
+              <div className="s">Abre una carta y toca el pin ⭑ para tenerla aquí a mano.</div>
+            </div>
+            <Icon name="chevron" className="go" size={18} />
+          </button>
+        )}
+        <div className="scroll-x" style={{ marginTop: 10 }}>
+          <button className="cat tap" onClick={onSeeAll}>TODAS <span className="n">{charts.length}</span></button>
           {TYPE_ORDER.filter(t => counts[t]).map(t => (
             <button key={t} className="cat tap" onClick={onSeeAll}>{t} <span className="n">{counts[t]}</span></button>
           ))}
-        </div>
-        <div className="charts">
-          {featured.map((c, i) => {
-            const tm = TYPE_META[c.type] || { c: 'ink-2' }
-            return (
-              <button key={c.code} className={'chart tap c-' + tm.c} onClick={() => onOpenChart(c.code)}>
-                <span className="badge">{c.type}</span>
-                <div className="grow"><div className="t trunc">{c.title}</div><div className="s trunc">SCEL {c.code}{c.rwy ? ' · RWY ' + c.rwy : ''}</div></div>
-                {i === 0 && <Icon name="pushpin" className="pin" size={16} />}
-                <Icon name="chevron" className="go" size={18} />
-              </button>
-            )
-          })}
         </div>
       </div>
     </>
