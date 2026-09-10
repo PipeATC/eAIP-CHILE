@@ -71,7 +71,7 @@ export function Aerodromo({ ad, charts, pinned, onOpenChart, onSeeAll, onToast, 
               </div>
               <div className="row" style={{ alignItems: 'flex-end', gap: 8, marginTop: 8 }}>
                 <h1 style={{ fontFamily: 'var(--mono)' }}>{ad.icao}</h1>
-                <span className="mono" style={{ fontSize: 14, color: 'var(--primary)', fontWeight: 700, marginBottom: 2 }}>{ad.iata}</span>
+                <span className="mono" style={{ fontSize: 14, color: '#9db8ee', fontWeight: 700, marginBottom: 2 }}>{ad.iata}</span>
               </div>
               <div className="sub1">{ad.name.toUpperCase()}</div>
               <div className="sub2">{ad.city.toUpperCase()} · FIR {ad.fir} · {g.ubicacion.split('·')[0].toUpperCase()}</div>

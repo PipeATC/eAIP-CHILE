@@ -25,10 +25,10 @@ function loadPinned(icao: string): string[] {
 
 function Brandmark() {
   return (
-    <svg width="34" height="34" viewBox="0 0 34 34" aria-label="IFIS">
-      <rect x="1" y="1" width="32" height="32" rx="7" fill="#0F131C" stroke="#00A3FF" strokeWidth="1.5" />
-      <path d="M17 6 L25 26 L17 21 L9 26 Z" fill="#00A3FF" />
-      <circle cx="17" cy="17" r="2.2" fill="#0A0E16" />
+    <svg width="34" height="34" viewBox="0 0 34 34" aria-label="eAIP" style={{ flex: 'none' }}>
+      <rect x="1" y="1" width="32" height="32" rx="8" fill="#0D3B85" stroke="#ffffff" strokeOpacity=".22" strokeWidth="1" />
+      <path d="M17 7 L24 25 L17 20.5 L10 25 Z" fill="#ffffff" />
+      <circle cx="17" cy="18" r="2" fill="#0D3B85" />
     </svg>
   )
 }
@@ -106,17 +106,22 @@ export function App() {
       </nav>
 
       <header className="header">
-        <div className="hbar">
-          <div className="brand">
-            <span className="none" style={{ display: 'inline-flex' }}><Brandmark /></span>
-            <div style={{ minWidth: 0 }}>
-              <div className="k">AIP CHILE · IFIS</div>
-              <div className="t">{TITLES[screen]}</div>
-            </div>
+        <div className="gov">
+          <div className="in">
+            <span><b>DGAC Chile</b> · Servicio de Información Aeronáutica</span>
+            <span className="r"><span>{utc}</span><span>·</span><span className="g">AIRAC 2409</span></span>
           </div>
-          <div className="row" style={{ gap: 6 }}>
-            <div className="pill clock"><Icon name="clock" size={13} color="var(--primary)" /><span>{utc}</span></div>
-            <div className="pill airac"><span className="dot pulse" /><b>AIRAC 2409</b></div>
+        </div>
+        <div className="hbar">
+          <div className="in">
+            <div className="brand">
+              <Brandmark />
+              <div style={{ minWidth: 0 }}>
+                <div className="wm">eAIP <span>CHILE</span></div>
+                <div className="t">{TITLES[screen]} · EFB</div>
+              </div>
+            </div>
+            <span className="pill vig"><span className="dot pulse" />VIGENTE</span>
           </div>
         </div>
         <div className="disclaimer">

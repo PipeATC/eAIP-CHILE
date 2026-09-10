@@ -113,7 +113,14 @@ Prueba de viabilidad lograda sobre las ediciones reales de ambos volúmenes:
 
 ## Sistema de diseño
 
-`design/DESIGN_SYSTEM.md` define el lenguaje visual objetivo: **EFB
+> **Estética actual de la PWA (`app/`): tema CLARO institucional "AeroIFIS
+> Modern"** (blancos + azules DGAC `#0D3B85`/`#0A2558`, franja institucional
+> navy, tipografía Plus Jakarta Sans para títulos + Inter + JetBrains Mono).
+> La marca es **eAIP** (reemplaza el "IFIS" del mockup original). Tokens en
+> `app/src/theme.css`. El `design/DESIGN_SYSTEM.md` (EFB oscuro) quedó como
+> referencia histórica del primer prototipo.
+
+`design/DESIGN_SYSTEM.md` define el lenguaje visual del primer prototipo: **EFB
 avionics-grade oscuro** optimizado para cabina y baja luz, densidad de
 información alta, tipografía dual (Inter para interfaz, JetBrains Mono para
 datos operacionales) y color por función:
